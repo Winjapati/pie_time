@@ -64,7 +64,8 @@ execute:
  *
  * Adjust the LEXICON_PATH if your site uses a different relative path.
  */
-const LEXICON_PATH = "../assets/data/lexicon.json";
+const LEXICON_PATH = "assets/data/lexicon.json";
+
 
 const viewSelect = document.getElementById("verbView");
 const verbPickWrap = document.getElementById("verbPickWrap");
