@@ -1,0 +1,9 @@
+---
+title: "Home"
+---
+
+This is a minimal Quarto website scaffold.
+
+- The lexicon lives in `assets/data/lexicon.json`.
+- The “Nominal paradigms (PB)” page renders paradigms for entries with `PB: true`.
+

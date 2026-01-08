@@ -1,0 +1,126 @@
+---
+title: "Pronouns"
+---
+
+## Pronouns
+
+### 1st person: h₁éĝoh₂ ‘I’, nóh₁ ‘we (du.)’, u̯éi̯es ‘we (pl.)’
+
+|  | Singular | Dual | Plural |
+| --- | --- | --- | --- |
+| Nominative | h₁éĝoh₂ | nóh₁ | u̯éi̯es |
+| Accusative | mḗ / me | nóh₁ | n̥smé / nos |
+| Instrumental | mói̯ |  |  |
+| Dative | méĝʰi / moi̯ |  | n̥sméi̯ / nos |
+| Ablative | méd |  | n̥sméd |
+| Genitive | méne / moi̯ |  | / nos |
+| Locative | mói̯ |  | n̥smí |
+
+### 2nd person: “you, y’all”
+
+|  | Singular | Dual | Plural |
+| --- | --- | --- | --- |
+| Nominative | tū́ / tu | u̯óh₁ | i̯ū́s |
+| Accusative | tu̯ḗ / te | u̯óh₁ | usu̯é |
+| Instrumental | tói̯ |  |  |
+| Dative | tebʰi̯o / toi̯ |  |  |
+| Ablative | tu̯éd |  |  |
+| Genitive | téu̯e / toi̯ |  |  |
+| Locative | tói̯ |  |  |
+| Vocative | tū́ | u̯óh1 | i̯ū́s |
+
+### 
+
+### 3rd person masculine “that one; this one”
+
+|  | Singular | Dual | Plural |
+| --- | --- | --- | --- |
+| Nominative | só | tóh₁ | tói̯ |
+| Accusative | tóm | tóh₁ | tóms |
+| Instrumental | tósmōh₁ | tói̯m | tói̯bhis |
+| Dative | tósmōi̯ | tói̯m | tói̯bhos |
+| Ablative | tósmōd | tói̯m | tói̯bhos |
+| Genitive | tósi̯o | tóu̯s | tói̯sōm |
+| Locative | tósmi | tóu̯s | tói̯su |
+
+### 3rd person neuter “that one; this one” (remaining paradigm identical to above)
+
+|  | Singular | Dual | Plural |
+| --- | --- | --- | --- |
+| Nominative | tód | tóh₁ | táh₂ |
+| Accusative | tód | tóh₁ | táh₂ |
+
+### 3rd person feminine “that one; this one”
+
+
+|  | Singular | Dual | Plural |
+| --- | --- | --- | --- |
+| Nominative | sáh₂ | táh₂h₁e | táh₂as |
+| Accusative | tā́m | táh₂h₁e | tā́ms |
+| Instrumental | tési̯ah₂ah₁ | táh₂oi̯m | táh₂bʰis |
+| Dative | tési̯ah₂ai̯ | táh₂oi̯m | táh₂bʰos |
+| Ablative | tési̯ah₂s | táh₂oi̯m | táh₂bʰos |
+| Genitive | tési̯ah₂s | táh₂ou̯s | táh₂sōm |
+| Locative | tési̯ah₂i | táh₂ou̯s | táh₂su | |
+
+### 
+
+### 3rd person masculine “the one just mentioned; said”
+
+|  | Singular | Dual | Plural |
+| --- | --- | --- | --- |
+| Nominative | ís | íh₁ | éi̯es |
+| Accusative | ím | íh₁ | íms |
+| Instrumental | ésmōh₁ | éi̯oi̯m | éi̯bʰis |
+| Dative | ésmōi̯ | éi̯oi̯m | éi̯bʰos |
+| Ablative | ésmōd | éi̯oi̯m | éi̯bʰos |
+| Genitive | ési̯o | éi̯ou̯s | éi̯sōm |
+| Locative | ésmi | éi̯ou̯s | éi̯su |
+
+### 3rd person neuter “the one just mentioned; said” (remaining paradigm identical to above)
+
+|  | Singular | Dual | Plural |
+| --- | --- | --- | --- |
+| Nominative | íd | íh₁ | íh₂ |
+| Accusative | íd | íh₁ | íh₂ |
+
+### 3rd person feminine “the one just mentioned; said”
+
+|  | Singular | Dual | Plural |
+| --- | --- | --- | --- |
+| Nominative | íh₂ | íh₂h₁e | íh₂as |
+| Accusative | ī́m | íh₂h₁e | ī́ms |
+| Instrumental | ési̯ah₂ah₁ | íh₂oi̯m | íh₂bʰis |
+| Dative | ési̯ah₂ai̯ | íh₂oi̯m | íh₂bʰos |
+| Ablative | ési̯ah₂s | íh₂oi̯m | íh₂bʰos |
+| Genitive | ési̯ah₂s | íh₂ou̯s | íh₂sōm |
+| Locative | ési̯ah₂i | íh₂ou̯s | íh₂su|
+
+### Interrogative Pronoun: kwís, kwósi̯o ‘who?’ (m./f.); kwíd “what?” (n.)
+
+|  | Singular | Dual | Plural |
+| --- | --- | --- | --- |
+| Nominative | kwís / kwíd | kwóh₁ | kwéi̯es / kwíh₂ |
+| Accusative | kwím / kwíd | kwóh₁ | kwíms / kwíh₂ |
+| Instrumental | kwṓh₁ | kwói̯m | kwṓi̯s |
+| Dative | kwṓi̯ | kwói̯m | kwibʰos |
+| Ablative | kwṓd | kwói̯m | kwibʰos |
+| Genitive | kwósi̯o | kwóu̯s | kwísōm |
+| Locative | kwói | kwóu̯s | kwísu |
+
+
+### 
+
+### Relative Pronoun: : h₁i̯ós, h₁i̯ósi̯o ‘who, which, that’ (m./f.); h₁i̯ód ‘id.’ (n.)
+
+
+|  | Singular | Dual | Plural |
+| --- | --- | --- | --- |
+| Nominative | h₁i̯ós / h₁i̯ód | h₁i̯óh₁ | h₁i̯ói̯ / h₁i̯áh₂ |
+| Accusative | h₁i̯óm / h₁i̯ód | h₁i̯óh₁ | h₁i̯óms / h₁i̯áh₂ |
+| Instrumental | h₁i̯ṓh₁ | h₁i̯ói̯m | h₁i̯ṓi̯s |
+| Dative | h₁i̯ṓi̯ | h₁i̯ói̯m | h₁i̯ói̯bʰos |
+| Ablative | h₁i̯ṓd | h₁i̯ói̯m | h₁i̯ói̯bʰos |
+| Genitive | h₁i̯ósi̯o | h₁i̯óu̯s | h₁i̯ói̯sōm |
+| Locative | h₁i̯ói | h₁i̯óu̯s | h₁i̯ói̯su |
+| Vocative | h₁i̯ós / h₁i̯ód | h₁i̯óh₁ | h₁i̯ói̯ / h₁i̯áh₂ |

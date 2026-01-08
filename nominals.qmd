@@ -1,0 +1,581 @@
+---
+title: "Nominals"
+format: html
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{=html}
+<div class="nominals-controls"
+     style="display:flex; gap:.75rem; flex-wrap:wrap; align-items:end; margin: 0 0 1rem 0;">
+
+  <div>
+    <label for="sectionSelect" style="display:block; font-weight:600; margin-bottom:.25rem;">View</label>
+    <select id="sectionSelect" style="padding:.35rem; max-width:22rem;">
+      <option value="overview" selected>General overview</option>
+      <option value="nouns">Nouns</option>
+      <option value="adjectives">Adjectives</option>
+      <option value="pronouns">Pronouns</option>
+    </select>
+  </div>
+
+  <div id="pickWrap" style="display:none;">
+    <label for="pickSelect" id="pickLabel" style="display:block; font-weight:600; margin-bottom:.25rem;">Choose…</label>
+    <select id="pickSelect" style="padding:.35rem; max-width:34rem;">
+      <option value="" selected>—</option>
+    </select>
+  </div>
+
+  <div id="exampleWrap" style="display:none;">
+    <label for="exampleSelect" id="exampleLabel" style="display:block; font-weight:600; margin-bottom:.25rem;">Example</label>
+    <select id="exampleSelect" style="padding:.35rem; max-width:34rem;">
+      <option value="" selected>—</option>
+    </select>
+  </div>
+
+  <div id="cliticToggleWrap" style="display:none;">
+    <label style="display:block; font-weight:600; margin-bottom:.25rem;">Pronouns</label>
+    <label style="display:flex; align-items:center; gap:.4rem;">
+      <input type="checkbox" id="showClitics">
+      show clitics
+    </label>
+  </div>
+</div>
+
+<div id="nominalsMain"></div>
+
+<style>
+table.nom-paradigm{
+  border-collapse: collapse;
+  margin: .75rem 0 1rem 0;
+  width: 100%;
+  max-width: 62rem;
+}
+table.nom-paradigm th, table.nom-paradigm td{
+  border: 1px solid rgba(0,0,0,.15);
+  padding: .25rem .4rem;
+  text-align: center;
+  vertical-align: middle;
+}
+table.nom-paradigm th:first-child{ text-align:left; white-space:nowrap; }
+.nom-note{ opacity:.8; }
+.nom-clitic{ opacity:.7; }
+.nom-grid{ display:grid; grid-template-columns: 1fr; gap: 1rem; }
+@media (min-width: 900px){ .nom-grid{ grid-template-columns: 1fr 1fr; } }
+code{ font-size: .95em; }
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  "use strict";
+
+  const LEXICON_URL   = "assets/data/lexicon.json";
+  const PARADIGMS_URL = "assets/data/paradigms.json";
+
+  const sectionSelect    = document.getElementById("sectionSelect");
+  const pickWrap         = document.getElementById("pickWrap");
+  const pickLabel        = document.getElementById("pickLabel");
+  const pickSelect       = document.getElementById("pickSelect");
+  const exampleWrap      = document.getElementById("exampleWrap");
+  const exampleLabel     = document.getElementById("exampleLabel");
+  const exampleSelect    = document.getElementById("exampleSelect");
+  const cliticToggleWrap = document.getElementById("cliticToggleWrap");
+  const showCliticsBox   = document.getElementById("showClitics");
+  const main             = document.getElementById("nominalsMain");
+
+  if (!sectionSelect || !pickWrap || !pickLabel || !pickSelect || !exampleWrap || !exampleLabel || !exampleSelect
+      || !cliticToggleWrap || !showCliticsBox || !main) {
+    console.error("Nominals: missing required DOM nodes.");
+    return;
+  }
+
+  let LEX = [];
+  let PAR = {};
+  let currentPick = null;      // paradigm id OR adjective-class id OR pronoun lexeme id
+  let currentExample = null;   // lexeme id (nouns/adjs)
+  let currentPickList = [];    // list for pick dropdown (ids)
+  let currentExampleList = []; // list for example dropdown (entries)
+
+  // ---------- helpers ----------
+  function esc(s){
+    return String(s ?? "")
+      .replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;")
+      .replaceAll('"',"&quot;").replaceAll("'","&#39;");
+  }
+
+  function getAny(o, keys, dflt=""){
+    for (const k of keys){
+      if (o && Object.prototype.hasOwnProperty.call(o,k)){
+        const v = o[k];
+        if (v !== null && v !== undefined && String(v).trim() !== "") return v;
+      }
+    }
+    return dflt;
+  }
+
+  function normPos(p){
+    const s = String(p||"").trim().toLowerCase();
+    if (s === "adj") return "adjective";
+    return s || "other";
+  }
+
+  function lineForEntry(e){
+    const lemma = getAny(e, ["lemma","headword","word"], e.id || "(?)");
+    const gloss = getAny(e, ["gloss","meaning"], "");
+    return gloss ? `${lemma} — ‘${gloss}’` : lemma;
+  }
+
+  function findEntryById(id){
+    return LEX.find(e => String(e.id) === String(id)) || null;
+  }
+
+  // ---------- paradigms list (stem classes) ----------
+  function listNominalParadigmIds(){
+    return Object.keys(PAR || {})
+      .filter(pid => {
+        const p = PAR[pid];
+        return p && typeof p === "object"
+          && p.category === "nominal"
+          && p.include_in_nom_paradigms === true;
+      })
+      .sort((a,b) => {
+        const la = (PAR[a]?.label || a).toLowerCase();
+        const lb = (PAR[b]?.label || b).toLowerCase();
+        return la.localeCompare(lb);
+      });
+  }
+
+  function paradigmLabel(pid){
+    const p = PAR[pid];
+    return (p && p.label) ? p.label : pid;
+  }
+
+  // Render a paradigm as ENDINGS ONLY (stem class view)
+  function renderParadigmEndings(pid){
+    const p = PAR[pid];
+    if (!p) return `<p class="nom-note"><em>No paradigm data for: ${esc(pid)}</em></p>`;
+
+    const cases = Array.isArray(p.cases) ? p.cases : ["nom","voc","acc","inst","dat","abl","gen","loc"];
+    const nums  = Array.isArray(p.numbers) ? p.numbers : ["sg","du","pl"];
+    const endings = (p.endings && typeof p.endings === "object") ? p.endings : {};
+
+    let html = `<` + `table class="nom-paradigm"><thead><tr><th></th>`;
+    html += nums.map(n => `<th>${esc(n)}</th>`).join("");
+    html += `</tr></thead><tbody>`;
+
+    for (const c of cases){
+      html += `<tr><th>${esc(c)}</th>`;
+      for (const n of nums){
+        const key = `${c}_${n}`;
+        const v = endings[key];
+        html += `<td>${esc((v===null || v===undefined || v==="") ? "—" : String(v))}</td>`;
+      }
+      html += `</tr>`;
+    }
+
+    html += `</tbody></` + `table>`;
+    return html;
+  }
+
+  // ---------- example realization (stem + ending) ----------
+  function getStem(entry, genderTag){
+    // Support additional stems, matching the lexicon strategy:
+    // - stems: {m:"...", f:"...", n:"..."}
+    // - stem_m / stem_f / stem_n
+    // - strong_stem_m etc.
+    if (genderTag){
+      const fromObj = entry?.stems && typeof entry.stems === "object" ? entry.stems[genderTag] : "";
+      const s = getAny(entry, [
+        `strong_stem_${genderTag}`, `stem_${genderTag}`, `base_${genderTag}`, `root_${genderTag}`
+      ], fromObj || "");
+      if (s) return String(s).trim().replace(/-+$/,"");
+    }
+
+    let s = getAny(entry, ["strong_stem","stem","base","root","lemma"], "");
+    s = String(s||"").trim();
+    s = s.replace(/-+$/,"");
+    return s;
+  }
+
+  function renderRealizedNominal(entry, pid, genderTag=null){
+    const p = PAR[pid];
+    if (!p) return `<p class="nom-note"><em>No paradigm data for: ${esc(pid)}</em></p>`;
+
+    const cases = Array.isArray(p.cases) ? p.cases : ["nom","voc","acc","inst","dat","abl","gen","loc"];
+    const nums  = Array.isArray(p.numbers) ? p.numbers : ["sg","du","pl"];
+    const endings = (p.endings && typeof p.endings === "object") ? p.endings : {};
+    const stem = getStem(entry, genderTag);
+
+    let html = `<` + `table class="nom-paradigm"><thead><tr><th></th>`;
+    html += nums.map(n => `<th>${esc(n)}</th>`).join("");
+    html += `</tr></thead><tbody>`;
+
+    for (const c of cases){
+      html += `<tr><th>${esc(c)}</th>`;
+      for (const n of nums){
+        const key = `${c}_${n}`;
+        const end = endings[key];
+        const form = (!end || end==="—") ? "—" : (stem + String(end));
+        html += `<td>${esc(form)}</td>`;
+      }
+      html += `</tr>`;
+    }
+
+    html += `</tbody></` + `table>`;
+    return html;
+  }
+
+  // ---------- adjective classes ----------
+  // Macro mapping: thematic adjectives use m=o-stem masc, n=o-stem neut, f=ah2-stem fem (and oxy variants)
+  // Add more macros here as you create them.
+  const ADJ_MACROS = {
+    "adj_thematic":      { m: "o_stem_m",     f: "ah2_stem_f",     n: "o_stem_n" },
+    "adj_thematic_oxy":  { m: "o_stem_m_oxy", f: "ah2_stem_f_oxy", n: "o_stem_n_oxy" }
+  };
+
+  // Allow multiple aliases for the same idea (so the page keeps working if you rename ids)
+  const ADJ_ALIASES = {
+    // common aliases you might use in lexicon.json
+    "thematic_adj": "adj_thematic",
+    "thematic_adjective": "adj_thematic",
+    "adj_theme": "adj_thematic",
+    "adj_thematic_bary": "adj_thematic",
+    "them_adj": "adj_thematic",
+    "them_adj_bary": "adj_thematic",
+
+    // oxytonic thematic adj (your current lexicon uses this)
+    "them_adj_oxy": "adj_thematic_oxy",
+    "thematic_adj_oxy": "adj_thematic_oxy",
+    "adj_theme_oxy": "adj_thematic_oxy",
+    "adj_thematic_oxytonic": "adj_thematic_oxy"
+  };
+
+  function canonAdjClassId(pid){
+    return ADJ_ALIASES[pid] || pid;
+  }
+
+  function listAdjectiveClassIds(){
+    const ids = new Set();
+    for (const e of LEX){
+      if (normPos(e.pos) === "adjective"){
+        const pid = getAny(e, ["paradigm"], "");
+        if (pid) ids.add(canonAdjClassId(pid));
+      }
+    }
+    return Array.from(ids).sort((a,b)=>a.localeCompare(b));
+  }
+
+  function adjectiveClassLabel(pid){
+    const canon = canonAdjClassId(pid);
+    if (Object.prototype.hasOwnProperty.call(ADJ_MACROS, canon)) {
+      const m = ADJ_MACROS[canon];
+      return `${canon} (m:${m.m}, f:${m.f}, n:${m.n})`;
+    }
+    if (PAR && Object.prototype.hasOwnProperty.call(PAR, canon)) return paradigmLabel(canon);
+    return canon;
+  }
+
+  function renderAdjectiveExample(entry){
+    const rawPid = getAny(entry, ["paradigm"], "");
+    const pid = canonAdjClassId(rawPid);
+    if (!pid) return `<p class="nom-note"><em>No adjective paradigm specified.</em></p>`;
+
+    // Macro → 3 gender tables (using gender-specific stems if provided)
+    if (Object.prototype.hasOwnProperty.call(ADJ_MACROS, pid)){
+      const map = ADJ_MACROS[pid];
+      const head = `<div class="nom-note">Macro: <code>${esc(pid)}</code> → m=<code>${esc(map.m)}</code>, f=<code>${esc(map.f)}</code>, n=<code>${esc(map.n)}</code></div>`;
+      const grid = `
+        <div class="nom-grid">
+          <div><h3>Masculine</h3>${renderRealizedNominal(entry, map.m, "m")}</div>
+          <div><h3>Feminine</h3>${renderRealizedNominal(entry, map.f, "f")}</div>
+          <div style="grid-column:1 / -1;"><h3>Neuter</h3>${renderRealizedNominal(entry, map.n, "n")}</div>
+        </div>`;
+      return head + grid;
+    }
+
+    // Otherwise: treat pid as a nominal-like paradigm id (single table)
+    if (PAR && Object.prototype.hasOwnProperty.call(PAR, pid)){
+      return `<div class="nom-note">Paradigm ID: <code>${esc(pid)}</code></div>` + renderRealizedNominal(entry, pid, null);
+    }
+
+    return `<p class="nom-note"><em>Unknown adjective paradigm: ${esc(rawPid)}</em></p>`;
+  }
+
+  // ---------- pronouns (hardcoded) ----------
+  const PRON_CASES = ["nom","voc","acc","gen","dat","abl","inst","loc"];
+  const PRON_NUMS  = ["sg","du","pl"];
+
+  function renderFormSlot(slot, showClitics){
+    if (!slot) return "—";
+    if (typeof slot === "string") return esc(slot);
+
+    const tonic  = (slot.tonic  || []).filter(Boolean);
+    const clitic = (slot.clitic || []).filter(Boolean);
+
+    const main = tonic.length ? tonic.join(" / ")
+              : (clitic.length ? clitic.join(" / ") : "—");
+
+    if (!showClitics) return esc(main);
+    if (!tonic.length || !clitic.length) return esc(main);
+
+    return `${esc(main)} <span class="nom-clitic">(cl. ${esc(clitic.join(" / "))})</span>`;
+  }
+
+  function renderHardcodedPronoun(entry, showClitics){
+    const forms = entry.forms || {};
+    let html = `<` + `table class="nom-paradigm"><thead><tr><th></th>`;
+    html += PRON_NUMS.map(n => `<th>${n}</th>`).join("");
+    html += `</tr></thead><tbody>`;
+
+    for (const c of PRON_CASES){
+      html += `<tr><th>${c}</th>`;
+      for (const n of PRON_NUMS){
+        html += `<td>${renderFormSlot(forms[`${c}_${n}`], showClitics)}</td>`;
+      }
+      html += `</tr>`;
+    }
+
+    html += `</tbody></` + `table>`;
+    return html;
+  }
+
+  // ---------- UI wiring ----------
+  function setPickList(section){
+    currentPick = null;
+    currentExample = null;
+    pickSelect.innerHTML = `<option value="" selected>—</option>`;
+    exampleSelect.innerHTML = `<option value="" selected>—</option>`;
+    currentPickList = [];
+    currentExampleList = [];
+
+    if (section === "overview") {
+      pickWrap.style.display = "none";
+      exampleWrap.style.display = "none";
+      cliticToggleWrap.style.display = "none";
+      showCliticsBox.checked = false;
+      return;
+    }
+
+    pickWrap.style.display = "";
+    cliticToggleWrap.style.display = (section === "pronouns") ? "" : "none";
+    if (section !== "pronouns") showCliticsBox.checked = false;
+
+    if (section === "pronouns") {
+      pickLabel.textContent = "Choose a pronoun";
+      exampleWrap.style.display = "none";
+
+      currentPickList = LEX
+        .filter(e => normPos(e.pos) === "pronoun")
+        .slice()
+        .sort((a,b) => lineForEntry(a).localeCompare(lineForEntry(b)))
+        .map(e => e.id);
+
+      pickSelect.innerHTML =
+        `<option value="" selected>— select —</option>` +
+        currentPickList.map(id => {
+          const e = findEntryById(id);
+          return `<option value="${esc(id)}">${esc(lineForEntry(e))}</option>`;
+        }).join("");
+      return;
+    }
+
+    if (section === "nouns") {
+      pickLabel.textContent = "Choose a noun stem class";
+      exampleWrap.style.display = "";
+
+      const pids = listNominalParadigmIds();
+      currentPickList = pids;
+
+      pickSelect.innerHTML =
+        `<option value="" selected>— select —</option>` +
+        pids.map(pid => `<option value="${esc(pid)}">${esc(paradigmLabel(pid))}</option>`).join("");
+      return;
+    }
+
+    // adjectives
+    pickLabel.textContent = "Choose an adjective class";
+    exampleWrap.style.display = "";
+
+    const aids = listAdjectiveClassIds();
+    currentPickList = aids;
+
+    pickSelect.innerHTML =
+      `<option value="" selected>— select —</option>` +
+      aids.map(pid => `<option value="${esc(pid)}">${esc(adjectiveClassLabel(pid))}</option>`).join("");
+  }
+
+  function setExampleList(){
+    const section = sectionSelect.value;
+    exampleSelect.innerHTML = `<option value="" selected>— select —</option>`;
+    currentExampleList = [];
+    currentExample = null;
+
+    if (section === "nouns") {
+      exampleLabel.textContent = "Example noun";
+      currentExampleList = LEX
+        .filter(e => normPos(e.pos) === "noun" && String(getAny(e,["paradigm"],"")) === String(currentPick))
+        .slice()
+        .sort((a,b)=> lineForEntry(a).localeCompare(lineForEntry(b)));
+
+      exampleSelect.innerHTML += currentExampleList.map(e =>
+        `<option value="${esc(e.id)}">${esc(lineForEntry(e))}</option>`
+      ).join("");
+      return;
+    }
+
+    if (section === "adjectives") {
+      exampleLabel.textContent = "Example adjective";
+      currentExampleList = LEX
+        .filter(e => normPos(e.pos) === "adjective" && String(canonAdjClassId(getAny(e,["paradigm"],""))) === String(currentPick))
+        .slice()
+        .sort((a,b)=> lineForEntry(a).localeCompare(lineForEntry(b)));
+
+      exampleSelect.innerHTML += currentExampleList.map(e =>
+        `<option value="${esc(e.id)}">${esc(lineForEntry(e))}</option>`
+      ).join("");
+      return;
+    }
+  }
+
+  function render(){
+    const section = sectionSelect.value;
+
+    if (section === "overview") {
+      main.innerHTML = `
+        <h2>General overview</h2>
+        <p class="nom-note">
+          Use the menu above to explore nominal morphology.
+          <br><strong>Nouns</strong>: choose a stem class, then view endings + an example lexeme.
+          <br><strong>Adjectives</strong>: choose an adjective class (including thematic macros), then view an example paradigm.
+          <br><strong>Pronouns</strong>: lexeme-specific paradigms (with optional clitics).
+        </p>`;
+      return;
+    }
+
+    if (!currentPick) {
+      main.innerHTML = `<p class="nom-note"><em>Select an option above.</em></p>`;
+      return;
+    }
+
+    if (section === "pronouns") {
+      const e = findEntryById(currentPick);
+      if (!e) { main.innerHTML = `<p class="nom-note"><em>Pronoun not found.</em></p>`; return; }
+
+      const head = `<h2>${esc(getAny(e,["lemma"], e.id))} <span class="nom-note">(pronoun)</span></h2>
+                    <p class="nom-note">${esc(getAny(e,["gloss"], ""))}</p>`;
+      main.innerHTML = head + renderHardcodedPronoun(e, showCliticsBox.checked);
+      return;
+    }
+
+    if (section === "nouns") {
+      const pid = currentPick;
+      const head = `<h2>${esc(paradigmLabel(pid))}</h2>
+                    <p class="nom-note">Stem class: <code>${esc(pid)}</code></p>`;
+      let html = head + `<h3>Endings</h3>` + renderParadigmEndings(pid);
+
+      if (currentExample) {
+        const ex = findEntryById(currentExample);
+        if (ex) {
+          html += `<h3>Example: ${esc(getAny(ex,["lemma"], ex.id))}</h3>` +
+                  `<p class="nom-note">${esc(getAny(ex,["gloss"], ""))}</p>` +
+                  renderRealizedNominal(ex, pid, null);
+        }
+      } else {
+        html += `<p class="nom-note"><em>Select an example noun to see a filled paradigm.</em></p>`;
+      }
+
+      main.innerHTML = html;
+      return;
+    }
+
+    // adjectives
+    const cls = currentPick;
+    const canonCls = canonAdjClassId(cls);
+
+    const head = `<h2>${esc(adjectiveClassLabel(canonCls))}</h2>
+                  <p class="nom-note">Class ID: <code>${esc(canonCls)}</code></p>`;
+    let html = head;
+
+    // Always show endings for the class (like nouns), so users can browse classes without selecting an example.
+    if (Object.prototype.hasOwnProperty.call(ADJ_MACROS, canonCls)) {
+      const map = ADJ_MACROS[canonCls];
+      html += `<h3>Endings (by gender)</h3>
+        <div class="nom-grid">
+          <div><h4>Masculine</h4>${renderParadigmEndings(map.m)}</div>
+          <div><h4>Feminine</h4>${renderParadigmEndings(map.f)}</div>
+          <div style="grid-column:1 / -1;"><h4>Neuter</h4>${renderParadigmEndings(map.n)}</div>
+        </div>`;
+    } else if (PAR && Object.prototype.hasOwnProperty.call(PAR, canonCls)) {
+      html += `<h3>Endings</h3>` + renderParadigmEndings(canonCls);
+    } else {
+      html += `<p class="nom-note"><em>No endings table available for this adjective class.</em></p>`;
+    }
+
+    // Example (filled paradigm)
+    if (currentExample) {
+      const ex = findEntryById(currentExample);
+      if (ex) {
+        html += `<h3>Example: ${esc(getAny(ex,["lemma"], ex.id))}</h3>` +
+                `<p class="nom-note">${esc(getAny(ex,["gloss"], ""))}</p>` +
+                renderAdjectiveExample(ex);
+      } else {
+        html += `<p class="nom-note"><em>Example not found.</em></p>`;
+      }
+    } else {
+      html += `<p class="nom-note"><em>Select an example adjective to see a filled paradigm.</em></p>`;
+    }
+
+    main.innerHTML = html;
+  }
+
+  async function init(){
+    const [lexResp, parResp] = await Promise.all([
+      fetch(LEXICON_URL, { cache: "no-store" }),
+      fetch(PARADIGMS_URL, { cache: "no-store" })
+    ]);
+
+    LEX = await lexResp.json();
+    PAR = await parResp.json();
+
+    setPickList(sectionSelect.value);
+    render();
+  }
+
+  // events
+  sectionSelect.addEventListener("change", () => {
+    setPickList(sectionSelect.value);
+    render();
+  });
+
+  pickSelect.addEventListener("change", () => {
+    currentPick = pickSelect.value || null;
+    currentExample = null;
+
+    if (sectionSelect.value === "nouns" || sectionSelect.value === "adjectives") {
+      setExampleList();
+      exampleWrap.style.display = currentPick ? "" : "none";
+    } else {
+      exampleWrap.style.display = "none";
+    }
+
+    render();
+  });
+
+  exampleSelect.addEventListener("change", () => {
+    currentExample = exampleSelect.value || null;
+    render();
+  });
+
+  showCliticsBox.addEventListener("change", () => {
+    if (sectionSelect.value === "pronouns") render();
+  });
+
+  init().catch(err => {
+    console.error(err);
+    main.innerHTML = `<p class="nom-note"><strong>Error:</strong> ${esc(err?.message || String(err))}</p>`;
+  });
+});
+</script>
+```

@@ -1,0 +1,1160 @@
+{
+  "o_stem_m": {
+    "category": "nominal",
+    "label": "o-stems (masculine)",
+    "include_in_nom_paradigms": true,
+    "cases": [
+      "nom",
+      "voc",
+      "acc",
+      "inst",
+      "dat",
+      "abl",
+      "gen",
+      "loc"
+    ],
+    "numbers": [
+      "sg",
+      "du",
+      "pl"
+    ],
+    "endings": {
+      "nom_sg": "os",
+      "nom_du": "oh₁",
+      "nom_pl": "ōs",
+      "voc_sg": "e",
+      "voc_du": "oh₁",
+      "voc_pl": "ōs",
+      "acc_sg": "om",
+      "acc_du": "oh₁",
+      "acc_pl": "oms",
+      "inst_sg": "oh₁",
+      "inst_du": "oym",
+      "inst_pl": "ōys",
+      "dat_sg": "ōy",
+      "dat_du": "oym",
+      "dat_pl": "obʰos",
+      "abl_sg": "ōd",
+      "abl_du": "oym",
+      "abl_pl": "obʰos",
+      "gen_sg": "osyo",
+      "gen_du": "oyows",
+      "gen_pl": "ōm",
+      "loc_sg": "oi",
+      "loc_du": "oyows",
+      "loc_pl": "oysu"
+    }
+  },
+  "o_stem_n": {
+    "category": "nominal",
+    "label": "o-stems (neuter)",
+    "include_in_nom_paradigms": true,
+    "cases": [
+      "nom",
+      "voc",
+      "acc",
+      "inst",
+      "dat",
+      "abl",
+      "gen",
+      "loc"
+    ],
+    "numbers": [
+      "sg",
+      "du",
+      "pl"
+    ],
+    "endings": {
+      "nom_sg": "om",
+      "nom_du": "oh₁",
+      "nom_pl": "ah₂",
+      "voc_sg": "om",
+      "voc_du": "oh₁",
+      "voc_pl": "ah₂",
+      "acc_sg": "om",
+      "acc_du": "oh₁",
+      "acc_pl": "ah₂",
+      "inst_sg": "oh₁",
+      "inst_du": "oym",
+      "inst_pl": "ōys",
+      "dat_sg": "ōy",
+      "dat_du": "oym",
+      "dat_pl": "obʰos",
+      "abl_sg": "ōd",
+      "abl_du": "oym",
+      "abl_pl": "obʰos",
+      "gen_sg": "osyo",
+      "gen_du": "oyows",
+      "gen_pl": "ōm",
+      "loc_sg": "oi",
+      "loc_du": "oyows",
+      "loc_pl": "oysu"
+    }
+  },
+  "o_stem_m_oxy": {
+    "category": "nominal",
+    "label": "o-stems (masculine)",
+    "include_in_nom_paradigms": false,
+    "cases": [
+      "nom",
+      "voc",
+      "acc",
+      "inst",
+      "dat",
+      "abl",
+      "gen",
+      "loc"
+    ],
+    "numbers": [
+      "sg",
+      "du",
+      "pl"
+    ],
+    "endings": {
+      "nom_sg": "ós",
+      "nom_du": "óh₁",
+      "nom_pl": "ṓs",
+      "voc_sg": "é",
+      "voc_du": "óh₁",
+      "voc_pl": "ṓs",
+      "acc_sg": "óm",
+      "acc_du": "óh₁",
+      "acc_pl": "óms",
+      "inst_sg": "óh₁",
+      "inst_du": "óym",
+      "inst_pl": "ṓys",
+      "dat_sg": "ṓy",
+      "dat_du": "óym",
+      "dat_pl": "óbʰos",
+      "abl_sg": "ṓd",
+      "abl_du": "óym",
+      "abl_pl": "óbʰos",
+      "gen_sg": "ósyo",
+      "gen_du": "óyows",
+      "gen_pl": "ṓm",
+      "loc_sg": "ói",
+      "loc_du": "óyows",
+      "loc_pl": "óysu"
+    }
+  },
+  "o_stem_n_oxy": {
+    "category": "nominal",
+    "label": "o-stems (neuter)",
+    "include_in_nom_paradigms": false,
+    "cases": [
+      "nom",
+      "voc",
+      "acc",
+      "inst",
+      "dat",
+      "abl",
+      "gen",
+      "loc"
+    ],
+    "numbers": [
+      "sg",
+      "du",
+      "pl"
+    ],
+    "endings": {
+      "nom_sg": "óm",
+      "nom_du": "óh₁",
+      "nom_pl": "áh₂",
+      "voc_sg": "óm",
+      "voc_du": "óh₁",
+      "voc_pl": "áh₂",
+      "acc_sg": "óm",
+      "acc_du": "óh₁",
+      "acc_pl": "áh₂",
+      "inst_sg": "óh₁",
+      "inst_du": "óym",
+      "inst_pl": "ṓys",
+      "dat_sg": "ṓy",
+      "dat_du": "óym",
+      "dat_pl": "óbʰos",
+      "abl_sg": "ṓd",
+      "abl_du": "óym",
+      "abl_pl": "óbʰos",
+      "gen_sg": "ósyo",
+      "gen_du": "óyows",
+      "gen_pl": "ṓm",
+      "loc_sg": "ói",
+      "loc_du": "óyows",
+      "loc_pl": "óysu"
+    }
+  },
+  "ah2_stem_f": {
+    "category": "nominal",
+    "label": "ah₂-stems (feminine)",
+    "include_in_nom_paradigms": true,
+    "cases": [
+      "nom",
+      "voc",
+      "acc",
+      "inst",
+      "dat",
+      "abl",
+      "gen",
+      "loc"
+    ],
+    "numbers": [
+      "sg",
+      "du",
+      "pl"
+    ],
+    "endings": {
+      "nom_sg": "ah₂",
+      "nom_du": "ah₂h₁e",
+      "nom_pl": "ah₂as",
+      "voc_sg": "a",
+      "voc_du": "ah₂h₁e",
+      "voc_pl": "ah₂as",
+      "acc_sg": "ām",
+      "acc_du": "ah₂h₁e",
+      "acc_pl": "āms",
+      "inst_sg": "ah₂ah₁",
+      "inst_du": "ah₂oym",
+      "inst_pl": "ah₂bʰis",
+      "dat_sg": "ah₂ay",
+      "dat_du": "ah₂oym",
+      "dat_pl": "ah₂bʰos",
+      "abl_sg": "ah₂as",
+      "abl_du": "ah₂oym",
+      "abl_pl": "ah₂bʰos",
+      "gen_sg": "ah₂as",
+      "gen_du": "ah₂ows",
+      "gen_pl": "ah₂ōm",
+      "loc_sg": "ah₂i",
+      "loc_du": "ah₂ows",
+      "loc_pl": "ah₂su"
+    }
+  },
+  "ah2_stem_f_oxy": {
+    "category": "nominal",
+    "label": "ah₂-stems (feminine)",
+    "include_in_nom_paradigms": false,
+    "cases": [
+      "nom",
+      "voc",
+      "acc",
+      "inst",
+      "dat",
+      "abl",
+      "gen",
+      "loc"
+    ],
+    "numbers": [
+      "sg",
+      "du",
+      "pl"
+    ],
+    "endings": {
+      "nom_sg": "áh₂",
+      "nom_du": "áh₂h₁e",
+      "nom_pl": "áh₂as",
+      "voc_sg": "á",
+      "voc_du": "áh₂h₁e",
+      "voc_pl": "áh₂as",
+      "acc_sg": "ā́m",
+      "acc_du": "áh₂h₁e",
+      "acc_pl": "ā́ms",
+      "inst_sg": "áh₂ah₁",
+      "inst_du": "áh₂oym",
+      "inst_pl": "áh₂bʰis",
+      "dat_sg": "áh₂ay",
+      "dat_du": "áh₂oym",
+      "dat_pl": "áh₂bʰos",
+      "abl_sg": "áh₂as",
+      "abl_du": "áh₂oym",
+      "abl_pl": "áh₂bʰos",
+      "gen_sg": "áh₂as",
+      "gen_du": "áh₂ows",
+      "gen_pl": "áh₂ōm",
+      "loc_sg": "áh₂i",
+      "loc_du": "áh₂ows",
+      "loc_pl": "áh₂su"
+    }
+  },
+  "ih2_stem_f": {
+    "category": "nominal",
+    "label": "ih₂-stems (feminine)",
+    "include_in_nom_paradigms": true,
+    "cases": [
+      "nom",
+      "voc",
+      "acc",
+      "inst",
+      "dat",
+      "abl",
+      "gen",
+      "loc"
+    ],
+    "numbers": [
+      "sg",
+      "du",
+      "pl"
+    ],
+    "endings": {
+      "nom_sg": "ih₂",
+      "nom_du": "ih₂h₁e",
+      "nom_pl": "ih₂as",
+      "voc_sg": "ih₂",
+      "voc_du": "ih₂h₁e",
+      "voc_pl": "ih₂as",
+      "acc_sg": "īm",
+      "acc_du": "ih₂h₁e",
+      "acc_pl": "ī́ms",
+      "inst_sg": "yáh₂ah₁",
+      "inst_du": "yáh₂oym",
+      "inst_pl": "íh₂bʰis",
+      "dat_sg": "yáh₂ay",
+      "dat_du": "yáh₂oym",
+      "dat_pl": "íh₂bʰos",
+      "abl_sg": "yáh₂s",
+      "abl_du": "yáh₂oym",
+      "abl_pl": "íh₂bʰos",
+      "gen_sg": "yáh₂s",
+      "gen_du": "yáh₂ows",
+      "gen_pl": "yáh₂ōm",
+      "loc_sg": "yáh₂i",
+      "loc_du": "yáh₂ows",
+      "loc_pl": "íh₂su"
+    }
+  },
+  "i_stem_acro_anim": {
+    "category": "nominal",
+    "label": "acrostatic i-stems (masculine & feminine)",
+    "include_in_nom_paradigms": true,
+    "cases": [
+      "nom",
+      "voc",
+      "acc",
+      "inst",
+      "dat",
+      "abl",
+      "gen",
+      "loc"
+    ],
+    "numbers": [
+      "sg",
+      "du",
+      "pl"
+    ],
+    "endings": {
+      "nom_sg": "is",
+      "nom_du": "ih₁",
+      "nom_pl": "eyes",
+      "voc_sg": "i",
+      "voc_du": "ih₁",
+      "voc_pl": "eyes",
+      "acc_sg": "im",
+      "acc_du": "ih₁",
+      "acc_pl": "ims",
+      "inst_sg": "yeh₁",
+      "inst_du": "yoym",
+      "inst_pl": "ibʰis",
+      "dat_sg": "yey",
+      "dat_du": "yoym",
+      "dat_pl": "ibʰos",
+      "abl_sg": "is",
+      "abl_du": "yoym",
+      "abl_pl": "ibʰos",
+      "gen_sg": "is",
+      "gen_du": "yows",
+      "gen_pl": "yōm",
+      "loc_sg": "i",
+      "loc_du": "yows",
+      "loc_pl": "isu"
+    }
+  },
+  "i_stem_pk_anim": {
+    "category": "nominal",
+    "label": "proterokinetic i-stems (masculine & feminine)",
+    "include_in_nom_paradigms": true,
+    "cases": [
+      "nom",
+      "voc",
+      "acc",
+      "inst",
+      "dat",
+      "abl",
+      "gen",
+      "loc"
+    ],
+    "numbers": [
+      "sg",
+      "du",
+      "pl"
+    ],
+    "endings": {
+      "nom_sg": "is",
+      "nom_du": "ih₁",
+      "nom_pl": "eyes",
+      "voc_sg": "i",
+      "voc_du": "ih₁",
+      "voc_pl": "eyes",
+      "acc_sg": "im",
+      "acc_du": "ih₁",
+      "acc_pl": "íms",
+      "inst_sg": "éyh₁",
+      "inst_du": "éyoym",
+      "inst_pl": "íbʰis",
+      "dat_sg": "éyey",
+      "dat_du": "éyoym",
+      "dat_pl": "íbʰos",
+      "abl_sg": "éys",
+      "abl_du": "éyoym",
+      "abl_pl": "íbʰos",
+      "gen_sg": "éys",
+      "gen_du": "éyows",
+      "gen_pl": "éyōm",
+      "loc_sg": "ḗy",
+      "loc_du": "éyows",
+      "loc_pl": "ísu"
+    }
+  },
+  "i_stem_pk_nt": {
+    "category": "nominal",
+    "label": "proterokinetic i-stems (neuter)",
+    "include_in_nom_paradigms": true,
+    "cases": [
+      "nom",
+      "voc",
+      "acc",
+      "inst",
+      "dat",
+      "abl",
+      "gen",
+      "loc"
+    ],
+    "numbers": [
+      "sg",
+      "du",
+      "pl"
+    ],
+    "endings": {
+      "nom_sg": "i",
+      "nom_du": "ih₁",
+      "nom_pl": "ih₂",
+      "voc_sg": "i",
+      "voc_du": "ih₁",
+      "voc_pl": "ih₂",
+      "acc_sg": "i",
+      "acc_du": "ih₁",
+      "acc_pl": "ih₂",
+      "inst_sg": "éyh₁",
+      "inst_du": "éyoym",
+      "inst_pl": "íbʰis",
+      "dat_sg": "éyey",
+      "dat_du": "éyoym",
+      "dat_pl": "íbʰos",
+      "abl_sg": "éys",
+      "abl_du": "éyoym",
+      "abl_pl": "íbʰos",
+      "gen_sg": "éys",
+      "gen_du": "éyows",
+      "gen_pl": "éyōm",
+      "loc_sg": "ḗy",
+      "loc_du": "éyows",
+      "loc_pl": "ísu"
+    }
+  },
+  "u_stem_anim": {
+    "category": "nominal",
+    "label": "u-stems (masculine & feminine)",
+    "include_in_nom_paradigms": true,
+    "cases": [
+      "nom",
+      "voc",
+      "acc",
+      "inst",
+      "dat",
+      "abl",
+      "gen",
+      "loc"
+    ],
+    "numbers": [
+      "sg",
+      "du",
+      "pl"
+    ],
+    "endings": {
+      "nom_sg": "us",
+      "nom_du": "uh₁",
+      "nom_pl": "ewes",
+      "voc_sg": "u",
+      "voc_du": "uh₁",
+      "voc_pl": "ewes",
+      "acc_sg": "um",
+      "acc_du": "uh₁",
+      "acc_pl": "úms",
+      "inst_sg": "éwh₁",
+      "inst_du": "éwoym",
+      "inst_pl": "úbʰis",
+      "dat_sg": "éwey",
+      "dat_du": "éwoym",
+      "dat_pl": "úbʰos",
+      "abl_sg": "éws",
+      "abl_du": "éwoym",
+      "abl_pl": "úbʰos",
+      "gen_sg": "éws",
+      "gen_du": "éwows",
+      "gen_pl": "éwōm",
+      "loc_sg": "ḗw",
+      "loc_du": "ewows",
+      "loc_pl": "úsu"
+    }
+  },
+  "u_stem_nt": {
+    "category": "nominal",
+    "label": "u-stems (neuter)",
+    "include_in_nom_paradigms": true,
+    "cases": [
+      "nom",
+      "voc",
+      "acc",
+      "inst",
+      "dat",
+      "abl",
+      "gen",
+      "loc"
+    ],
+    "numbers": [
+      "sg",
+      "du",
+      "pl"
+    ],
+    "endings": {
+      "nom_sg": "u",
+      "nom_du": "uh₁",
+      "nom_pl": "uh₂",
+      "voc_sg": "u",
+      "voc_du": "uh₁",
+      "voc_pl": "uh₂",
+      "acc_sg": "u",
+      "acc_du": "uh₁",
+      "acc_pl": "uh₂",
+      "inst_sg": "éwh₁",
+      "inst_du": "éwoym",
+      "inst_pl": "úbʰis",
+      "dat_sg": "éwey",
+      "dat_du": "éwoym",
+      "dat_pl": "úbʰos",
+      "abl_sg": "éws",
+      "abl_du": "éwoym",
+      "abl_pl": "úbʰos",
+      "gen_sg": "éws",
+      "gen_du": "éwows",
+      "gen_pl": "éwōm",
+      "loc_sg": "ḗw",
+      "loc_du": "ewows",
+      "loc_pl": "úsu"
+    }
+  },
+  "n_stem_anim_hyster": {
+    "category": "nominal",
+    "label": "n-stems hysterokinetic (masculine & feminine)",
+    "include_in_nom_paradigms": true,
+    "cases": [
+      "nom",
+      "voc",
+      "acc",
+      "inst",
+      "dat",
+      "abl",
+      "gen",
+      "loc"
+    ],
+    "numbers": [
+      "sg",
+      "du",
+      "pl"
+    ],
+    "endings": {
+      "nom_sg": "ṓ",
+      "nom_du": "ónh₁",
+      "nom_pl": "ónes",
+      "voc_sg": "ón",
+      "voc_du": "ónh₁",
+      "voc_pl": "ónes",
+      "acc_sg": "ónm̥",
+      "acc_du": "ónh₁",
+      "acc_pl": "nḿ̥s",
+      "inst_sg": "néh₁",
+      "inst_du": "nóym",
+      "inst_pl": "n̥bʰís",
+      "dat_sg": "néh₁",
+      "dat_du": "nóym",
+      "dat_pl": "n̥bʰós",
+      "abl_sg": "nés",
+      "abl_du": "nóym",
+      "abl_pl": "n̥bʰós",
+      "gen_sg": "nés",
+      "gen_du": "nóws",
+      "gen_pl": "nṓm",
+      "loc_sg": "ní",
+      "loc_du": "nóws",
+      "loc_pl": "n̥sú"
+    }
+  },
+  "n_stem_nt_protero": {
+    "category": "nominal",
+    "label": "n-stems proterokinetic (neuter)",
+    "include_in_nom_paradigms": true,
+    "cases": [
+      "nom",
+      "voc",
+      "acc",
+      "inst",
+      "dat",
+      "abl",
+      "gen",
+      "loc"
+    ],
+    "numbers": [
+      "sg",
+      "du",
+      "pl"
+    ],
+    "endings": {
+      "nom_sg": "n̥",
+      "nom_du": "nih₁",
+      "nom_pl": "ōn",
+      "voc_sg": "n̥",
+      "voc_du": "nih₁",
+      "voc_pl": "ōn",
+      "acc_sg": "n̥",
+      "acc_du": "nih₁",
+      "acc_pl": "ōn",
+      "inst_sg": "énh₁",
+      "inst_du": "énoym",
+      "inst_pl": "n̥bʰís",
+      "dat_sg": "éney",
+      "dat_du": "énoym",
+      "dat_pl": "n̥bʰós",
+      "abl_sg": "éns",
+      "abl_du": "énoym",
+      "abl_pl": "n̥bʰós",
+      "gen_sg": "éns",
+      "gen_du": "énows",
+      "gen_pl": "nṓm",
+      "loc_sg": "éni",
+      "loc_du": "énows",
+      "loc_pl": "n̥sú"
+    }
+  },
+  "s_stem_nt": {
+    "category": "nominal",
+    "label": "s-stems (neuter)",
+    "include_in_nom_paradigms": true,
+    "cases": [
+      "nom",
+      "voc",
+      "acc",
+      "inst",
+      "dat",
+      "abl",
+      "gen",
+      "loc"
+    ],
+    "numbers": [
+      "sg",
+      "du",
+      "pl"
+    ],
+    "endings": {
+      "nom_sg": "os",
+      "nom_du": "osih₁",
+      "nom_pl": "osh₂",
+      "voc_sg": "os",
+      "voc_du": "osih₁",
+      "voc_pl": "osh₂",
+      "acc_sg": "os",
+      "acc_du": "osih₁",
+      "acc_pl": "osh₂",
+      "inst_sg": "eseh₁",
+      "inst_du": "esoym",
+      "inst_pl": "ezbʰis",
+      "dat_sg": "esey",
+      "dat_du": "esoym",
+      "dat_pl": "ezbʰos",
+      "abl_sg": "eses",
+      "abl_du": "esoym",
+      "abl_pl": "ezbʰos",
+      "gen_sg": "eses",
+      "gen_du": "esows",
+      "gen_pl": "esōm",
+      "loc_sg": "esi",
+      "loc_du": "esows",
+      "loc_pl": "esu"
+    }
+  },
+  "protero_heteroclite_rn": {
+    "category": "nominal",
+    "label": "proterokinetic heteroclites (neuter)",
+    "include_in_nom_paradigms": true,
+    "cases": [
+      "nom",
+      "voc",
+      "acc",
+      "inst",
+      "dat",
+      "abl",
+      "gen",
+      "loc"
+    ],
+    "numbers": [
+      "sg",
+      "du",
+      "pl"
+    ],
+    "endings": {
+      "nom_sg": "r̥",
+      "nom_du": "r̥h₁",
+      "nom_pl": "ōr",
+      "voc_sg": "r̥",
+      "voc_du": "r̥h₁",
+      "voc_pl": "ōr",
+      "acc_sg": "r̥",
+      "acc_du": "r̥h₁",
+      "acc_pl": "ōr",
+      "inst_sg": "énh₁",
+      "inst_du": "énoym",
+      "inst_pl": "n̥bʰís",
+      "dat_sg": "éney",
+      "dat_du": "énoym",
+      "dat_pl": "n̥bʰós",
+      "abl_sg": "éns",
+      "abl_du": "énoym",
+      "abl_pl": "n̥bʰós",
+      "gen_sg": "éns",
+      "gen_du": "énows",
+      "gen_pl": "énōm",
+      "loc_sg": "éni",
+      "loc_du": "énows",
+      "loc_pl": "n̥sú"
+    }
+  },
+  "acro_heteroclite_rn": {
+    "category": "nominal",
+    "label": "acrostatic heteroclites (neuter)",
+    "include_in_nom_paradigms": true,
+    "cases": [
+      "nom",
+      "voc",
+      "acc",
+      "inst",
+      "dat",
+      "abl",
+      "gen",
+      "loc"
+    ],
+    "numbers": [
+      "sg",
+      "du",
+      "pl"
+    ],
+    "endings": {
+      "nom_sg": "r̥",
+      "nom_du": "r̥h₁",
+      "nom_pl": "ōr",
+      "voc_sg": "r̥",
+      "voc_du": "r̥h₁",
+      "voc_pl": "ōr",
+      "acc_sg": "r̥",
+      "acc_du": "r̥h₁",
+      "acc_pl": "ōr",
+      "inst_sg": "n̥h₁",
+      "inst_du": "noym",
+      "inst_pl": "n̥bʰis",
+      "dat_sg": "ney",
+      "dat_du": "noym",
+      "dat_pl": "n̥bʰos",
+      "abl_sg": "n̥s",
+      "abl_du": "noym",
+      "abl_pl": "n̥bʰos",
+      "gen_sg": "n̥s",
+      "gen_du": "nows",
+      "gen_pl": "nōm",
+      "loc_sg": "ni",
+      "loc_du": "nows",
+      "loc_pl": "n̥su"
+    }
+  },
+  "athem_static_anim": {
+    "category": "nominal",
+    "label": "static athematic (masculine & feminine)",
+    "include_in_nom_paradigms": true,
+    "cases": [
+      "nom",
+      "voc",
+      "acc",
+      "inst",
+      "dat",
+      "abl",
+      "gen",
+      "loc"
+    ],
+    "numbers": [
+      "sg",
+      "du",
+      "pl"
+    ],
+    "endings": {
+      "nom_sg": "s",
+      "nom_du": "h₁e",
+      "nom_pl": "es",
+      "voc_sg": "∅",
+      "voc_du": "h₁e",
+      "voc_pl": "es",
+      "acc_sg": "m̥",
+      "acc_du": "h₁e",
+      "acc_pl": "m̥s",
+      "inst_sg": "eh₁",
+      "inst_du": "oym",
+      "inst_pl": "bʰis",
+      "dat_sg": "ey",
+      "dat_du": "oym",
+      "dat_pl": "bʰos",
+      "abl_sg": "s",
+      "abl_du": "oym",
+      "abl_pl": "bʰos",
+      "gen_sg": "s",
+      "gen_du": "ows",
+      "gen_pl": "ōm",
+      "loc_sg": "i",
+      "loc_du": "ows",
+      "loc_pl": "su"
+    }
+  },
+  "athem_static_nt": {
+    "category": "nominal",
+    "label": "static athematic (neuter)",
+    "include_in_nom_paradigms": true,
+    "cases": [
+      "nom",
+      "voc",
+      "acc",
+      "inst",
+      "dat",
+      "abl",
+      "gen",
+      "loc"
+    ],
+    "numbers": [
+      "sg",
+      "du",
+      "pl"
+    ],
+    "endings": {
+      "nom_sg": "∅",
+      "nom_du": "ih₁",
+      "nom_pl": "ǝh₂",
+      "voc_sg": "∅",
+      "voc_du": "ih₁",
+      "voc_pl": "ǝh₂",
+      "acc_sg": "∅",
+      "acc_du": "ih₁",
+      "acc_pl": "ǝh₂",
+      "inst_sg": "eh₁",
+      "inst_du": "oym",
+      "inst_pl": "bʰis",
+      "dat_sg": "ey",
+      "dat_du": "oym",
+      "dat_pl": "bʰos",
+      "abl_sg": "s",
+      "abl_du": "oym",
+      "abl_pl": "bʰos",
+      "gen_sg": "s",
+      "gen_du": "ows",
+      "gen_pl": "ōm",
+      "loc_sg": "i",
+      "loc_du": "ows",
+      "loc_pl": "su"
+    }
+  },
+  "athem_kin_anim": {
+    "category": "nominal",
+    "label": "kinetic athematic (masculine & feminine)",
+    "include_in_nom_paradigms": true,
+    "cases": [
+      "nom",
+      "voc",
+      "acc",
+      "inst",
+      "dat",
+      "abl",
+      "gen",
+      "loc"
+    ],
+    "numbers": [
+      "sg",
+      "du",
+      "pl"
+    ],
+    "endings": {
+      "nom_sg": "s",
+      "nom_du": "h₁e",
+      "nom_pl": "es",
+      "voc_sg": "∅",
+      "voc_du": "h₁e",
+      "voc_pl": "es",
+      "acc_sg": "m̥",
+      "acc_du": "h₁e",
+      "acc_pl": "ḿ̥s",
+      "inst_sg": "éh₁",
+      "inst_du": "óym",
+      "inst_pl": "bʰís",
+      "dat_sg": "éy",
+      "dat_du": "óym",
+      "dat_pl": "bʰós",
+      "abl_sg": "és",
+      "abl_du": "óym",
+      "abl_pl": "bʰós",
+      "gen_sg": "és",
+      "gen_du": "óws",
+      "gen_pl": "ṓm",
+      "loc_sg": "í",
+      "loc_du": "óws",
+      "loc_pl": "sú"
+    }
+  },
+  "athem_kin_nt": {
+    "category": "nominal",
+    "label": "kinetic athematic (neuter)",
+    "include_in_nom_paradigms": true,
+    "cases": [
+      "nom",
+      "voc",
+      "acc",
+      "inst",
+      "dat",
+      "abl",
+      "gen",
+      "loc"
+    ],
+    "numbers": [
+      "sg",
+      "du",
+      "pl"
+    ],
+    "endings": {
+      "nom_sg": "∅",
+      "nom_du": "ih₁",
+      "nom_pl": "ǝh₂",
+      "voc_sg": "∅",
+      "voc_du": "ih₁",
+      "voc_pl": "ǝh₂",
+      "acc_sg": "∅",
+      "acc_du": "ih₁",
+      "acc_pl": "ǝh₂",
+      "inst_sg": "éh₁",
+      "inst_du": "óym",
+      "inst_pl": "bʰís",
+      "dat_sg": "éy",
+      "dat_du": "óym",
+      "dat_pl": "bʰós",
+      "abl_sg": "és",
+      "abl_du": "óym",
+      "abl_pl": "bʰós",
+      "gen_sg": "és",
+      "gen_du": "óws",
+      "gen_pl": "ṓm",
+      "loc_sg": "í",
+      "loc_du": "óws",
+      "loc_pl": "sú"
+    }
+  },
+  "ending_sets": {
+    "primary_active": {
+      "1sg": "mi",
+      "2sg": "si",
+      "3sg": "ti",
+      "1du": "u̯e",
+      "2du": "to",
+      "3du": "to",
+      "1pl": "me",
+      "2pl": "te",
+      "3pl": "nti"
+    },
+    "secondary_active": {
+      "1sg": "m",
+      "2sg": "s",
+      "3sg": "t",
+      "1du": "u̯e",
+      "2du": "to",
+      "3du": "to",
+      "1pl": "me",
+      "2pl": "te",
+      "3pl": "nt"
+    },
+    "primary_mediopassive": {
+      "1sg": "h₂ar",
+      "2sg": "th₂ar",
+      "3sg": "or",
+      "1du": "u̯edʰh₂",
+      "2du": "dʰh₂u̯e",
+      "3du": "ntor",
+      "1pl": "medʰh₂",
+      "2pl": "dʰh₂u̯e",
+      "3pl": "ntor",
+      "_note": "Appendix says 2du/3du use plural; we map 2du->2pl, 3du->3pl by default."
+    },
+    "secondary_mediopassive": {
+      "1sg": "h₂a",
+      "2sg": "th₂a",
+      "3sg": "o",
+      "1du": "u̯edʰh₂",
+      "2du": "dʰh₂u̯e",
+      "3du": "nto",
+      "1pl": "medʰh₂",
+      "2pl": "dʰh₂u̯e",
+      "3pl": "nto",
+      "_note": "Appendix says 2du/3du use plural; we map 2du->2pl, 3du->3pl by default."
+    },
+    "stative": {
+      "1sg": "h₂a",
+      "2sg": "th₂a",
+      "3sg": "e",
+      "1du": "u̯e",
+      "2du": "to",
+      "3du": "to",
+      "1pl": "me",
+      "2pl": "e",
+      "3pl": "ḗr"
+    }
+  },
+  "templates": {
+    "present_root_athematic": {
+      "label": "Present (root), athematic",
+      "system": "present",
+      "stem_type": "athematic",
+      "grade": {
+        "strong": "full",
+        "weak": "zero"
+      },
+      "endings": {
+        "active": "primary_active",
+        "mediopassive": "primary_mediopassive"
+      },
+      "notes": "Strong/weak stems: strong used in sg (1-3) + du/pl? weak in 1pl/2pl/3pl often; actual distribution is verb-specific."
+    },
+    "present_narten_athematic": {
+      "label": "Present (Narten), athematic",
+      "system": "present",
+      "stem_type": "athematic",
+      "grade": {
+        "strong": "lengthened",
+        "weak": "full"
+      },
+      "endings": {
+        "active": "primary_active",
+        "mediopassive": "primary_mediopassive"
+      }
+    },
+    "present_reduplicated_athematic": {
+      "label": "Present (reduplicated), athematic",
+      "system": "present",
+      "stem_type": "athematic",
+      "processes": [
+        "reduplication"
+      ],
+      "grade": {
+        "strong": "full",
+        "weak": "zero"
+      },
+      "endings": {
+        "active": "primary_active",
+        "mediopassive": "primary_mediopassive"
+      }
+    },
+    "present_nasal_infixed_athematic": {
+      "label": "Present (nasal-infixed), athematic",
+      "system": "present",
+      "stem_type": "athematic",
+      "processes": [
+        {
+          "type": "nasal_infix",
+          "strong": "ne",
+          "weak": "n"
+        }
+      ],
+      "grade": {
+        "strong": "full",
+        "weak": "zero"
+      },
+      "endings": {
+        "active": "primary_active",
+        "mediopassive": "primary_mediopassive"
+      }
+    },
+    "present_thematic": {
+      "label": "Present (thematic)",
+      "system": "present",
+      "stem_type": "thematic",
+      "theme_vowels": {
+        "strong": "o",
+        "weak": "e"
+      },
+      "endings": {
+        "active": "primary_active",
+        "mediopassive": "primary_mediopassive"
+      },
+      "notes": "Theme vowel alternation is modeled simply as o ~ e; if you want a single theme vowel, set both to 'e' or both to 'o'."
+    },
+    "aorist_root_athematic": {
+      "label": "Aorist (root), athematic",
+      "system": "aorist",
+      "stem_type": "athematic",
+      "grade": {
+        "strong": "full",
+        "weak": "zero"
+      },
+      "endings": {
+        "active": "secondary_active",
+        "mediopassive": "secondary_mediopassive"
+      }
+    },
+    "aorist_thematic": {
+      "label": "Aorist (thematic)",
+      "system": "aorist",
+      "stem_type": "thematic",
+      "theme_vowels": {
+        "strong": "o",
+        "weak": "e"
+      },
+      "endings": {
+        "active": "secondary_active",
+        "mediopassive": "secondary_mediopassive"
+      }
+    },
+    "aorist_sigmatic": {
+      "label": "Aorist (sigmatic)",
+      "system": "aorist",
+      "stem_type": "athematic",
+      "processes": [
+        {
+          "type": "suffix",
+          "value": "s"
+        }
+      ],
+      "grade": {
+        "strong": "lengthened",
+        "weak": "full"
+      },
+      "endings": {
+        "active": "secondary_active",
+        "mediopassive": "secondary_mediopassive"
+      }
+    },
+    "stative_perfect": {
+      "label": "Stative/Perfect",
+      "system": "stative",
+      "stem_type": "stative",
+      "endings": {
+        "stative": "stative"
+      },
+      "notes": "Perfect stems are lexeme-specific; store an explicit stem (e.g., 'memón-') in the lexicon entry."
+    }
+  }
+}

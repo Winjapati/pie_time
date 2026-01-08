@@ -1,0 +1,603 @@
+---
+title: "Verbs"
+format:
+  html:
+    toc: true
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{=html}
+<style>
+/* lightweight styling that won’t fight your site CSS */
+.vb-controls { display:flex; gap:.5rem; flex-wrap:wrap; align-items:end; margin: 1rem 0; }
+.vb-controls label { display:flex; flex-direction:column; gap:.25rem; font-weight:600; }
+.vb-controls select { padding:.35rem .4rem; max-width: 24rem; }
+.vb-panel { margin-top: 1rem; }
+.vb-note { opacity: .85; font-size: .95rem; }
+.vb-missing { padding:.75rem 1rem; border:1px solid rgba(0,0,0,.12); border-radius:.75rem; background: rgba(0,0,0,.03); }
+.vb-table { border-collapse: collapse; width: 100%; max-width: 52rem; margin-top: .75rem; }
+.vb-table th, .vb-table td { border: 1px solid rgba(0,0,0,.15); padding: .4rem .5rem; text-align: left; }
+.vb-table th { background: rgba(0,0,0,.03); }
+.vb-head { margin: 0 0 .25rem 0; }
+.vb-subhead { margin: 0 0 .75rem 0; opacity: .85; }
+</style>
+
+<div class="vb-controls">
+  <label>
+    View
+    <select id="verbView">
+      <option value="overview" selected>General overview</option>
+      <option value="present">Present paradigms</option>
+      <option value="aorist">Aorist paradigms</option>
+      <option value="perfect">Perfect paradigms</option>
+    </select>
+  </label>
+
+  <label id="verbPickWrap" style="display:none;">
+    Verb
+    <select id="verbSelect"></select>
+  </label>
+
+  <label id="voiceWrap" style="display:none;">
+    Voice
+    <select id="voiceSelect">
+      <option value="active">Active</option>
+      <option value="middle">Middle</option>
+    </select>
+  </label>
+</div>
+
+<div id="verbOverview" class="vb-panel"></div>
+<div id="verbPresent" class="vb-panel" hidden></div>
+<div id="verbAorist" class="vb-panel" hidden></div>
+<div id="verbPerfect" class="vb-panel" hidden></div>
+
+<script type="module">
+/**
+ * verbs.qmd
+ * - mirrors the nominals page pattern: default view = General overview
+ * - reads verbs directly from your lexicon.json entries with `systems`
+ * - uses each system’s `template` to route to a renderer (stubs included)
+ *
+ * Adjust the LEXICON_PATH if your site uses a different relative path.
+ */
+const LEXICON_PATH = "../assets/data/lexicon.json";
+
+const viewSelect = document.getElementById("verbView");
+const verbPickWrap = document.getElementById("verbPickWrap");
+const verbSelect = document.getElementById("verbSelect");
+const voiceWrap = document.getElementById("voiceWrap");
+const voiceSelect = document.getElementById("voiceSelect");
+
+const panels = {
+  overview: document.getElementById("verbOverview"),
+  present:  document.getElementById("verbPresent"),
+  aorist:   document.getElementById("verbAorist"),
+  perfect:  document.getElementById("verbPerfect"),
+};
+
+let LEX = [];
+let VERBS = [];
+
+function esc(s){
+  return String(s ?? "")
+    .replaceAll("&","&amp;")
+    .replaceAll("<","&lt;")
+    .replaceAll(">","&gt;");
+}
+
+function showView(which){
+  Object.values(panels).forEach(p => p.hidden = true);
+  panels[which].hidden = false;
+
+  // Only show verb picker/voice controls in paradigm views
+  const needsVerb = (which !== "overview");
+  verbPickWrap.style.display = needsVerb ? "" : "none";
+  // voiceWrap toggled per-verb via updateVoiceUI()
+}
+
+function hasSystem(v, sys){
+  return !!(v && v.systems && v.systems[sys] && v.systems[sys].template);
+}
+
+function labelVerb(v){
+  const lemma = v.lemma ?? v.id ?? "(no lemma)";
+  const gloss = v.gloss ? ` — ${v.gloss}` : "";
+  return `${lemma}${gloss}`;
+}
+
+function populateVerbSelect(forSystem){
+  const opts = VERBS
+    .filter(v => hasSystem(v, forSystem))
+    .map(v => ({ id: v.id, label: labelVerb(v) }));
+
+  verbSelect.innerHTML = "";
+  for (let i=0; i<opts.length; i++){
+    const o = document.createElement("option");
+    o.value = opts[i].id;
+    o.textContent = opts[i].label;
+    if (i === 0) o.selected = true;
+    verbSelect.appendChild(o);
+  }
+}
+
+function getSelectedVerb(){
+  const id = verbSelect.value;
+  return VERBS.find(v => v.id === id) || null;
+}
+
+/**
+ * Voice handling
+ * Suggested schema (lexeme-level):
+ *   voice: { default:"middle", allowed:["middle"] }
+ * If absent, assume both active+middle allowed and default active.
+ * Optional per-system override:
+ *   systems.present.voice.allowed = ["middle"]
+ */
+function voiceAllowedFor(v, sys){
+  const sysAllowed = v?.systems?.[sys]?.voice?.allowed;
+  if (Array.isArray(sysAllowed) && sysAllowed.length) return sysAllowed;
+
+  const lexAllowed = v?.voice?.allowed;
+  if (Array.isArray(lexAllowed) && lexAllowed.length) return lexAllowed;
+
+  return ["active","middle"];
+}
+
+function voiceDefaultFor(v){
+  const d = v?.voice?.default;
+  if (d === "middle" || d === "active") return d;
+  return "active";
+}
+
+function updateVoiceUI(v, sys){
+  const allowed = voiceAllowedFor(v, sys);
+  const show = allowed.length > 1; // if only one voice, no need to show selector
+  voiceWrap.style.display = show ? "" : "none";
+
+  // If single allowed voice, force it; otherwise default to lexeme default unless currently valid
+  if (allowed.length === 1){
+    voiceSelect.value = allowed[0];
+    return;
+  }
+  // keep current if still allowed, else default
+  if (!allowed.includes(voiceSelect.value)){
+    voiceSelect.value = voiceDefaultFor(v);
+    if (!allowed.includes(voiceSelect.value)) voiceSelect.value = allowed[0];
+  }
+}
+
+function renderOverview(){
+  panels.overview.innerHTML = `
+    <h2 class="vb-head">General overview</h2>
+    <p class="vb-note">
+      This page shows verbal paradigms by <strong>system</strong> (Present, Aorist, Perfect).
+      Choose a system in the dropdown above to see paradigms for verbs that have that system encoded.
+    </p>
+    <ul>
+      <li><strong>Present</strong>: imperfective / ongoing / habitual (pedagogical gloss)</li>
+      <li><strong>Aorist</strong>: perfective / bounded event</li>
+      <li><strong>Perfect</strong>: resultant state / stative (as modeled in this course)</li>
+    </ul>
+    <p class="vb-note">
+      Some verbs are <strong>middle-only</strong> (mediopassive/deponent-style). When a verb is middle-only,
+      the page will display only middle forms.
+    </p>
+  `;
+}
+
+/**
+ * Template routing
+ * Your lexicon entries use:
+ *   systems.present.template, systems.aorist.template, systems.perfect.template
+ * and stems under systems[sys].stems or strong_stem/weak_stem etc.
+ *
+ * Replace the stub renderers with your real paradigm generator once ready.
+ */
+
+function getSystemSpec(v, sys){
+  return v?.systems?.[sys] || null;
+}
+
+/* ===== Stub renderers (replace with real tables) ===== */
+
+/* =========================================================
+   ENDINGS (pedagogical PIE-like; swap in your own if desired)
+   - Thematic present: unaccented (bary) vs accented (oxy)
+   - Athematic present: (mi-verbs style)
+   - Aorist: secondary endings (athematic root aorist, etc.)
+   - Perfect: basic perfect endings (simplified)
+   ========================================================= */
+
+const PERSONS = ["1sg","2sg","3sg","1du","2du","3du","1pl","2pl","3pl"];
+
+const ENDINGS = {
+  // PRESENT — THEMATIC (primary endings)
+
+  present_thematic_unaccented: {
+    active: {
+      "1sg":"oh₂","2sg":"esi","3sg":"eti",
+      "1du":"owe","2du":"eto","3du":"eto",
+      "1pl":"ome","2pl":"ete","3pl":"onti"
+    },
+    middle: {
+      "1sg":"oh₂r","2sg":"eth₂e","3sg":"etor",
+      "1du":"owedhh₂",         
+      "2du":"edʰh₂we",         
+      "3du":"ontor",           
+      "1pl":"omedhh₂","2pl":"edʰh₂we","3pl":"ontor"
+    }
+  },
+  
+  present_thematic_accented: {
+    active: {
+      "1sg":"óh₂","2sg":"ési","3sg":"éti",
+      "1du":"ówē","2du":"étō","3du":"étō",
+      "1pl":"óme","2pl":"éte","3pl":"ónti"
+    },
+    middle: {
+      "1sg":"óh₂r","2sg":"éth₂e","3sg":"étor",
+      "1du":"ówedhh₂",         
+      "2du":"édʰh₂we",         
+      "3du":"óntor", 
+      "1pl":"ómedhh₂","2pl":"édʰh₂we","3pl":"óntor"
+    }
+  },
+
+  // PRESENT — ATHEMATIC (primary endings; simplified “mi” set)
+  present_athematic: {
+  active: {
+    "1sg":"mi","2sg":"si","3sg":"ti",
+    "1du":"u̯e","2du":"to","3du":"to",
+    "1pl":"me","2pl":"te","3pl":"nti"
+  },
+  middle: {
+    "1sg":"h₂ar","2sg":"th₂ar","3sg":"or",
+    "1du":"u̯edʰh₂","2du":"dʰh₂u̯e","3du":"ntor",
+    "1pl":"medʰh₂","2pl":"dʰh₂u̯e","3pl":"ntor"
+    }
+  },
+
+  // AORIST — ATHEMATIC ROOT (secondary endings; simplified)
+  aorist_root_athematic: {
+  active: {
+    "1sg":"m̥","2sg":"s","3sg":"t",
+    "1du":"u̯é","2du":"tó","3du":"tó",
+    "1pl":"mé","2pl":"té","3pl":"ént"
+  },
+  middle: {
+    "1sg":"h₂a","2sg":"th₂a","3sg":"o",
+    "1du":"u̯édʰh₂","2du":"dʰh₂u̯é","3du":"énto",
+    "1pl":"médʰh₂","2pl":"dʰh₂u̯é","3pl":"énto"
+    }
+  },
+
+
+  // AORIST — SIGMATIC (secondary endings; treat as athematic for now unless you want -e/o- thematics)
+  aorist_sigmatic: {
+    active: {
+      "1sg":"m̥","2sg":"s","3sg":"t",
+      "1du":"u̯e","2du":"to","3du":"to",
+      "1pl":"me","2pl":"te","3pl":"n̥t"
+    },
+    middle: {
+      "1sg":"h₂a","2sg":"th₂a","3sg":"o",
+      "1du":"u̯edʰh₂","2du":"dʰh₂u̯e","3du":"n̥to",
+      "1pl":"medʰh₂","2pl":"dʰh₂u̯e","3pl":"n̥to"
+    }
+  },
+
+  // AORIST — REDUPLICATED (same secondary endings; stem builder differs)
+  aorist_reduplicated: {
+  active: {
+    "1sg":"om","2sg":"es","3sg":"et",
+    "1du":"ou̯e","2du":"eto","3du":"eto",
+    "1pl":"ome","2pl":"ete","3pl":"ont"
+  },
+  middle: {
+    "1sg":"oh₂a","2sg":"eth₂a","3sg":"eto",
+    "1du":"ou̯edʰh₂","2du":"edʰh₂u̯e","3du":"onto",
+    "1pl":"omedʰh₂","2pl":"edʰh₂u̯e","3pl":"onto"
+    }
+  },
+
+  // PERFECT — (very simplified; tweak to your system)
+  perfect: {
+    active: {
+      "1sg":"h₂a","2sg":"th₂a","3sg":"e",
+      "1du":"u̯e","2du":"to","3du":"to",
+      "1pl":"me","2pl":"e","3pl":"ēr"
+    },
+    middle: {
+      "1sg":"h₂a","2sg":"th₂a","3sg":"e",
+      "1du":"u̯e","2du":"to","3du":"to",
+      "1pl":"me","2pl":"e","3pl":"ēr"
+    }
+  }
+};
+
+/* =========================================================
+   STEM BUILDERS
+   You can keep this simple because templates already encode choices.
+   Stems are read from system spec:
+     spec.stems.stem OR spec.strong_stem/spec.weak_stem
+   ========================================================= */
+
+function getStem(spec, key){
+  // preferred: spec.stems.{stem/strong/weak/base/etc}
+  if (spec?.stems && spec.stems[key]) return spec.stems[key];
+
+  // legacy fallbacks
+  if (key === "strong" && spec?.strong_stem) return spec.strong_stem;
+  if (key === "weak" && spec?.weak_stem) return spec.weak_stem;
+  if (key === "stem" && spec?.strong_stem) return spec.strong_stem;
+
+  return "";
+}
+
+function concatStemEnding(stem, ending){
+  // crude but effective; you can add sandhi rules later
+  return `${stem}${ending}`;
+}
+
+/* =========================================================
+   TABLE RENDERER
+   ========================================================= */
+
+function renderMorphTable(title, subtitle, formsByPerson){
+  const rows = PERSONS.map(p => {
+    const f = formsByPerson[p] ?? "—";
+    return `<tr><th>${p}</th><td>${esc(f)}</td></tr>`;
+  }).join("");
+
+  // Prevent Quarto's HTML-table parser from seeing a literal "<table" in the source
+  const TBL = "tab" + "le";
+
+  return `
+    <h3 class="vb-head">${esc(title)}</h3>
+    ${subtitle ? `<p class="vb-subhead">${subtitle}</p>` : ""}
+    <${TBL} class="vb-table">
+      <thead><tr><th style="width:7rem;">Person</th><th>Form</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </${TBL}>
+  `;
+}
+
+
+function buildForms(stem, endingSet){
+  const out = {};
+  for (const p of PERSONS){
+    out[p] = concatStemEnding(stem, endingSet[p]);
+  }
+  return out;
+}
+
+/* =========================================================
+   TEMPLATE REGISTRY
+   - Add templates here as you invent them.
+   - Keep the UI stable; templates do the work.
+   ========================================================= */
+
+const TEMPLATE = {
+  // PRESENT
+  present_thematic_unaccented: (v, spec, voice) => {
+    const stem = getStem(spec, "stem");
+    const set = ENDINGS.present_thematic_unaccented[voice];
+    return renderMorphTable(
+      `${v.lemma} — Present (${voice})`,
+      `<strong>Template:</strong> ${spec.template}`,
+      buildForms(stem, set)
+    );
+  },
+
+  present_thematic_accented: (v, spec, voice) => {
+    const stem = getStem(spec, "stem");
+    const set = ENDINGS.present_thematic_accented[voice];
+    return renderMorphTable(
+      `${v.lemma} — Present (${voice})`,
+      `<strong>Template:</strong> ${spec.template}`,
+      buildForms(stem, set)
+    );
+  },
+
+  present_athematic: (v, spec, voice) => {
+    const set = ENDINGS.present_athematic[voice];
+  
+    const strong = spec.strong_stem || getStem(spec, "stem") || "";
+    const weak   = spec.weak_stem   || strong;
+  
+    // middle must always be zero-grade
+    const midStem = spec.middle_stem || spec.weak_stem || weak;
+  
+    const forms = {};
+    for (const p of PERSONS){
+      const stem =
+        (voice === "middle")
+          ? midStem
+          : (p.endsWith("sg") ? strong : weak);
+  
+      forms[p] = concatStemEnding(stem, set[p]);
+    }
+  
+    return renderMorphTable(
+      `${v.lemma} — Present (${voice})`,
+      `<strong>Template:</strong> ${spec.template} (middle uses zero-grade)`,
+      forms
+    );
+  },
+
+  // Easy extensions that reuse the same ending set:
+  present_ske_them_unaccented: (v, spec, voice) => TEMPLATE.present_thematic_unaccented(v, spec, voice),
+  present_ske_them_accented:   (v, spec, voice) => TEMPLATE.present_thematic_accented(v, spec, voice),
+  present_ye_them_unaccented:  (v, spec, voice) => TEMPLATE.present_thematic_unaccented(v, spec, voice),
+  present_ye_them_accented:    (v, spec, voice) => TEMPLATE.present_thematic_accented(v, spec, voice),
+
+  // AORIST
+ aorist_root_athematic: (v, spec, voice) => {
+  const set = ENDINGS.aorist_root_athematic[voice];
+
+  const strong = spec.strong_stem || getStem(spec, "strong") || getStem(spec, "stem") || "";
+  const weak   = spec.weak_stem   || getStem(spec, "weak")   || strong;
+
+  // middle must always be zero-grade
+  const midStem = spec.middle_stem || spec.weak_stem || weak;
+
+  const forms = {};
+  for (const p of PERSONS){
+    const stem =
+      (voice === "middle")
+        ? midStem
+        : (p.endsWith("sg") ? strong : weak);
+
+    forms[p] = concatStemEnding(stem, set[p]);
+  }
+
+  return renderMorphTable(
+    `${v.lemma} — Aorist (${voice})`,
+    `<strong>Template:</strong> ${spec.template} (middle uses zero-grade)`,
+    forms
+  );
+  },
+
+  aorist_sigmatic: (v, spec, voice) => {
+    const strong = spec.strong_stem || getStem(spec, "stem") || "";
+    const weak   = spec.weak_stem   || strong;
+
+    const set = ENDINGS.aorist_sigmatic[voice];
+  
+    const forms = {};
+    for (const p of PERSONS){
+      // weak stem in dual + plural
+      const stem = p.endsWith("sg") ? strong : weak;
+      forms[p] = concatStemEnding(stem, set[p]);
+    }
+  
+    return renderMorphTable(
+      `${v.lemma} — Aorist (${voice})`,
+      `<strong>Template:</strong> ${spec.template} (weak in du/pl)`,
+      forms
+    );
+  },
+
+  aorist_reduplicated: (v, spec, voice) => {
+    const stem = getStem(spec, "stem") || getStem(spec, "strong") || "";
+    const set = ENDINGS.aorist_reduplicated[voice];
+    return renderMorphTable(
+      `${v.lemma} — Aorist (${voice})`,
+      `<strong>Template:</strong> ${spec.template}`,
+      buildForms(stem, set)
+    );
+  },
+
+  // PERFECT
+  perfect: (v, spec, voice) => {
+    const stem = getStem(spec, "stem") || getStem(spec, "strong") || "";
+    const set = ENDINGS.perfect[voice];
+    return renderMorphTable(
+      `${v.lemma} — Perfect (${voice})`,
+      `<strong>Template:</strong> ${spec.template}`,
+      buildForms(stem, set)
+    );
+  }
+};
+
+/* =========================================================
+   Hook into your existing renderSystem(v, sys)
+   Replace renderPresent/renderAorist/renderPerfect with this:
+   ========================================================= */
+
+function renderByTemplate(v, sys){
+  const spec = getSystemSpec(v, sys);
+  if (!spec){
+    return `<div class="vb-missing">No <strong>${esc(sys)}</strong> data is encoded for this verb.</div>`;
+  }
+
+  const allowed = voiceAllowedFor(v, sys);
+  const voice = allowed.length === 1 ? allowed[0] : voiceSelect.value;
+
+  const fn = TEMPLATE[spec.template];
+  if (!fn){
+    return `<div class="vb-missing">
+      Unknown template: <code>${esc(spec.template)}</code><br>
+      Add it to the <code>TEMPLATE</code> registry in <code>verbs.qmd</code>.
+    </div>`;
+  }
+
+  return fn(v, spec, voice);
+}
+
+// then in your renderSystem(v, sys) replace the whole routing body with:
+function renderSystem(v, sys){
+  return renderByTemplate(v, sys);
+}
+
+
+/* ===== Panel controllers ===== */
+
+function renderPanel(sys){
+  const v = getSelectedVerb();
+  if (!v){
+    panels[sys].innerHTML = `<div class="vb-missing">No verb selected.</div>`;
+    return;
+  }
+  updateVoiceUI(v, sys);
+  panels[sys].innerHTML = renderSystem(v, sys);
+}
+
+function onViewChange(){
+  const which = viewSelect.value;
+  showView(which);
+
+  if (which === "overview"){
+    renderOverview();
+    return;
+  }
+
+  // Populate verb list for the chosen system and render first one
+  populateVerbSelect(which);
+  const v = getSelectedVerb();
+  updateVoiceUI(v, which);
+  renderPanel(which);
+}
+
+/* ===== Init ===== */
+
+async function init(){
+  try{
+    const res = await fetch(LEXICON_PATH, { cache: "no-cache" });
+    if (!res.ok) throw new Error(`Failed to load lexicon.json (${res.status})`);
+    LEX = await res.json();
+  }catch(err){
+    renderOverview();
+    panels.overview.innerHTML += `<div class="vb-missing" style="margin-top:1rem;">
+      <strong>Error:</strong> ${esc(err.message)}<br>
+      Check that <code>${esc(LEXICON_PATH)}</code> is correct relative to this page.
+    </div>`;
+    return;
+  }
+
+  VERBS = (Array.isArray(LEX) ? LEX : [])
+    .filter(e => (e?.pos === "verb" || e?.pos === "v"))
+    .filter(e => e?.systems && (e.systems.present || e.systems.aorist || e.systems.perfect));
+
+  // Wire events
+  viewSelect.addEventListener("change", onViewChange);
+  verbSelect.addEventListener("change", () => {
+    const which = viewSelect.value;
+    if (which !== "overview") renderPanel(which);
+  });
+  voiceSelect.addEventListener("change", () => {
+    const which = viewSelect.value;
+    if (which !== "overview") renderPanel(which);
+  });
+
+  // Initial state: General overview
+  showView("overview");
+  renderOverview();
+}
+
+init();
+</script>

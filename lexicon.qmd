@@ -1,0 +1,87 @@
+---
+title: "Lexicon"
+format: 
+  html:
+    include-after-body:
+      - assets/includes/lexicon-after-body.html
+execute:
+  echo: false
+  warning: false
+  message: false
+  cache: false
+---
+
+```{=html}
+
+<style>
+.lex-tabs { display:flex; gap:.35rem; margin: 0 0 1rem 0; flex-wrap: wrap; }
+.lex-tabbtn {
+  border: 1px solid rgba(0,0,0,.15);
+  background: rgba(0,0,0,.03);
+  padding: .35rem .6rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  user-select: none;
+}
+.lex-tabbtn[aria-selected="true"] { background: rgba(0,0,0,.10); }
+
+.lex-title { margin-top: 0.25rem; }
+
+.lex-panel { display: none; }
+.lex-panel[data-active="true"] { display:block; }
+
+.lex-controls { display:flex; gap:.75rem; align-items:center; flex-wrap: wrap; margin: .75rem 0 1rem 0; }
+.lex-controls label { font-weight: 600; }
+.lex-controls select { border: 1px solid rgba(0,0,0,.2); border-radius: .5rem; padding: .35rem .5rem; max-width: 16rem; width: 100%; }
+
+.lex-pos-section { margin: 0 0 1.25rem 0; }
+.lex-pos-title { font-size: 1.15rem; margin: 0 0 .5rem 0; }
+
+.lex-list { list-style: none; padding-left: 0; margin: 0; display: grid; gap: .5rem; }
+.lex-item { border: 1px solid rgba(0,0,0,.12); border-radius: .75rem; padding: .5rem .65rem; }
+.lex-word { display:inline-block; font-weight: 700; background: none; border: none; padding: 0; cursor: pointer; text-align: left; }
+.lex-word:hover { text-decoration: underline; }
+.lex-paradigm { margin-top: .4rem; display: none; }
+.lex-paradigm[data-open="true"] { display:block; }
+
+table.lex-kv { border-collapse: collapse; width: 100%; }
+table.lex-kv th, table.lex-kv td { padding: .15rem 0; vertical-align: top; }
+.lex-pron{
+  font-style: italic !important;
+}
+.lex-audio{
+  transform: scale(0.75);
+  transform-origin: left center;
+  height: 28px; /* leave normal; scale does the shrinking */
+}
+
+
+</style>
+
+<div class="lex-tabs" role="tablist" aria-label="Lexicon views">
+  <button class="lex-tabbtn" role="tab" id="tab-ch" aria-controls="panel-ch" aria-selected="false" type="button">By chapter</button>
+  <button class="lex-tabbtn" role="tab" id="tab-all" aria-controls="panel-all" aria-selected="true" type="button">All words</button>
+</div>
+
+<h1 class="lex-title">Lexicon</h1>
+
+<section id="panel-all" class="lex-panel" role="tabpanel" aria-labelledby="tab-all" data-active="true">
+  <div id="lexAllContainer"></div>
+</section>
+
+<section id="panel-ch" class="lex-panel" role="tabpanel" aria-labelledby="tab-ch" data-active="false">
+  <div class="lex-controls">
+    <label for="lexChapter">Chapter</label>
+    <select id="lexChapter"></select>
+  </div>
+  <div id="lexListCh"></div>
+</section>
+
+<script src="./assets/js/lexicon.js"></script>
+```
+
+```{=html}
+<script>
+console.log("INLINE SCRIPT RUNNING");
+</script>
+```

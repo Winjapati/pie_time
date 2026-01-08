@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "verbs.html",
+    "href": "verbs.html",
+    "title": "Verbs",
+    "section": "",
+    "text": "View  General overview Present paradigms Aorist paradigms Perfect paradigms  \n Verb  \n Voice  Active Middle"
+  },
+  {
+    "objectID": "nominals.html",
+    "href": "nominals.html",
+    "title": "Nominals",
+    "section": "",
+    "text": "View\n    \n      General overview\n      Nouns\n      Adjectives\n      Pronouns\n    \n  \n\n  \n    Choose…\n    \n      —\n    \n  \n\n  \n    Example\n    \n      —\n    \n  \n\n  \n    Pronouns\n    \n      \n      show clitics"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "This is a minimal Quarto website scaffold.\n\nThe lexicon lives in assets/data/lexicon.json.\nThe “Nominal paradigms (PB)” page renders paradigms for entries with PB: true."
+  },
+  {
+    "objectID": "lexicon.html",
+    "href": "lexicon.html",
+    "title": "Lexicon",
+    "section": "",
+    "text": "By chapter\n  All words\n\n\nLexicon\n\n\n  \n\n\n\n  \n    Chapter"
+  },
+  {
+    "objectID": "pronouns.html",
+    "href": "pronouns.html",
+    "title": "Pronouns",
+    "section": "",
+    "text": "Singular\nDual\nPlural\n\n\n\n\nNominative\nh₁éĝoh₂\nnóh₁\nu̯éi̯es\n\n\nAccusative\nmḗ / me\nnóh₁\nn̥smé / nos\n\n\nInstrumental\nmói̯\n\n\n\n\nDative\nméĝʰi / moi̯\n\nn̥sméi̯ / nos\n\n\nAblative\nméd\n\nn̥sméd\n\n\nGenitive\nméne / moi̯\n\n/ nos\n\n\nLocative\nmói̯\n\nn̥smí\n\n\n\n\n\n\n\n\n\n\nSingular\nDual\nPlural\n\n\n\n\nNominative\ntū́ / tu\nu̯óh₁\ni̯ū́s\n\n\nAccusative\ntu̯ḗ / te\nu̯óh₁\nusu̯é\n\n\nInstrumental\ntói̯\n\n\n\n\nDative\ntebʰi̯o / toi̯\n\n\n\n\nAblative\ntu̯éd\n\n\n\n\nGenitive\ntéu̯e / toi̯\n\n\n\n\nLocative\ntói̯\n\n\n\n\nVocative\ntū́\nu̯óh1\ni̯ū́s\n\n\n\n\n\n\n\n\n\n\n\n\n\nSingular\nDual\nPlural\n\n\n\n\nNominative\nsó\ntóh₁\ntói̯\n\n\nAccusative\ntóm\ntóh₁\ntóms\n\n\nInstrumental\ntósmōh₁\ntói̯m\ntói̯bhis\n\n\nDative\ntósmōi̯\ntói̯m\ntói̯bhos\n\n\nAblative\ntósmōd\ntói̯m\ntói̯bhos\n\n\nGenitive\ntósi̯o\ntóu̯s\ntói̯sōm\n\n\nLocative\ntósmi\ntóu̯s\ntói̯su\n\n\n\n\n\n\n\n\n\n\nSingular\nDual\nPlural\n\n\n\n\nNominative\ntód\ntóh₁\ntáh₂\n\n\nAccusative\ntód\ntóh₁\ntáh₂\n\n\n\n\n\n\n\n\n\n\nSingular\nDual\nPlural\n\n\n\n\nNominative\nsáh₂\ntáh₂h₁e\ntáh₂as\n\n\nAccusative\ntā́m\ntáh₂h₁e\ntā́ms\n\n\nInstrumental\ntési̯ah₂ah₁\ntáh₂oi̯m\ntáh₂bʰis\n\n\nDative\ntési̯ah₂ai̯\ntáh₂oi̯m\ntáh₂bʰos\n\n\nAblative\ntési̯ah₂s\ntáh₂oi̯m\ntáh₂bʰos\n\n\nGenitive\ntési̯ah₂s\ntáh₂ou̯s\ntáh₂sōm\n\n\nLocative\ntési̯ah₂i\ntáh₂ou̯s\ntáh₂su\n\n\n\n\n\n\n\n\n\n\n\n\n\nSingular\nDual\nPlural\n\n\n\n\nNominative\nís\níh₁\néi̯es\n\n\nAccusative\ním\níh₁\níms\n\n\nInstrumental\nésmōh₁\néi̯oi̯m\néi̯bʰis\n\n\nDative\nésmōi̯\néi̯oi̯m\néi̯bʰos\n\n\nAblative\nésmōd\néi̯oi̯m\néi̯bʰos\n\n\nGenitive\nési̯o\néi̯ou̯s\néi̯sōm\n\n\nLocative\nésmi\néi̯ou̯s\néi̯su\n\n\n\n\n\n\n\n\n\n\nSingular\nDual\nPlural\n\n\n\n\nNominative\níd\níh₁\níh₂\n\n\nAccusative\níd\níh₁\níh₂\n\n\n\n\n\n\n\n\n\n\nSingular\nDual\nPlural\n\n\n\n\nNominative\níh₂\níh₂h₁e\níh₂as\n\n\nAccusative\nī́m\níh₂h₁e\nī́ms\n\n\nInstrumental\nési̯ah₂ah₁\níh₂oi̯m\níh₂bʰis\n\n\nDative\nési̯ah₂ai̯\níh₂oi̯m\níh₂bʰos\n\n\nAblative\nési̯ah₂s\níh₂oi̯m\níh₂bʰos\n\n\nGenitive\nési̯ah₂s\níh₂ou̯s\níh₂sōm\n\n\nLocative\nési̯ah₂i\níh₂ou̯s\níh₂su\n\n\n\n\n\n\n\n\n\n\nSingular\nDual\nPlural\n\n\n\n\nNominative\nkwís / kwíd\nkwóh₁\nkwéi̯es / kwíh₂\n\n\nAccusative\nkwím / kwíd\nkwóh₁\nkwíms / kwíh₂\n\n\nInstrumental\nkwṓh₁\nkwói̯m\nkwṓi̯s\n\n\nDative\nkwṓi̯\nkwói̯m\nkwibʰos\n\n\nAblative\nkwṓd\nkwói̯m\nkwibʰos\n\n\nGenitive\nkwósi̯o\nkwóu̯s\nkwísōm\n\n\nLocative\nkwói\nkwóu̯s\nkwísu\n\n\n\n\n\n\n\n\n\n\n\n\n\nSingular\nDual\nPlural\n\n\n\n\nNominative\nh₁i̯ós / h₁i̯ód\nh₁i̯óh₁\nh₁i̯ói̯ / h₁i̯áh₂\n\n\nAccusative\nh₁i̯óm / h₁i̯ód\nh₁i̯óh₁\nh₁i̯óms / h₁i̯áh₂\n\n\nInstrumental\nh₁i̯ṓh₁\nh₁i̯ói̯m\nh₁i̯ṓi̯s\n\n\nDative\nh₁i̯ṓi̯\nh₁i̯ói̯m\nh₁i̯ói̯bʰos\n\n\nAblative\nh₁i̯ṓd\nh₁i̯ói̯m\nh₁i̯ói̯bʰos\n\n\nGenitive\nh₁i̯ósi̯o\nh₁i̯óu̯s\nh₁i̯ói̯sōm\n\n\nLocative\nh₁i̯ói\nh₁i̯óu̯s\nh₁i̯ói̯su\n\n\nVocative\nh₁i̯ós / h₁i̯ód\nh₁i̯óh₁\nh₁i̯ói̯ / h₁i̯áh₂"
+  },
+  {
+    "objectID": "pronouns.html#pronouns",
+    "href": "pronouns.html#pronouns",
+    "title": "Pronouns",
+    "section": "",
+    "text": "Singular\nDual\nPlural\n\n\n\n\nNominative\nh₁éĝoh₂\nnóh₁\nu̯éi̯es\n\n\nAccusative\nmḗ / me\nnóh₁\nn̥smé / nos\n\n\nInstrumental\nmói̯\n\n\n\n\nDative\nméĝʰi / moi̯\n\nn̥sméi̯ / nos\n\n\nAblative\nméd\n\nn̥sméd\n\n\nGenitive\nméne / moi̯\n\n/ nos\n\n\nLocative\nmói̯\n\nn̥smí\n\n\n\n\n\n\n\n\n\n\nSingular\nDual\nPlural\n\n\n\n\nNominative\ntū́ / tu\nu̯óh₁\ni̯ū́s\n\n\nAccusative\ntu̯ḗ / te\nu̯óh₁\nusu̯é\n\n\nInstrumental\ntói̯\n\n\n\n\nDative\ntebʰi̯o / toi̯\n\n\n\n\nAblative\ntu̯éd\n\n\n\n\nGenitive\ntéu̯e / toi̯\n\n\n\n\nLocative\ntói̯\n\n\n\n\nVocative\ntū́\nu̯óh1\ni̯ū́s\n\n\n\n\n\n\n\n\n\n\n\n\n\nSingular\nDual\nPlural\n\n\n\n\nNominative\nsó\ntóh₁\ntói̯\n\n\nAccusative\ntóm\ntóh₁\ntóms\n\n\nInstrumental\ntósmōh₁\ntói̯m\ntói̯bhis\n\n\nDative\ntósmōi̯\ntói̯m\ntói̯bhos\n\n\nAblative\ntósmōd\ntói̯m\ntói̯bhos\n\n\nGenitive\ntósi̯o\ntóu̯s\ntói̯sōm\n\n\nLocative\ntósmi\ntóu̯s\ntói̯su\n\n\n\n\n\n\n\n\n\n\nSingular\nDual\nPlural\n\n\n\n\nNominative\ntód\ntóh₁\ntáh₂\n\n\nAccusative\ntód\ntóh₁\ntáh₂\n\n\n\n\n\n\n\n\n\n\nSingular\nDual\nPlural\n\n\n\n\nNominative\nsáh₂\ntáh₂h₁e\ntáh₂as\n\n\nAccusative\ntā́m\ntáh₂h₁e\ntā́ms\n\n\nInstrumental\ntési̯ah₂ah₁\ntáh₂oi̯m\ntáh₂bʰis\n\n\nDative\ntési̯ah₂ai̯\ntáh₂oi̯m\ntáh₂bʰos\n\n\nAblative\ntési̯ah₂s\ntáh₂oi̯m\ntáh₂bʰos\n\n\nGenitive\ntési̯ah₂s\ntáh₂ou̯s\ntáh₂sōm\n\n\nLocative\ntési̯ah₂i\ntáh₂ou̯s\ntáh₂su\n\n\n\n\n\n\n\n\n\n\n\n\n\nSingular\nDual\nPlural\n\n\n\n\nNominative\nís\níh₁\néi̯es\n\n\nAccusative\ním\níh₁\níms\n\n\nInstrumental\nésmōh₁\néi̯oi̯m\néi̯bʰis\n\n\nDative\nésmōi̯\néi̯oi̯m\néi̯bʰos\n\n\nAblative\nésmōd\néi̯oi̯m\néi̯bʰos\n\n\nGenitive\nési̯o\néi̯ou̯s\néi̯sōm\n\n\nLocative\nésmi\néi̯ou̯s\néi̯su\n\n\n\n\n\n\n\n\n\n\nSingular\nDual\nPlural\n\n\n\n\nNominative\níd\níh₁\níh₂\n\n\nAccusative\níd\níh₁\níh₂\n\n\n\n\n\n\n\n\n\n\nSingular\nDual\nPlural\n\n\n\n\nNominative\níh₂\níh₂h₁e\níh₂as\n\n\nAccusative\nī́m\níh₂h₁e\nī́ms\n\n\nInstrumental\nési̯ah₂ah₁\níh₂oi̯m\níh₂bʰis\n\n\nDative\nési̯ah₂ai̯\níh₂oi̯m\níh₂bʰos\n\n\nAblative\nési̯ah₂s\níh₂oi̯m\níh₂bʰos\n\n\nGenitive\nési̯ah₂s\níh₂ou̯s\níh₂sōm\n\n\nLocative\nési̯ah₂i\níh₂ou̯s\níh₂su\n\n\n\n\n\n\n\n\n\n\nSingular\nDual\nPlural\n\n\n\n\nNominative\nkwís / kwíd\nkwóh₁\nkwéi̯es / kwíh₂\n\n\nAccusative\nkwím / kwíd\nkwóh₁\nkwíms / kwíh₂\n\n\nInstrumental\nkwṓh₁\nkwói̯m\nkwṓi̯s\n\n\nDative\nkwṓi̯\nkwói̯m\nkwibʰos\n\n\nAblative\nkwṓd\nkwói̯m\nkwibʰos\n\n\nGenitive\nkwósi̯o\nkwóu̯s\nkwísōm\n\n\nLocative\nkwói\nkwóu̯s\nkwísu\n\n\n\n\n\n\n\n\n\n\n\n\n\nSingular\nDual\nPlural\n\n\n\n\nNominative\nh₁i̯ós / h₁i̯ód\nh₁i̯óh₁\nh₁i̯ói̯ / h₁i̯áh₂\n\n\nAccusative\nh₁i̯óm / h₁i̯ód\nh₁i̯óh₁\nh₁i̯óms / h₁i̯áh₂\n\n\nInstrumental\nh₁i̯ṓh₁\nh₁i̯ói̯m\nh₁i̯ṓi̯s\n\n\nDative\nh₁i̯ṓi̯\nh₁i̯ói̯m\nh₁i̯ói̯bʰos\n\n\nAblative\nh₁i̯ṓd\nh₁i̯ói̯m\nh₁i̯ói̯bʰos\n\n\nGenitive\nh₁i̯ósi̯o\nh₁i̯óu̯s\nh₁i̯ói̯sōm\n\n\nLocative\nh₁i̯ói\nh₁i̯óu̯s\nh₁i̯ói̯su\n\n\nVocative\nh₁i̯ós / h₁i̯ód\nh₁i̯óh₁\nh₁i̯ói̯ / h₁i̯áh₂"
+  }
+]

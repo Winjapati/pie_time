@@ -1,0 +1,1133 @@
+[
+  {
+    "id": "dom",
+    "chapter": "1",
+    "pos": "noun",
+    "lemma": "dṓm",
+    "pronunciation": "dohm",
+    "paradigm": "athem_static_anim",
+    "strong_stem": "dóm-",
+    "weak_stem": "dém-",
+    "gloss": "house",
+    "PB": true,
+    "thematic": false,
+    "gender": "f",
+    "overrides": {
+      "nom_sg": "dṓm",
+      "acc_sg": "dṓm"
+    }
+  },
+  {
+    "id": "doru",
+    "chapter": "1",
+    "pos": "noun",
+    "lemma": "dóru",
+    "pronunciation": "doh-roo",
+    "paradigm": "u_stem_nt",
+    "strong_stem": "dór-",
+    "weak_stem": "dr-",
+    "gloss": "tree; wood",
+    "PB": true,
+    "thematic": false,
+    "gender": "n."
+  },
+  {
+    "id": "dheghom",
+    "chapter": "1",
+    "pos": "noun",
+    "lemma": "dʰéĝʰōm",
+    "pronunciation": "dhe-ghohm",
+    "paradigm": "athem_kin_anim",
+    "strong_stem": "dʰéĝʰom-",
+    "weak_stem": "dʰəĝʰm-",
+    "gloss": "earth, ground",
+    "PB": true,
+    "thematic": true,
+    "gender": "m",
+    "stem_type": "m-stem",
+    "overrides": {
+      "nom_sg": "dʰéĝʰōm",
+      "acc_sg": "dʰéĝʰōm"
+    }
+  },
+  {
+    "id": "h1ogwhis",
+    "chapter": "1",
+    "pos": "noun",
+    "lemma": "h₁ógʷʰis",
+    "pronunciation": "hoh-gwhees",
+    "paradigm": "i_stem_acro_anim",
+    "strong_stem": "h₁ógʷʰ-",
+    "weak_stem": "h₁égʷʰ-",
+    "gloss": "snake",
+    "PB": true,
+    "thematic": false,
+    "gender": "m"
+  },
+  {
+    "id": "h1nomn",
+    "chapter": "1",
+    "pos": "noun",
+    "lemma": "h₁nómn̥",
+    "pronunciation": "hnoh-mun",
+    "paradigm": "n_stem_nt_protero",
+    "strong_stem": "h₁nóm-",
+    "weak_stem": "h₁n̥m-",
+    "gloss": "name",
+    "PB": true,
+    "thematic": false,
+    "gender": "n",
+    "overrides": {
+      "nom_pl": "h₁némōn",
+      "acc_pl": "h₁némōn",
+      "voc_pl": "h₁némōn"
+    }
+  },
+  {
+    "id": "h2awis",
+    "chapter": "1",
+    "pos": "noun",
+    "lemma": "h₂áwis",
+    "pronunciation": "khah-wees",
+    "paradigm": "i_stem_pk_anim",
+    "strong_stem": "h₂áw-",
+    "weak_stem": "h₂w-",
+    "gloss": "bird",
+    "PB": true,
+    "thematic": false,
+    "gender": "f"
+  },
+  {
+    "id": "h2ozdos",
+    "chapter": "1",
+    "pos": "noun",
+    "lemma": "h₂ózdos",
+    "pronunciation": "khohz-dohs",
+    "paradigm": "o_stem_m",
+    "strong_stem": "h₂ózd-",
+    "weak_stem": "h₂ózd-",
+    "gloss": "twig, branch, stick",
+    "PB": true,
+    "thematic": true,
+    "gender": "m"
+  },
+  {
+    "id": "h2owis",
+    "chapter": "1",
+    "pos": "noun",
+    "lemma": "h₂ówis",
+    "pronunciation": "khoh-wees",
+    "paradigm": "i_stem_acro_anim",
+    "strong_stem": "h₂ów-",
+    "weak_stem": "h₂áw-",
+    "gloss": "sheep",
+    "PB": true,
+    "thematic": false,
+    "gender": "f",
+    "overrides": {
+      "voc_sg": "h₂ówi",
+      "loc_sg": "h₂áwi"
+    }
+  },
+  {
+    "id": "h2yuHnkos",
+    "chapter": "1",
+    "pos": "adjective",
+    "lemma": "h₂yuHn̥k̂ós",
+    "pronunciation": "khyoohn-kyohs",
+    "paradigm": "them_adj_oxy",
+    "strong_stem": "h₂yuHn̥k̂-",
+    "weak_stem": "h₂yuHn̥k̂-",
+    "gloss": "young",
+    "extended_meaning": "as masc. noun, 'boy'; as fem. noun, 'girl'",
+    "PB": true,
+    "thematic": true,
+    "gender": ""
+  },
+  {
+    "id": "korh2s",
+    "chapter": "1",
+    "pos": "noun",
+    "lemma": "k̂órh₂s",
+    "pronunciation": "kyorkhs",
+    "paradigm": "athem_kin_anim",
+    "strong_stem": "k̂órh₂-",
+    "weak_stem": "k̂r̥h₂-",
+    "gloss": "crow",
+    "PB": true,
+    "thematic": false,
+    "gender": "m",
+    "overrides": {
+      "nom_sg": "k̂órh₂s"
+    }
+  },
+  {
+    "id": "swesor",
+    "chapter": "1",
+    "pos": "noun",
+    "lemma": "swésōr",
+    "pronunciation": "sweh-sohr",
+    "paradigm": "athem_kin_anim",
+    "strong_stem": "swésor-",
+    "weak_stem": "swesr-",
+    "gloss": "sister",
+    "PB": true,
+    "thematic": false,
+    "gender": "f",
+    "overrides": {
+      "nom_sg": "swésōr"
+    }
+  },
+  {
+    "id": "trozdos",
+    "chapter": "1",
+    "pos": "noun",
+    "lemma": "trózdos",
+    "pronunciation": "trohz-dohs",
+    "paradigm": "o_stem_m",
+    "strong_stem": "trózd-",
+    "gloss": "thrush, blackbird",
+    "PB": false,
+    "thematic": true,
+    "gender": "m",
+    "stem_type": "o-stem"
+  },
+  {
+    "id": "pah2wr",
+    "chapter": "1",
+    "pos": "noun",
+    "lemma": "páh₂wr̥",
+    "pronunciation": "pah-wr",
+    "paradigm": "protero_heteroclite_rn",
+    "strong_stem": "páh₂w-",
+    "weak_stem": "pəh₂w-",
+    "gloss": "fire",
+    "PB": true,
+    "thematic": false,
+    "gender": "n",
+    "stem_type": "heteroclite",
+    "endings_type": "kinetic",
+    "overrides": {
+      "nom_pl": "páh₂wōr",
+      "acc_pl": "páh₂wōr",
+      "voc_pl": "páh₂wōr"
+    }
+  },
+  {
+    "id": "h2oyr",
+    "chapter": "1",
+    "pos": "noun",
+    "lemma": "h₂óyr̥",
+    "pronunciation": "khigh-yurr",
+    "paradigm": "acro_heteroclite_rn",
+    "strong_stem": "h₂óy-",
+    "weak_stem": "h₂áy-",
+    "gloss": "day, morning",
+    "PB": true,
+    "thematic": false,
+    "gender": "n",
+    "stem_type": "heteroclite",
+    "overrides": {
+      "nom_pl": "h₂áyōr",
+      "acc_pl": "h₂áyōr",
+      "voc_pl": "h₂áyōr"
+    }
+  },
+  {
+    "id": "h1ekwos",
+    "pos": "noun",
+    "lemma": "h₁ék̂wos",
+    "paradigm": "o_stem_m",
+    "strong_stem": "h₁ék̂w-",
+    "gloss": "horse",
+    "PB": true,
+    "thematic": true,
+    "gender": "m",
+    "stem_type": "o-stem"
+  },
+  {
+    "id": "gwih3wos",
+    "pos": "adjective",
+    "lemma": "gʷih₃wós",
+    "paradigm": "them_adj_oxy",
+    "strong_stem": "gʷih₃w-",
+    "gloss": "alive",
+    "PB": false,
+    "thematic": true,
+    "gender": "",
+    "stem_type": "o-stem",
+    "endings_type": "accented"
+  },
+  {
+    "id": "ph2ter",
+    "pos": "noun",
+    "lemma": "pəh₂tḗr",
+    "paradigm": "athem_kin_anim",
+    "gloss": "father",
+    "PB": true,
+    "thematic": false,
+    "gender": "m",
+    "strong_stem": "pəh₂tér-",
+    "weak_stem": "pəh₂tr-",
+    "stem_type": "athematic",
+    "endings_type": "static",
+    "overrides": {
+      "nom_sg": "pəh₂tḗr"
+    }
+  },
+  {
+    "id": "bhudhmen",
+    "pos": "noun",
+    "lemma": "bʰudʰmḗn",
+    "paradigm": "athem_kin_anim",
+    "gloss": "bottom",
+    "PB": true,
+    "thematic": false,
+    "stem_type": "athematic",
+    "gender": "m",
+    "weak_stem": "bʰudʰm̥n-",
+    "strong_stem": "bʰudʰmén-",
+    "endings_type": "static",
+    "overrides": {
+      "nom_sg": "bʰudʰmḗn"
+    }
+  },
+  {
+    "id": "mentis",
+    "pos": "noun",
+    "lemma": "méntis",
+    "paradigm": "i_stem_pk_anim",
+    "gloss": "mind, thought",
+    "stem_type": "athematic",
+    "gender": "f",
+    "strong_stem": "ménti-",
+    "weak_stem": "mn̥t-"
+  },
+  {
+    "id": "deywah2",
+    "pos": "noun",
+    "paradigm": "ah2_stem_f",
+    "lemma": "déywah₂",
+    "gloss": "goddess",
+    "strong_stem": "déyw-",
+    "PB": true,
+    "thematic": true,
+    "gender": "f",
+    "stem_type": "ah2-stem",
+    "endings_type": "static"
+  },
+  {
+    "id": "neptih2",
+    "pos": "noun",
+    "paradigm": "ih2_stem_f",
+    "lemma": "néptih₂",
+    "gloss": "granddaughter",
+    "PB": true,
+    "thematic": false,
+    "gender": "f",
+    "stem_type": "ih2-stem",
+    "endings_type": "kinetic",
+    "strong_stem": "népt-",
+    "weak_stem": "nept-"
+  },
+  {
+    "id": "mori",
+    "pos": "noun",
+    "lemma": "móri",
+    "gloss": "sea",
+    "PB": true,
+    "thematic": false,
+    "gender": "n",
+    "stem_type": "i-stem",
+    "stem_class": "proterokinetic",
+    "endings_type": "kinetic",
+    "strong_stem": "mór-",
+    "weak_stem": "mr-",
+    "overrides": {
+      "acc_pl": "mórih₂",
+      "voc_pl": "mórih₂"
+    }
+  },
+  {
+    "id": "gewstus",
+    "pos": "noun",
+    "paradigm": "u_stem_anim",
+    "lemma": "ĝéwstus",
+    "gloss": "taste",
+    "PB": true,
+    "thematic": false,
+    "gender": "n",
+    "stem_type": "u-stem",
+    "stem_class": "proterokinetic",
+    "endings_type": "kinetic",
+    "strong_stem": "ĝéwst-",
+    "weak_stem": "ĝust-"
+  },
+  {
+    "id": "peku",
+    "pos": "noun",
+    "paradigm": "u_stem_nt",
+    "lemma": "pék̂u",
+    "gloss": "livestock",
+    "PB": true,
+    "thematic": false,
+    "gender": "n",
+    "stem_type": "u-stem",
+    "stem_class": "proterokinetic",
+    "endings_type": "kinetic",
+    "strong_stem": "pék̂-",
+    "weak_stem": "pk̂-",
+    "overrides": {
+      "acc_pl": "pék̂uh₂",
+      "voc_pl": "pék̂uh₂"
+    }
+  },
+  {
+    "id": "dhghmon",
+    "pos": "noun",
+    "paradigm": "n_stem_anim_hyster",
+    "lemma": "dʰǝĝʰmṓ",
+    "gloss": "person",
+    "PB": true,
+    "thematic": false,
+    "gender": "m",
+    "stem_type": "n-stem",
+    "endings_type": "kinetic",
+    "strong_stem": "dʰǝĝʰm-",
+    "weak_stem": "dʰǝĝʰm̥-",
+    "overrides": {
+      "nom_sg": "dhǝĝhmṓ",
+      "voc_sg": "dhǝĝhmón"
+    }
+  },
+  {
+    "id": "genh1os",
+    "pos": "noun",
+    "paradigm": "s_stem_nt",
+    "lemma": "ĝénh₁os",
+    "gloss": "family",
+    "extended_meaning": "tribe, clan",
+    "PB": true,
+    "thematic": false,
+    "gender": "n",
+    "stem_type": "s-stem",
+    "strong_stem": "ĝénh₁-",
+    "weak_stem": "ĝénh₁-",    
+    "endings_type": "static"
+  },
+  {
+    "id": "sah2wl",
+    "pos": "noun",
+    "paradigm": "protero_heteroclite_rn",
+    "lemma": "sáh₂wl̥",
+    "gloss": "sun",
+    "PB": false,
+    "thematic": false,
+    "gender": "n",
+    "stem_type": "heteroclite",
+    "endings_type": "kinetic",
+    "strong_stem": "sáh₂w-",
+    "weak_stem": "səh₂w-",
+    "overrides": {
+      "nom_sg": "sáh₂wl̥",
+      "acc_sg": "sáh₂wl̥",
+      "voc_sg": "sáh₂wl̥",
+      "nom_du": "sáh₂wl̥h₁",
+      "acc_du": "sáh₂wl̥h₁",
+      "voc_du": "sáh₂wl̥h₁",
+      "nom_pl": "sáh₂wōl",
+      "acc_pl": "sáh₂wōl",
+      "voc_pl": "sáh₂wōl"
+    }
+  },
+  {
+    "id": "h2ayks",
+    "pos": "noun",
+    "paradigm": "athem_kin_anim",
+    "lemma": "h₂áyks",
+    "gloss": "goat",
+    "PB": true,
+    "thematic": false,
+    "gender": "m",
+    "stem_type": "root",
+    "endings_type": "kinetic",
+    "strong_stem": "h₂áyĝ-",
+    "weak_stem": "h₂iĝ-",
+    "overrides": {
+      "nom_sg": "h₂áyk̂s",
+      "voc_sg": "h₂áyĝ"
+    }
+  },
+  {
+    "id": "h2osth1",
+    "pos": "noun",
+    "paradigm": "athem_static_nt",
+    "lemma": "h₂ósth₁-",
+    "gloss": "bone",
+    "PB": true,
+    "thematic": false,
+    "gender": "n",
+    "stem_type": "root",
+    "endings_type": "kinetic",
+    "strong_stem": "h₂ósth₁-",
+    "weak_stem": "h₂ásth₁-",
+    "overrides": {
+      "nom_sg": "h₂ósth₁",
+      "acc_sg": "h₂ósth₁",
+      "voc_sg": "h₂ósth₁",
+      "nom_du": "h₂ósth₁ih₁",
+      "acc_du": "h₂ósth₁ih₁",
+      "voc_du": "h₂ósth₁ih₁",
+      "nom_pl": "h₂ósth₁ǝh₂",
+      "acc_pl": "h₂ósth₁ǝh₂",
+      "voc_pl": "h₂ósth₁ǝh₂"
+    }
+  },
+  {
+    "id": "dheh1",
+    "pos": "verb",
+    "chapter": "1",
+    "lemma": "dʰeh₁-",
+    "pronunciation": "dheh",
+    "gloss": "to do",
+    "extended_meaning": "to put, place, set",
+    "systems": {
+      "present": {
+        "template": "present_athematic",
+        "strong_stem": "dʰédʰeh₁-",
+        "weak_stem": "dʰedʰh₁-"
+      },
+      "aorist": {
+        "template": "aorist_root_athematic",
+        "strong_stem": "dʰéh₁-",
+        "weak_stem": "dʰh₁-"
+      }
+    }
+  },
+  {
+    "id": "gwem",
+    "pos": "verb",
+    "chapter": "1",
+    "lemma": "gʷem-",
+    "pronunciation": "gwem",
+    "gloss": "to come",
+    "extended_meaning": "to go, step",
+    "systems": {
+      "present": {
+        "template": "present_thematic_accented",
+        "strong_stem": "gʷm̥sk̂-"
+      },
+      "aorist": {
+        "template": "aorist_root_athematic",
+        "strong_stem": "gʷém-",
+        "weak_stem": "gʷm̥-"
+      }
+    }
+  },
+  {
+    "id": "h1wah2",
+    "pos": "verb",
+    "chapter": "1",
+    "lemma": "h₁wah₂-",
+    "pronunciation": "hwakh",
+    "gloss": "to be missing",
+    "extended_meaning": "to abandon, desert",
+    "systems": {
+      "present": {
+        "template": "present_thematic_accented",
+        "strong_stem": "h₁wáh₂y-"
+      }
+    }
+  },    
+  {
+    "id": "h1ey",
+    "pos": "verb",
+    "chapter": "1",
+    "lemma": "h₁ey-",
+    "pronunciation": "hay",
+    "gloss": "to go",
+    "systems": {
+      "present": {
+        "template": "present_athematic",
+        "strong_stem": "h₁éy-",
+        "weak_stem": "h₁i-"
+      }
+    }
+  },
+  {
+    "id": "h1es",
+    "pos": "verb",
+    "chapter": "1",
+    "lemma": "h₁es-",
+    "pronunciation": "hess",
+    "gloss": "to be",
+    "extended_meaning": "to exist",
+    "systems": {
+      "present": {
+        "template": "present_athematic",
+        "strong_stem": "h₁és-",
+        "weak_stem": "h₁s-"
+      }
+    }
+  },
+  {
+    "id": "h2wes",
+    "pos": "verb",
+    "chapter": "1",
+    "lemma": "h₂wes-",
+    "pronunciation": "khwess",
+    "gloss": "to dwell",
+    "extended_meaning": "to live (in a place); to stay the night",
+    "systems": {
+      "present": {
+        "template": "present_athematic",
+        "strong_stem": "h₂wés-",
+        "weak_stem": "h₂us-"
+      }
+    }
+  },
+  {
+    "id": "leg",
+    "pos": "verb",
+    "chapter": "1",
+    "lemma": "leĝ-",
+    "pronunciation": "leg",
+    "gloss": "to gather",
+    "extended_meaning": "to collect; to speak",
+    "systems": {
+      "present": {
+        "template": "present_thematic_unaccented",
+        "strong_stem": "léĝ-"
+      }
+    }
+  },
+  {
+    "id": "prek",
+    "pos": "verb",
+    "lemma": "prek̑-",
+    "pronunciation": "prek",
+    "gloss": "to ask",
+    "extended_meaning": "to inquire",
+    "systems": {
+      "aorist": {
+        "template": "aorist_sigmatic",
+        "strong_stem": "prḗk̑s-",
+        "weak_stem": "prék̑s-"
+      }
+    }
+  },
+  {
+    "id": "sed",
+    "pos": "verb",
+    "chapter": "1",
+    "lemma": "sed-",
+    "pronunciation": "sed",
+    "gloss": "to sit",
+    "voice": {
+      "default": "middle",
+      "allowed": ["middle"]
+    },
+    "systems": {
+      "present": {
+        "template": "present_thematic_unaccented",
+        "strong_stem": "sízd-"
+      }
+    }
+  },
+  {
+    "id": "stah2",
+    "pos": "verb",
+    "chapter": "1",
+    "lemma": "stah₂-",
+    "pronunciation": "stakh",
+    "gloss": "to stand",
+    "systems": {
+      "present": {
+        "template": "present_athematic",
+        "strong_stem": "sistáh₂-",
+        "weak_stem": "sistəh₂-"
+      }
+    }
+  },
+  {
+    "id": "wekw",
+    "pos": "verb",
+    "chapter": "1",
+    "lemma": "wekʷ-",
+    "pronunciation": "wekw",
+    "gloss": "to say",
+    "extended_meaning": "to speak",
+    "systems": {
+      "present": {
+        "template": "aorist_reduplicated",
+        "strong_stem": "wéwk-"
+      }
+    }
+  },
+  {
+    "id": "men",
+    "pos": "verb",
+    "lemma": "men-",
+    "pronunciation": "men",
+    "gloss": "think",
+    "systems": {
+      "perfect": {
+        "template": "perfect",
+        "strong_stem": "memón-",
+        "weak_stem": "memn-"        
+      }
+    }
+  },
+  {
+    "id": "pro_1sg",
+    "pos": "pronoun",
+    "subpos": "personal",
+    "person": 1,
+    "number": "sg",
+    "lemma": "h₁éĝoh₂",
+    "gloss": "I",
+    "paradigm": "hardcoded",
+    "forms": {
+      "nom_sg": { "tonic": ["h₁éĝoh₂"], "clitic": [] },
+      "acc_sg": { "tonic": ["mḗ"], "clitic": ["me"] },
+      "inst_sg": { "tonic": ["móy"], "clitic": [] },
+      "dat_sg": { "tonic": ["méĝʰi"], "clitic": ["moy"] },
+      "abl_sg": { "tonic": ["méd"], "clitic": [] },
+      "gen_sg": { "tonic": ["méne"], "clitic": ["moy"] },
+      "loc_sg": { "tonic": ["móy"], "clitic": [] }
+    }
+  },
+  {
+    "id": "pro_1du",
+    "pos": "pronoun",
+    "subpos": "personal",
+    "person": 1,
+    "number": "du",
+    "lemma": "wéh₁",
+    "gloss": "we two",
+    "paradigm": "hardcoded",
+    "forms": {
+      "nom_du": { "tonic": ["wéh₁"], "clitic": [] },
+      "acc_du": { "tonic": ["n̥swé"], "clitic": ["noh₁"] },
+      "inst_du": { "tonic": [], "clitic": ["noh₁"] },
+      "dat_du": { "tonic": [], "clitic": ["noh₁"] },
+      "abl_du": { "tonic": [], "clitic": ["noh₁"] },
+      "gen_du": { "tonic": [], "clitic": ["noh₁"] },
+      "loc_du": { "tonic": [], "clitic": ["noh₁"] }
+    }
+  },
+  {
+    "id": "pro_1pl",
+    "pos": "pronoun",
+    "subpos": "personal",
+    "person": 1,
+    "number": "pl",
+    "lemma": "wéyes",
+    "gloss": "we",
+    "paradigm": "hardcoded",
+    "forms": {
+      "nom_pl": { "tonic": ["wéyes"], "clitic": [] },
+      "acc_pl": { "tonic": ["n̥smé"], "clitic": ["nos"] },
+      "inst_pl": { "tonic": [], "clitic": ["nos"] },
+      "dat_pl": { "tonic": ["n̥sméy"], "clitic": ["nos"] },
+      "abl_pl": { "tonic": ["n̥sméd"], "clitic": [] },
+      "gen_pl": { "tonic": [], "clitic": ["nos"] },
+      "loc_pl": { "tonic": ["n̥smí"], "clitic": [] }
+    }
+  },
+  {
+    "id": "pro_2sg",
+    "pos": "pronoun",
+    "subpos": "personal",
+    "person": 2,
+    "number": "sg",
+    "lemma": "tū́",
+    "gloss": "you (sg.)",
+    "paradigm": "hardcoded",
+    "forms": {
+      "nom_sg": { "tonic": ["tū́"], "clitic": ["tu"] },
+      "voc_sg": { "tonic": ["tū́"], "clitic": [] },
+      "acc_sg": { "tonic": ["twḗ"], "clitic": ["te"] },
+      "inst_sg": { "tonic": ["tóy"], "clitic": [] },
+      "dat_sg": { "tonic": ["tebʰyo"], "clitic": ["toy"] },
+      "abl_sg": { "tonic": ["twéd"], "clitic": [] },
+      "gen_sg": { "tonic": ["téwe"], "clitic": ["toy"] },
+      "loc_sg": { "tonic": ["tóy"], "clitic": [] }
+    }
+  },
+  {
+    "id": "pro_2du",
+    "pos": "pronoun",
+    "subpos": "personal",
+    "person": 2,
+    "number": "du",
+    "lemma": "wóh₁",
+    "gloss": "you two",
+    "paradigm": "hardcoded",
+    "forms": {
+      "nom_du": { "tonic": ["yū́h₁"], "clitic": [] },
+      "voc_du": { "tonic": ["wóh₁"], "clitic": ["woh₁"] },
+      "acc_du": { "tonic": ["uh₁wé"], "clitic": ["woh₁"] },
+      "inst_du": { "tonic": [], "clitic": ["woh₁"] },
+      "dat_du": { "tonic": [], "clitic": ["woh₁"] },
+      "abl_du": { "tonic": [], "clitic": ["woh₁"] },
+      "gen_du": { "tonic": [], "clitic": ["woh₁"] },
+      "loc_du": { "tonic": [], "clitic": ["woh₁"] }
+    }
+  },
+  {
+    "id": "pro_2pl",
+    "pos": "pronoun",
+    "subpos": "personal",
+    "person": 2,
+    "number": "pl",
+    "lemma": "yū́s",
+    "gloss": "y'all",
+    "paradigm": "hardcoded",
+    "forms": {
+      "nom_pl": { "tonic": ["yū́s"], "clitic": [] },
+      "voc_pl": { "tonic": ["yū́s"], "clitic": [] },
+      "acc_pl": { "tonic": ["uswé"], "clitic": ["wos"] },
+      "inst_pl": { "tonic": [], "clitic": ["wos"] },
+      "dat_pl": { "tonic": [], "clitic": ["wos"] },
+      "abl_pl": { "tonic": [], "clitic": ["wos"] },
+      "gen_pl": { "tonic": [], "clitic": ["wos"] },
+      "loc_pl": { "tonic": [], "clitic": ["wos"] }
+    }
+  },
+  {
+    "id": "pro_dem_m",
+    "pos": "pronoun",
+    "subpos": "demonstrative",
+    "chapter": "1",
+    "gender": "m",
+    "lemma": "só",
+    "gloss": "he",
+    "extended_meaning": "that (one); this (one)",
+    "paradigm": "hardcoded",
+    "forms": {
+      "nom_sg": { "tonic": ["só"], "clitic": [] },
+      "nom_du": { "tonic": ["tóh₁"], "clitic": [] },
+      "nom_pl": { "tonic": ["tóy"], "clitic": [] },
+      "acc_sg": { "tonic": ["tóm"], "clitic": [] },
+      "acc_du": { "tonic": ["tóh₁"], "clitic": [] },
+      "acc_pl": { "tonic": ["tóms"], "clitic": [] },
+      "inst_sg": { "tonic": ["tósmōh₁"], "clitic": [] },
+      "inst_du": { "tonic": ["tóym"], "clitic": [] },
+      "inst_pl": { "tonic": ["tóybhis"], "clitic": [] },
+      "dat_sg": { "tonic": ["tósmōy"], "clitic": [] },
+      "dat_du": { "tonic": ["tóym"], "clitic": [] },
+      "dat_pl": { "tonic": ["tóybhos"], "clitic": [] },
+      "abl_sg": { "tonic": ["tósmōd"], "clitic": [] },
+      "abl_du": { "tonic": ["tóym"], "clitic": [] },
+      "abl_pl": { "tonic": ["tóybhos"], "clitic": [] },
+      "gen_sg": { "tonic": ["tósyo"], "clitic": [] },
+      "gen_du": { "tonic": ["tóws"], "clitic": [] },
+      "gen_pl": { "tonic": ["tóysōm"], "clitic": [] },
+      "loc_sg": { "tonic": ["tósmi"], "clitic": [] },
+      "loc_du": { "tonic": ["tóws"], "clitic": [] },
+      "loc_pl": { "tonic": ["tóysu"], "clitic": [] }
+    }
+  },
+  {
+    "id": "pro_dem_n",
+    "pos": "pronoun",
+    "subpos": "demonstrative",
+    "chapter": "1",
+    "gender": "n",
+    "lemma": "tód",
+    "gloss": "it",
+    "extended_meaning": "that (one); this (one)",
+    "paradigm": "hardcoded",
+    "forms": {
+      "nom_sg": { "tonic": ["tód"], "clitic": [] },
+      "nom_du": { "tonic": ["tóh₁"], "clitic": [] },
+      "nom_pl": { "tonic": ["táh₂"], "clitic": [] },
+      "acc_sg": { "tonic": ["tód"], "clitic": [] },
+      "acc_du": { "tonic": ["tóh₁"], "clitic": [] },
+      "acc_pl": { "tonic": ["táh₂"], "clitic": [] },
+      "inst_sg": { "tonic": ["tósmōh₁"], "clitic": [] },
+      "inst_du": { "tonic": ["tóym"], "clitic": [] },
+      "inst_pl": { "tonic": ["tóybhis"], "clitic": [] },
+      "dat_sg": { "tonic": ["tósmōy"], "clitic": [] },
+      "dat_du": { "tonic": ["tóym"], "clitic": [] },
+      "dat_pl": { "tonic": ["tóybhos"], "clitic": [] },
+      "abl_sg": { "tonic": ["tósmōd"], "clitic": [] },
+      "abl_du": { "tonic": ["tóym"], "clitic": [] },
+      "abl_pl": { "tonic": ["tóybhos"], "clitic": [] },
+      "gen_sg": { "tonic": ["tósyo"], "clitic": [] },
+      "gen_du": { "tonic": ["tóws"], "clitic": [] },
+      "gen_pl": { "tonic": ["tóysōm"], "clitic": [] },
+      "loc_sg": { "tonic": ["tósmi"], "clitic": [] },
+      "loc_du": { "tonic": ["tóws"], "clitic": [] },
+      "loc_pl": { "tonic": ["tóysu"], "clitic": [] }
+    }
+  },
+  {
+    "id": "pro_dem_f",
+    "pos": "pronoun",
+    "subpos": "demonstrative",
+    "chapter": "1",
+    "gender": "f",
+    "lemma": "sáh₂",
+    "gloss": "she",
+    "extended_meaning": "that (one); this (one)",
+    "paradigm": "hardcoded",
+    "forms": {
+      "nom_sg": { "tonic": ["sáh₂"], "clitic": [] },
+      "nom_du": { "tonic": ["táh₂h₁e"], "clitic": [] },
+      "nom_pl": { "tonic": ["táh₂as"], "clitic": [] },
+      "acc_sg": { "tonic": ["tā́m"], "clitic": [] },
+      "acc_du": { "tonic": ["táh₂h₁e"], "clitic": [] },
+      "acc_pl": { "tonic": ["tā́ms"], "clitic": [] },
+      "inst_sg": { "tonic": ["tésyah₂ah₁"], "clitic": [] },
+      "inst_du": { "tonic": ["táh₂oym"], "clitic": [] },
+      "inst_pl": { "tonic": ["táh₂bʰis"], "clitic": [] },
+      "dat_sg": { "tonic": ["tésyah₂ay"], "clitic": [] },
+      "dat_du": { "tonic": ["táh₂oym"], "clitic": [] },
+      "dat_pl": { "tonic": ["táh₂bʰos"], "clitic": [] },
+      "abl_sg": { "tonic": ["tésyah₂s"], "clitic": [] },
+      "abl_du": { "tonic": ["táh₂oym"], "clitic": [] },
+      "abl_pl": { "tonic": ["táh₂bʰos"], "clitic": [] },
+      "gen_sg": { "tonic": ["tésyah₂s"], "clitic": [] },
+      "gen_du": { "tonic": ["táh₂ows"], "clitic": [] },
+      "gen_pl": { "tonic": ["táh₂sōm"], "clitic": [] },
+      "loc_sg": { "tonic": ["tésyah₂i"], "clitic": [] },
+      "loc_du": { "tonic": ["táh₂ows"], "clitic": [] },
+      "loc_pl": { "tonic": ["táh₂su"], "clitic": [] }
+    }
+  },
+  {
+    "id": "pro_ana_m",
+    "pos": "pronoun",
+    "subpos": "anaphoric",
+    "gender": "m",
+    "lemma": "ís",
+    "gloss": "the one just mentioned",
+    "extended_meaning": "said (m.)", 
+    "paradigm": "hardcoded",
+    "forms": {
+      "nom_sg": { "tonic": ["ís"], "clitic": [] },
+      "nom_du": { "tonic": ["íh₁"], "clitic": [] },
+      "nom_pl": { "tonic": ["éyes"], "clitic": [] },
+      "acc_sg": { "tonic": ["ím"], "clitic": [] },
+      "acc_du": { "tonic": ["íh₁"], "clitic": [] },
+      "acc_pl": { "tonic": ["íms"], "clitic": [] },
+      "inst_sg": { "tonic": ["ésmōh₁"], "clitic": [] },
+      "inst_du": { "tonic": ["éyoym"], "clitic": [] },
+      "inst_pl": { "tonic": ["éybʰis"], "clitic": [] },
+      "dat_sg": { "tonic": ["ésmōy"], "clitic": [] },
+      "dat_du": { "tonic": ["éyoym"], "clitic": [] },
+      "dat_pl": { "tonic": ["éybʰos"], "clitic": [] },
+      "abl_sg": { "tonic": ["ésmōd"], "clitic": [] },
+      "abl_du": { "tonic": ["éyoym"], "clitic": [] },
+      "abl_pl": { "tonic": ["éybʰos"], "clitic": [] },
+      "gen_sg": { "tonic": ["ésyo"], "clitic": [] },
+      "gen_du": { "tonic": ["éyows"], "clitic": [] },
+      "gen_pl": { "tonic": ["éysōm"], "clitic": [] },
+      "loc_sg": { "tonic": ["ésmi"], "clitic": [] },
+      "loc_du": { "tonic": ["éyows"], "clitic": [] },
+      "loc_pl": { "tonic": ["éysu"], "clitic": [] }
+    }
+  },
+  {
+    "id": "pro_ana_n",
+    "pos": "pronoun",
+    "subpos": "anaphoric",
+    "gender": "n",
+    "lemma": "íd",
+    "gloss": "the one just mentioned",
+    "extended_meaning" : "said (n.)",
+    "paradigm": "hardcoded",
+    "forms": {
+      "nom_sg": { "tonic": ["íd"], "clitic": [] },
+      "nom_du": { "tonic": ["íh₁"], "clitic": [] },
+      "nom_pl": { "tonic": ["íh₂"], "clitic": [] },
+      "acc_sg": { "tonic": ["íd"], "clitic": [] },
+      "acc_du": { "tonic": ["íh₁"], "clitic": [] },
+      "acc_pl": { "tonic": ["íh₂"], "clitic": [] },
+      "inst_sg": { "tonic": ["ésmōh₁"], "clitic": [] },
+      "inst_du": { "tonic": ["éyoym"], "clitic": [] },
+      "inst_pl": { "tonic": ["éybʰis"], "clitic": [] },
+      "dat_sg": { "tonic": ["ésmōy"], "clitic": [] },
+      "dat_du": { "tonic": ["éyoym"], "clitic": [] },
+      "dat_pl": { "tonic": ["éybʰos"], "clitic": [] },
+      "abl_sg": { "tonic": ["ésmōd"], "clitic": [] },
+      "abl_du": { "tonic": ["éyoym"], "clitic": [] },
+      "abl_pl": { "tonic": ["éybʰos"], "clitic": [] },
+      "gen_sg": { "tonic": ["ésyo"], "clitic": [] },
+      "gen_du": { "tonic": ["éyows"], "clitic": [] },
+      "gen_pl": { "tonic": ["éysōm"], "clitic": [] },
+      "loc_sg": { "tonic": ["ésmi"], "clitic": [] },
+      "loc_du": { "tonic": ["éyows"], "clitic": [] },
+      "loc_pl": { "tonic": ["éysu"], "clitic": [] }
+    }
+  },
+  {
+    "id": "pro_ana_f",
+    "pos": "pronoun",
+    "subpos": "anaphoric",
+    "gender": "f",
+    "lemma": "íh₂",
+    "gloss": "the one just mentioned",
+    "extended_meaning": "said (f.)",
+    "paradigm": "hardcoded",
+    "forms": {
+      "nom_sg": { "tonic": ["íh₂"], "clitic": [] },
+      "nom_du": { "tonic": ["íh₂h₁e"], "clitic": [] },
+      "nom_pl": { "tonic": ["íh₂as"], "clitic": [] },
+      "acc_sg": { "tonic": ["ī́m"], "clitic": [] },
+      "acc_du": { "tonic": ["íh₂h₁e"], "clitic": [] },
+      "acc_pl": { "tonic": ["ī́ms"], "clitic": [] },
+      "inst_sg": { "tonic": ["ésyah₂ah₁"], "clitic": [] },
+      "inst_du": { "tonic": ["íh₂oym"], "clitic": [] },
+      "inst_pl": { "tonic": ["íh₂bʰis"], "clitic": [] },
+      "dat_sg": { "tonic": ["ésyah₂ay"], "clitic": [] },
+      "dat_du": { "tonic": ["íh₂oym"], "clitic": [] },
+      "dat_pl": { "tonic": ["íh₂bʰos"], "clitic": [] },
+      "abl_sg": { "tonic": ["ésyah₂s"], "clitic": [] },
+      "abl_du": { "tonic": ["íh₂oym"], "clitic": [] },
+      "abl_pl": { "tonic": ["íh₂bʰos"], "clitic": [] },
+      "gen_sg": { "tonic": ["ésyah₂s"], "clitic": [] },
+      "gen_du": { "tonic": ["íh₂ows"], "clitic": [] },
+      "gen_pl": { "tonic": ["íh₂sōm"], "clitic": [] },
+      "loc_sg": { "tonic": ["ésyah₂i"], "clitic": [] },
+      "loc_du": { "tonic": ["íh₂ows"], "clitic": [] },
+      "loc_pl": { "tonic": ["íh₂su"], "clitic": [] }
+    }
+  },
+  {
+    "id": "pro_int_mf",
+    "pos": "pronoun",
+    "subpos": "interrogative",
+    "gender": "m/f",
+    "lemma": "kʷís",
+    "gloss": "who? (m./f.)",
+    "paradigm": "hardcoded",
+    "forms": {
+      "nom_sg": { "tonic": ["kʷís"], "clitic": [] },
+      "nom_du": { "tonic": ["kʷóh₁"], "clitic": [] },
+      "nom_pl": { "tonic": ["kʷéyes"], "clitic": [] },
+      "acc_sg": { "tonic": ["kʷím"], "clitic": [] },
+      "acc_du": { "tonic": ["kʷóh₁"], "clitic": [] },
+      "acc_pl": { "tonic": ["kʷíms"], "clitic": [] },
+      "inst_sg": { "tonic": ["kʷṓh₁"], "clitic": [] },
+      "inst_du": { "tonic": ["kʷóym"], "clitic": [] },
+      "inst_pl": { "tonic": ["kʷṓys"], "clitic": [] },
+      "dat_sg": { "tonic": ["kʷṓy"], "clitic": [] },
+      "dat_du": { "tonic": ["kʷóym"], "clitic": [] },
+      "dat_pl": { "tonic": ["kʷíbʰos"], "clitic": [] },
+      "abl_sg": { "tonic": ["kʷṓd"], "clitic": [] },
+      "abl_du": { "tonic": ["kʷóym"], "clitic": [] },
+      "abl_pl": { "tonic": ["kʷíbʰos"], "clitic": [] },
+      "gen_sg": { "tonic": ["kʷósyo"], "clitic": [] },
+      "gen_du": { "tonic": ["kʷóws"], "clitic": [] },
+      "gen_pl": { "tonic": ["kʷísōm"], "clitic": [] },
+      "loc_sg": { "tonic": ["kʷói"], "clitic": [] },
+      "loc_du": { "tonic": ["kʷóws"], "clitic": [] },
+      "loc_pl": { "tonic": ["kʷísu"], "clitic": [] }
+    }
+  },
+  {
+    "id": "pro_int_n",
+    "pos": "pronoun",
+    "subpos": "interrogative",
+    "gender": "n",
+    "lemma": "kʷíd",
+    "gloss": "what? (n.)",
+    "paradigm": "hardcoded",
+    "forms": {
+      "nom_sg": { "tonic": ["kʷíd"], "clitic": [] },
+      "nom_du": { "tonic": ["kʷóh₁"], "clitic": [] },
+      "nom_pl": { "tonic": ["kʷíh₂"], "clitic": [] },
+      "acc_sg": { "tonic": ["kʷíd"], "clitic": [] },
+      "acc_du": { "tonic": ["kʷóh₁"], "clitic": [] },
+      "acc_pl": { "tonic": ["kʷíh₂"], "clitic": [] },
+      "inst_sg": { "tonic": ["kʷṓh₁"], "clitic": [] },
+      "inst_du": { "tonic": ["kʷóym"], "clitic": [] },
+      "inst_pl": { "tonic": ["kʷṓys"], "clitic": [] },
+      "dat_sg": { "tonic": ["kʷṓy"], "clitic": [] },
+      "dat_du": { "tonic": ["kʷóym"], "clitic": [] },
+      "dat_pl": { "tonic": ["kʷíbʰos"], "clitic": [] },
+      "abl_sg": { "tonic": ["kʷṓd"], "clitic": [] },
+      "abl_du": { "tonic": ["kʷóym"], "clitic": [] },
+      "abl_pl": { "tonic": ["kʷíbʰos"], "clitic": [] },
+      "gen_sg": { "tonic": ["kʷósyo"], "clitic": [] },
+      "gen_du": { "tonic": ["kʷóws"], "clitic": [] },
+      "gen_pl": { "tonic": ["kʷísōm"], "clitic": [] },
+      "loc_sg": { "tonic": ["kʷói"], "clitic": [] },
+      "loc_du": { "tonic": ["kʷóws"], "clitic": [] },
+      "loc_pl": { "tonic": ["kʷísu"], "clitic": [] }
+    }
+  },
+  {
+    "id": "pro_rel_mf",
+    "pos": "pronoun",
+    "subpos": "relative",
+    "gender": "m/f",
+    "lemma": "h₁yós",
+    "gloss": "who, which, that (m./f.)",
+    "paradigm": "hardcoded",
+    "forms": {
+      "nom_sg": { "tonic": ["h₁yós"], "clitic": [] },
+      "nom_du": { "tonic": ["h₁yóh₁"], "clitic": [] },
+      "nom_pl": { "tonic": ["h₁yóy"], "clitic": [] },
+      "acc_sg": { "tonic": ["h₁yóm"], "clitic": [] },
+      "acc_du": { "tonic": ["h₁yóh₁"], "clitic": [] },
+      "acc_pl": { "tonic": ["h₁yóms"], "clitic": [] },
+      "inst_sg": { "tonic": ["h₁yṓh₁"], "clitic": [] },
+      "inst_du": { "tonic": ["h₁yóym"], "clitic": [] },
+      "inst_pl": { "tonic": ["h₁yṓys"], "clitic": [] },
+      "dat_sg": { "tonic": ["h₁yṓy"], "clitic": [] },
+      "dat_du": { "tonic": ["h₁yóym"], "clitic": [] },
+      "dat_pl": { "tonic": ["h₁yóybʰos"], "clitic": [] },
+      "abl_sg": { "tonic": ["h₁yṓd"], "clitic": [] },
+      "abl_du": { "tonic": ["h₁yóym"], "clitic": [] },
+      "abl_pl": { "tonic": ["h₁yóybʰos"], "clitic": [] },
+      "gen_sg": { "tonic": ["h₁yósyo"], "clitic": [] },
+      "gen_du": { "tonic": ["h₁yóws"], "clitic": [] },
+      "gen_pl": { "tonic": ["h₁yóysōm"], "clitic": [] },
+      "loc_sg": { "tonic": ["h₁yói"], "clitic": [] },
+      "loc_du": { "tonic": ["h₁yóws"], "clitic": [] },
+      "loc_pl": { "tonic": ["h₁yóysu"], "clitic": [] },
+      "voc_sg": { "tonic": ["h₁yós"], "clitic": [] },
+      "voc_du": { "tonic": ["h₁yóh₁"], "clitic": [] },
+      "voc_pl": { "tonic": ["h₁yóy"], "clitic": [] }
+    }
+  },
+  {
+    "id": "pro_rel_n",
+    "pos": "pronoun",
+    "subpos": "relative",
+    "gender": "n",
+    "lemma": "h₁yód",
+    "gloss": "who, which, that (n.)",
+    "paradigm": "hardcoded",
+    "forms": {
+      "nom_sg": { "tonic": ["h₁yód"], "clitic": [] },
+      "nom_du": { "tonic": ["h₁yóh₁"], "clitic": [] },
+      "nom_pl": { "tonic": ["h₁yáh₂"], "clitic": [] },
+      "acc_sg": { "tonic": ["h₁yód"], "clitic": [] },
+      "acc_du": { "tonic": ["h₁yóh₁"], "clitic": [] },
+      "acc_pl": { "tonic": ["h₁yáh₂"], "clitic": [] },
+      "inst_sg": { "tonic": ["h₁yṓh₁"], "clitic": [] },
+      "inst_du": { "tonic": ["h₁yóym"], "clitic": [] },
+      "inst_pl": { "tonic": ["h₁yṓys"], "clitic": [] },
+      "dat_sg": { "tonic": ["h₁yṓy"], "clitic": [] },
+      "dat_du": { "tonic": ["h₁yóym"], "clitic": [] },
+      "dat_pl": { "tonic": ["h₁yóybʰos"], "clitic": [] },
+      "abl_sg": { "tonic": ["h₁yṓd"], "clitic": [] },
+      "abl_du": { "tonic": ["h₁yóym"], "clitic": [] },
+      "abl_pl": { "tonic": ["h₁yóybʰos"], "clitic": [] },
+      "gen_sg": { "tonic": ["h₁yósyo"], "clitic": [] },
+      "gen_du": { "tonic": ["h₁yóws"], "clitic": [] },
+      "gen_pl": { "tonic": ["h₁yóysōm"], "clitic": [] },
+      "loc_sg": { "tonic": ["h₁yói"], "clitic": [] },
+      "loc_du": { "tonic": ["h₁yóws"], "clitic": [] },
+      "loc_pl": { "tonic": ["h₁yóysu"], "clitic": [] },
+      "voc_sg": { "tonic": ["h₁yód"], "clitic": [] },
+      "voc_du": { "tonic": ["h₁yóh₁"], "clitic": [] },
+      "voc_pl": { "tonic": ["h₁yáh₂"], "clitic": [] }
+    }
+  }
+]

@@ -1,0 +1,219 @@
+PARADIGMS = OrderedDict({
+
+  # ------------------------------------------------------------
+  # Thematic stems
+  # ------------------------------------------------------------
+  "o_stem_m": {
+    "label": "o-stems (masculine)",
+    "endings": {
+      "nom_sg":"os","nom_du":"oh₁","nom_pl":"ōs",
+      "voc_sg":"e", "voc_du":"oh₁","voc_pl":"ōs",
+      "acc_sg":"om","acc_du":"oh₁","acc_pl":"oms",
+      "inst_sg":"oh₁","inst_du":"oym","inst_pl":"ōys",
+      "dat_sg":"ōy","dat_du":"oym","dat_pl":"obʰos",
+      "abl_sg":"ōd","abl_du":"oym","abl_pl":"obʰos",
+      "gen_sg":"osyo","gen_du":"oyows","gen_pl":"ōm",
+      "loc_sg":"oi","loc_du":"oyows","loc_pl":"oysu",
+    }
+  },
+
+  "o_stem_n": {
+    "label": "o-stems (neuter)",
+    "endings": {
+      "nom_sg":"om","nom_du":"oh₁","nom_pl":"ah₂",
+      "voc_sg":"om","voc_du":"oh₁","voc_pl":"ah₂",
+      "acc_sg":"om","acc_du":"oh₁","acc_pl":"ah₂",
+      "inst_sg":"oh₁","inst_du":"oym","inst_pl":"ōys",
+      "dat_sg":"ōy","dat_du":"oym","dat_pl":"obʰos",
+      "abl_sg":"ōd","abl_du":"oym","abl_pl":"obʰos",
+      "gen_sg":"osyo","gen_du":"oyows","gen_pl":"ōm",
+      "loc_sg":"oi","loc_du":"oyows","loc_pl":"oysu",
+    }
+  },
+
+  "ah2_stem_f": {
+    "label": "ah₂-stems (feminine)",
+    "endings": {
+      "nom_sg":"ah₂","nom_du":"ah₂h₁e","nom_pl":"as",
+      "voc_sg":"a",  "voc_du":"ah₂h₁e","voc_pl":"as",
+      "acc_sg":"ām","acc_du":"ah₂h₁e","acc_pl":"āms",
+      "inst_sg":"ah₂ah₁","inst_du":"oym","inst_pl":"bʰis",
+      "dat_sg":"ay","dat_du":"oym","dat_pl":"bʰos",
+      "abl_sg":"as","abl_du":"oym","abl_pl":"bʰos",
+      "gen_sg":"as","gen_du":"ows","gen_pl":"ōm",
+      "loc_sg":"i","loc_du":"ows","loc_pl":"su",
+    }
+  },
+
+  "ih2_stem_f": {
+    "label": "ih₂-stems (feminine)",
+    "endings": {
+      "nom_sg":"ih₂","nom_du":"ih₂h₁e","nom_pl":"as",
+      "voc_sg":"ih₂", "voc_du":"ih₂h₁e","voc_pl":"as",
+      "acc_sg":"īm","acc_du":"ih₂h₁e","acc_pl":"īms",
+      "inst_sg":"yáh₂ah₁","inst_du":"yáh₂oym","inst_pl":"bʰís",
+      "dat_sg":"yáh₂ay",  "dat_du":"yáh₂oym","dat_pl":"bʰós",
+      "abl_sg":"yáh₂s","abl_du":"yáh₂oym","abl_pl":"bʰós",
+      "gen_sg":"yáh₂s","gen_du":"yáh₂ows","gen_pl":"ṓm",
+      "loc_sg":"yáh₂i","loc_du":"yáh₂ows","loc_pl":"sú",
+    }
+  },
+
+  # ------------------------------------------------------------
+  # i-stems
+  # ------------------------------------------------------------
+  "i_stem_acro_f": {
+    "label": "acrostatic i-stems (h₂ówis ‘sheep’)",
+    "endings": {
+      "nom_sg":"is","nom_du":"ih₁","nom_pl":"eyes",
+      "voc_sg":"i", "voc_du":"ih₁","voc_pl":"eyes",
+      "acc_sg":"im","acc_du":"ih₁","acc_pl":"ims",
+      "inst_sg":"yeh₁","inst_du":"yoym","inst_pl":"ibʰis",
+      "dat_sg":"yey","dat_du":"yoym","dat_pl":"ibʰos",
+      "abl_sg":"is","abl_du":"yoym","abl_pl":"ibʰos",
+      "gen_sg":"is","gen_du":"yows","gen_pl":"yōm",
+      "loc_sg":"—","loc_du":"yows","loc_pl":"isu",
+    }
+  },
+
+  "i_stem_pk": {
+    "label": "proterokinetic i-stems (móri ‘sea’)",
+    "endings": {
+      "nom_sg":"i / is","nom_du":"ih₁","nom_pl":"yes / ih₂",
+      "voc_sg":"i",      "voc_du":"ih₁","voc_pl":"yes / ih₂",
+      "acc_sg":"i / im","acc_du":"ih₁","acc_pl":"yes / ih₂",
+      "inst_sg":"yh₁","inst_du":"oym","inst_pl":"ibʰís",
+      "dat_sg":"yey","dat_du":"oym","dat_pl":"ibʰós",
+      "abl_sg":"is","abl_du":"oym","abl_pl":"ibʰós",
+      "gen_sg":"is","gen_du":"yows","gen_pl":"yōm",
+      "loc_sg":"ḗy", "loc_du":"yows","loc_pl":"isú",
+    }
+  },
+
+  # ------------------------------------------------------------
+  # u-stems
+  # ------------------------------------------------------------
+  "u_stem": {
+    "label": "u-stems (e.g. *dóru / dréws ‘tree’*)",
+    "endings": {
+      "nom_sg":"u","nom_du":"uh₁","nom_pl":"uh₂",
+      "voc_sg":"u","voc_du":"uh₁","voc_pl":"uh₂",
+      "acc_sg":"u","acc_du":"uh₁","acc_pl":"uh₂",
+      "inst_sg":"wh₁","inst_du":"woym","inst_pl":"ubʰís",
+      "dat_sg":"wey","dat_du":"woym","dat_pl":"ubʰós",
+      "abl_sg":"ws","abl_du":"woym","abl_pl":"ubʰós",
+      "gen_sg":"ws","gen_du":"wows","gen_pl":"wōm",
+      "loc_sg":"ḗw","loc_du":"wows","loc_pl":"usú",
+    }
+  },
+
+  # ------------------------------------------------------------
+  # Consonant stems (as presented in the appendix)
+  # ------------------------------------------------------------
+  "n_stem": {
+    "label": "n-stems (e.g. *dhəǵʰmṓ ‘person’*, *h₁nómn̥ ‘name’*)",
+    "endings": {
+      "nom_sg":"ṓ / ∅","nom_du":"ónh₁ / n̥h₁","nom_pl":"ónes / ōn",
+      "voc_sg":"ón / ∅","voc_du":"ónh₁ / n̥h₁","voc_pl":"ónes / ōn",
+      "acc_sg":"ónm / ∅","acc_du":"ónh₁ / n̥h₁","acc_pl":"nḿ̥s / ōn",
+      "inst_sg":"néh₁ / ménh₁","inst_du":"nóym / noym","inst_pl":"n̥bʰís",
+      "dat_sg":"néh₁ / méney","dat_du":"nóym / noym","dat_pl":"n̥bʰós",
+      "abl_sg":"nés / méns","abl_du":"nóym / noym","abl_pl":"n̥bʰós",
+      "gen_sg":"nés / méns","gen_du":"nóws","gen_pl":"enṓm",
+      "loc_sg":"ní / méni","loc_du":"nóws","loc_pl":"n̥sú",
+    }
+  },
+
+  "s_stem_n": {
+    "label": "s-stems (neuter; e.g. *ǵénh₁os ‘family’*)",
+    "endings": {
+      "nom_sg":"os","nom_du":"osih₁","nom_pl":"osh₂",
+      "voc_sg":"os","voc_du":"osih₁","voc_pl":"osh₂",
+      "acc_sg":"os","acc_du":"osih₁","acc_pl":"osh₂",
+      "inst_sg":"eseh₁","inst_du":"esoym","inst_pl":"ezbʰis",
+      "dat_sg":"esey","dat_du":"esoym","dat_pl":"ezbʰos",
+      "abl_sg":"eses","abl_du":"esoym","abl_pl":"ezbʰos",
+      "gen_sg":"eses","gen_du":"esows","gen_pl":"esōm",
+      "loc_sg":"esi","loc_du":"esows","loc_pl":"esu",
+    }
+  },
+
+  "protero_heteroclite_rn": {
+    "label": "proterokinetic heteroclites)",
+    "endings": {
+      "nom_sg":"r̥","nom_du":"h₁","nom_pl":"ōr",
+      "voc_sg":"r̥","voc_du":"h₁","voc_pl":"ōr",
+      "acc_sg":"r̥","acc_du":"h₁","acc_pl":"ōr",
+      "inst_sg":"énh₁","inst_du":"énoym","inst_pl":"n̥bʰís",
+      "dat_sg":"éney","dat_du":"énoym","dat_pl":"n̥bʰós",
+      "abl_sg":"éns","abl_du":"énoym","abl_pl":"n̥bʰós",
+      "gen_sg":"éns","gen_du":"énows","gen_pl":"énōm",
+      "loc_sg":"éni","loc_du":"énows","loc_pl":"n̥sú",
+    }
+  },
+  "acro_heteroclite_rn": {
+    "label": "acrostatic heteroclites)",
+    "endings": {
+      "nom_sg":"r̥","nom_du":"h₁","nom_pl":"ōr",
+      "voc_sg":"r̥","voc_du":"h₁","voc_pl":"ōr",
+      "acc_sg":"r̥","acc_du":"h₁","acc_pl":"ōr",
+      "inst_sg":"n̥h₁","inst_du":"noym","inst_pl":"n̥bʰis",
+      "dat_sg":"ney","dat_du":"noym","dat_pl":"n̥bʰos",
+      "abl_sg":"n̥s","abl_du":"noym","abl_pl":"n̥bʰos",
+      "gen_sg":"n̥s","gen_du":"nows","gen_pl":"nōm",
+      "loc_sg":"ni","loc_du":"nows","loc_pl":"n̥su",
+    }
+  },
+  "athem_static_anim": {
+    "label": "static athematic (masculine & feminine)",
+    "endings": {
+      "nom_sg":"s","nom_du":"h₁e","nom_pl":"es",
+      "voc_sg":"∅","voc_du":"h₁e","voc_pl":"es",
+      "acc_sg":"m̥","acc_du":"h₁e","acc_pl":"m̥s",
+      "inst_sg":"eh₁","inst_du":"oym","inst_pl":"bʰis",
+      "dat_sg":"ey","dat_du":"oym","dat_pl":"bʰos",
+      "abl_sg":"s","abl_du":"oym","abl_pl":"bʰos",
+      "gen_sg":"s","gen_du":"ows","gen_pl":"ōm",
+      "loc_sg":"i","loc_du":"ows","loc_pl":"su",
+    }
+  },
+  "athem_static_nt": {
+    "label": "static athematic (neuter)",
+    "endings": {
+      "nom_sg":"∅","nom_du":"ih₁","nom_pl":"ǝh₂",
+      "voc_sg":"∅","voc_du":"ih₁","voc_pl":"ǝh₂",
+      "acc_sg":"∅","acc_du":"ih₁","acc_pl":"ǝh₂",
+      "inst_sg":"eh₁","inst_du":"oym","inst_pl":"bʰis",
+      "dat_sg":"ey","dat_du":"oym","dat_pl":"bʰos",
+      "abl_sg":"s","abl_du":"oym","abl_pl":"bʰos",
+      "gen_sg":"s","gen_du":"ows","gen_pl":"ōm",
+      "loc_sg":"i","loc_du":"ows","loc_pl":"su",
+    }
+  },  
+  "athem_kin_anim": {
+    "label": "kinetic athematic (masculine & feminine)",
+    "endings": {
+      "nom_sg":"∅","nom_du":"h₁e / ih₁","nom_pl":"es / ǝh₂",
+      "voc_sg":"∅","voc_du":"h₁e / ih₁","voc_pl":"es / ǝh₂",
+      "acc_sg":"m̥ / ∅","acc_du":"h₁e / ih₁","acc_pl":"ḿ̥s / ǝh₂",
+      "inst_sg":"éh₁","inst_du":"oym","inst_pl":"bʰís",
+      "dat_sg":"éy","dat_du":"oym","dat_pl":"bʰós",
+      "abl_sg":"és","abl_du":"oym","abl_pl":"bʰós",
+      "gen_sg":"és","gen_du":"ows","gen_pl":"ṓm / sú",
+      "loc_sg":"í / i","loc_du":"ows","loc_pl":"ṓm / ōm",
+    }
+  },  
+  "athem_kin_nt": {
+    "label": "kinetic athematic (neuter)",
+    "endings": {
+      "nom_sg":"∅","nom_du":"h₁e / ih₁","nom_pl":"es / ǝh₂",
+      "voc_sg":"∅","voc_du":"h₁e / ih₁","voc_pl":"es / ǝh₂",
+      "acc_sg":"m̥ / ∅","acc_du":"h₁e / ih₁","acc_pl":"ḿ̥s / ǝh₂",
+      "inst_sg":"éh₁","inst_du":"oym","inst_pl":"bʰís",
+      "dat_sg":"éy","dat_du":"oym","dat_pl":"bʰós",
+      "abl_sg":"és","abl_du":"oym","abl_pl":"bʰós",
+      "gen_sg":"és","gen_du":"ows","gen_pl":"ṓm / sú",
+      "loc_sg":"í / i","loc_du":"ows","loc_pl":"ṓm / ōm",
+    }
+  },    
+})

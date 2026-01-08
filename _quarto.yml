@@ -1,0 +1,30 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - assets/
+    # - assets/data/paradigms.json
+    # - assets/data/lexicon.json
+    # - assets/audio
+
+website:
+  title: "An Immersive Introduction to PIE"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: nominals.qmd    
+        text: Nominals
+      - href: verbs.qmd
+        text: Verbs
+      - href: lexicon.qmd
+        text: Lexicon
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: right
+
+execute:
+  freeze: false
