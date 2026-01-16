@@ -18,7 +18,7 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "This is a minimal Quarto website scaffold.\n\nThe lexicon lives in assets/data/lexicon.json.\nThe “Nominal paradigms (PB)” page renders paradigms for entries with PB: true."
+    "text": "H₂aláh₂! Welcome to the homepage for Andrew & Brenna Byrd’s An Immersive Introduction to Proto-Indo-European.\n\n\n\n\n\nAt this site, there are three tabs to click on:\n\nNominals: paradigms for nouns, adjectives, and pronouns\nVerbs: paradigms for verbs\nLexicon: a complete lexicon of PIE, as used in the PIE novellas.\n\nPlease reach out to Andrew Byrd if you any issues or questions."
   },
   {
     "objectID": "lexicon.html",
