@@ -483,7 +483,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   renderRealizedNominal(ex, pid, null);
         }
       } else {
-        html += `<p class="nom-note"><em>Select an example noun to see a filled paradigm.</em></p>`;
+        html += `<p class="nom-note"><em>Select an example adjective to see a filled paradigm.</em></p>`;
       }
 
       main.innerHTML = html;
