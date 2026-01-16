@@ -1,0 +1,285 @@
+---
+title: "An Immersive Introduction to PIE"
+subtitle: "Day 3: Learning How to Translate PIE"
+author: "Dr. Andrew M. Byrd"
+format:
+  revealjs:
+    css: header_shrink.css
+    theme: serif
+    slide-number: true
+    center: true
+    toc: true
+    toc-title: "Plan for the Day"
+    toc-depth: 1
+jupyter: python3
+editor: source
+markdown: 
+  wrap: 72
+---
+
+## What you should be able to do by the end
+
+-   Explain how PIE builds meaning with **roots + morphology**
+-   Use the website to find:
+    -   a word in the **lexicon**
+    -   its **paradigm**
+    -   audio + gloss
+-   Begin to translate the story, *K̂orh₂ikós and the Snake*
+
+# Overview of PIE grammar
+
+## English often uses:
+
+-   word order:
+    -   The boy hugged the tree.
+    -   The tree hugged the boy.
+-   helper words
+    -   The boy *can* hug the tree.
+    -   The boy *will* hug the tree.
+
+## PIE often uses:
+
+-   **endings**
+
+    -   nominals: case/number/gender
+    -   verbs: person/number/tense/aspect/mood
+
+-   stem alternations (**ablaut**)
+
+-   derivational morphology (**suffixes**)
+
+## The basic units
+
+-   **Root**: core meaning (e.g. *\*bʰer-* ‘to carry’)
+-   **Stem**: root + suffix + ablaut grade (e.g. *\*bʰére-* ‘carry’, present stem)
+-   **Ending**: tells you the grammatical job (e.g. *\*-ti*, 3rd singular)
+
+## The basic units
+
+Put it together:
+
+> **bʰéreti** 'he/she/it carries'
+
+## The basic units
+
+You can change the ending:
+
+> **bʰéresi** 'you carry'
+
+## The basic units
+
+You can change the stem:
+
+> **bʰoréyeti** '(s)he makes (someone) carry'
+
+## The basic units
+
+Or the root:
+
+> **léĝeti** '(s)he gathers'
+
+## Nominals
+
+-   Nouns
+-   Adjectives
+-   Pronouns
+
+## Nominals
+
+-   **Case** (what role?)
+-   **Number** (sg/du/pl)
+-   **Gender** (m/f/n)
+-   **Stem class** (o-stem, eh₂-stem, root noun, etc.)
+
+## Nominals
+
+-   **Case** (what role?)
+-   **Number** (sg/du/pl)
+-   **Gender** (m/f/n)
+-   **Stem class** (o-stem, eh₂-stem, root noun, etc.)
+
+**When translating:**\
+Find the ending → identify case/number/gender → identify word's function in the sentence.
+
+## PIE Cases
+
+-   **Nominative**: subject (“the wolf”)
+-   **Vocative**: address (“yo wolf!”)
+-   **Accusative**: direct object / motion-goal (“see the wolf”)
+-   **Instrumental**: means (“with a wolf”)
+-   **Dative**: recipient / “to/for the wolf”
+-   **Ablative**: source (“from the wolf”)
+-   **Genitive**: possession / “of” (“tail of the wolf”)
+-   **Locative**: location (“in/on/at the wolf”)
+
+## PIE Cases
+
+| **Case**         | **PIE form** | **Function / Meaning**  |
+|------------------|--------------|-------------------------|
+| **Nominative**   | **wĺ̥kʷos**   | “the wolf” (subject)    |
+| **Vocative**     | **wĺ̥kʷe**    | “yo, wolf!” (address)   |
+| **Accusative**   | **wĺ̥kʷom**   | "the wolf” (object)     |
+| **Instrumental** | **wĺ̥kʷoh**   | “with a wolf”           |
+| **Dative**       | **wĺ̥kʷōy**   | “to / for the wolf”     |
+| **Ablative**     | **wĺ̥kʷōd**   | “from the wolf”         |
+| **Genitive**     | **wĺ̥kʷosyo** | “of the wolf”           |
+| **Locative**     | **wĺ̥kʷoi**   | “in / on / at the wolf” |
+
+## Verbs: what you track
+
+-   **Person/number**: 1/2/3; sg/du/pl
+-   **Tense/aspect**: present, aorist, perfect
+-   **Mood**: indicative, imperative, optative, subjunctive
+-   **Voice**: active, mediopassive
+
+## Verbs: what you track
+
+-   **Person/number**
+-   **Tense/aspect**
+-   **Mood**
+-   **Voice**
+
+**When translating:**\
+Figure out *who's* doing the action from the verb's ending first. From there, figure out the tense, etc.
+
+## PIE Word Order
+
+-   Default is often described as **SOV-ish**, but it’s flexible.
+-   Endings carry a lot of the load, so word order can be freer.
+
+**When translating:**\
+1) identify **verbs**\
+2) identify **subjects/objects** via case\
+3) find other nominals and words to complete your translation
+
+# Using the Novella Website
+
+## The Novella Website
+
+Access at <https://winjapati.github.io/pie_time/>
+
+![](3_pie_time_qr.png){fig-alt="It's PIE time." fig-align="center"}
+
+## Open the site
+
+Go ahead and open the site. You'll find three basic page links at the top.
+
+-   **Nominals**: https://winjapati.github.io/pie_time/nominals.html
+-   **Verbs**: https://winjapati.github.io/pie_time/verbs.html
+-   **Lexicon**: https://winjapati.github.io/pie_time/lexicon.html
+
+## Using the Nominals Page
+
+## Using the Verbs Page
+
+## Using the Lexicon Page
+
+## Activity
+
+What you’ll do repeatedly:
+
+1.  **Hover / click a word** (if enabled)\
+2.  Look for:
+    -   lemma
+    -   gloss
+    -   morphology hints
+    -   audio (if present)
+3.  If stuck:
+    -   jump to **Lexicon entry**
+    -   then to **Paradigm**
+
+------------------------------------------------------------------------
+
+## Lexicon entry: what matters most
+
+When you open an entry, scan in this order:
+
+1)  **Gloss** (rough meaning)
+2)  **Part of speech**
+3)  **Stem info** (strong/weak stem; thematic vs athematic)
+4)  **Paradigm name** (tells you where to find endings)
+
+If descendants are listed, treat them as *memory hooks*, not proof.
+
+------------------------------------------------------------------------
+
+## Paradigm page: what you’re extracting
+
+From a paradigm table you want:
+
+-   the **exact ending** in your form
+-   what that ending means (case/number or person/number/etc.)
+-   any alternations you must copy (accent, ablaut, strong/weak stem)
+
+Rule: **Do not “guess an ending” if the paradigm table is available.**
+
+------------------------------------------------------------------------
+
+## A concrete “site workflow” slide
+
+When you hit an unknown form:
+
+**Text page** → click word → if not enough → **Lexicon** → **Paradigm** → back to text → translate
+
+Do this fast and repeatedly.
+
+------------------------------------------------------------------------
+
+# 3) How we start translating
+
+## Translation is a 3-pass process
+
+**Pass 1: morphology (mechanical)** - identify endings - label case/number/gender or person/number/etc.
+
+**Pass 2: syntax (structural)** - decide who did what to whom
+
+**Pass 3: English (stylistic)** - reorder, add “the/a”, smooth it out
+
+## Common beginner errors to watch out for
+
+-   Trusting English word order too early
+-   Ignoring case endings (“it *looks* like an object…”)
+-   Translating word-by-word without syntax
+-   Forgetting to check the paradigm page
+
+------------------------------------------------------------------------
+
+## Whole-class debrief prompts
+
+-   What was the **main verb**?
+-   Where did you find the **subject**?
+-   What ending was the “key” clue?
+-   What did the lexicon *not* tell you that you had to infer?
+
+------------------------------------------------------------------------
+
+## Exit ticket (2 minutes)
+
+On a notecard / LMS:
+
+1)  One thing endings let PIE do that English doesn’t\
+2)  The exact website path you used when stuck\
+3)  One form you translated + how you identified its case/person
+
+------------------------------------------------------------------------
+
+# Backup / optional slides
+
+## If we have time: speed drill
+
+I will project 5 forms.\
+You call out:
+
+-   noun: case/number (and gender if obvious)
+-   verb: person/number (and tense/aspect label in our system)
+
+No English translation needed—just analysis.
+
+------------------------------------------------------------------------
+
+## Next time
+
+-   More on:
+    -   adjective-noun agreement
+    -   pronouns and clitics (if relevant to your text)
+    -   building a “translation memory” for repeated forms
