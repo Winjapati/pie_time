@@ -144,13 +144,8 @@ Figure out *who's* doing the action from the verb's ending first. From there, fi
 
 ## PIE Word Order
 
--   Default is often described as **SOV-ish**, but it’s flexible.
--   Endings carry a lot of the load, so word order can be freer.
-
-**When translating:**\
-1) identify **verbs**\
-2) identify **subjects/objects** via case\
-3) find other nominals and words to complete your translation
+-   Often characterize as **SOV (subject + object + verb)**, but it’s very flexible.
+    -   Endings carry a lot of the load, so word order can be freer.
 
 # Using the Novella Website
 
@@ -170,114 +165,89 @@ Go ahead and open the site. You'll find three basic page links at the top.
 
 ## Using the Nominals Page
 
+-   This is where you can access paradigms for nouns, adjectives, and pronouns
+
+-   Click on "View" –\> "Nouns" –\> o-stems (masculine)
+
+    -   this gives you the endings for masculine o-stems
+
+-   Click on "Example noun" –\> h₁ék̂wos – 'horse'
+
+    -   this gives you all of the forms for 'horse'
+
 ## Using the Verbs Page
+
+-   This is where you can access paradigms for verbs
+
+-   Click on "View" –\> "Present paradigms"
+
+-   Click on "Verb" –\> h₁ey- – to go
 
 ## Using the Lexicon Page
 
+-   Here you can access the PIE lexicon (vocabulary), organized by chapter within the novella
+
+    -   You also have access to vocab not in the novellas
+
+-   Click on a noun: h₂ózdos – 'twig, branch, stick'
+
+    -   POS, gender, pronunciation (+ audio file)
+
+    -   Full paradigm
+
 ## Activity
 
-Find the following forms:
+-   Find the:
 
--   The
+    1.  nominative singular of 'house'
 
-What you’ll do repeatedly:
+    2.  third singular of 'to be'
 
-1.  **Hover / click a word** (if enabled)\
-2.  Look for:
-    -   lemma
-    -   gloss
-    -   morphology hints
-    -   audio (if present)
-3.  If stuck:
-    -   jump to **Lexicon entry**
-    -   then to **Paradigm**
+    3.  genitive singular of 'father'
 
-------------------------------------------------------------------------
+-   What are the words which mean:
 
-## Lexicon entry: what matters most
+    1.  'day, morning'
 
-When you open an entry, scan in this order:
+    2.  'sheep'
 
-1)  **Gloss** (rough meaning)
-2)  **Part of speech**
-3)  **Stem info** (strong/weak stem; thematic vs athematic)
-4)  **Paradigm name** (tells you where to find endings)
+    3.  'granddaughter'
 
-If descendants are listed, treat them as *memory hooks*, not proof.
+# Learning How to Translate
 
-------------------------------------------------------------------------
+## Translating PIE
 
-## Paradigm page: what you’re extracting
+> H₂aláh₂. h₁nómn̥ moy H₁inigṓ montóyah₂ h₁esti. Gʷʰégʷʰens pəh₂térm̥ méne. Pékʷeswe mr̥téyey.
 
-From a paradigm table you want:
+### How on earth can be begin to translate this?
 
--   the **exact ending** in your form
--   what that ending means (case/number or person/number/etc.)
--   any alternations you must copy (accent, ablaut, strong/weak stem)
+## Steps to Translate
 
-Rule: **Do not “guess an ending” if the paradigm table is available.**
+1) identify **verbs**\
+2) identify **subjects/objects** via case\
+3) find **other nominals** and words to complete your translation\
+4) shuffle word order to make it more English-like
 
-------------------------------------------------------------------------
-
-## A concrete “site workflow” slide
-
-When you hit an unknown form:
-
-**Text page** → click word → if not enough → **Lexicon** → **Paradigm** → back to text → translate
-
-Do this fast and repeatedly.
-
-------------------------------------------------------------------------
-
-# 3) How we start translating
-
-## Translation is a 3-pass process
-
-**Pass 1: morphology (mechanical)** - identify endings - label case/number/gender or person/number/etc.
-
-**Pass 2: syntax (structural)** - decide who did what to whom
-
-**Pass 3: English (stylistic)** - reorder, add “the/a”, smooth it out
-
-## Common beginner errors to watch out for
-
--   Trusting English word order too early
--   Ignoring case endings (“it *looks* like an object…”)
--   Translating word-by-word without syntax
--   Forgetting to check the paradigm page
-
-------------------------------------------------------------------------
-
-## Whole-class debrief prompts
-
--   What was the **main verb**?
--   Where did you find the **subject**?
--   What ending was the “key” clue?
--   What did the lexicon *not* tell you that you had to infer?
--   
-
-## Immersive PIE Text
+## Immersive PIE Text: together
 
 1.  H₁ésti h₁ógʷʰis. Só h₂wésti dʰəĝʰmí.
 
-<!-- -->
+2.  H₁ésti gʷṓws. Sáh₂ h₂wésti dʰəĝʰmí.
 
-1.  H₁ésti gʷṓws. Sáh₂ h₂wésti dʰəĝʰmí.
+3.  H₁ésti h₂ówis. Sáh₂ h₂wésti dʰəĝʰmí.
 
-2.  H₁ésti h₂ówis. Sáh₂ h₂wésti dʰəĝʰmí.
+4.  H₁ésti h₂áwis. H₁ésti trózdos. Só h₂wésti drḗw.
 
-3.  H₁ésti h₂áwis. H₁ésti trózdos. Só h₂wésti drḗw.
+5.  H₁ésti h₂áwis. H₁éstik̂órh₂s. Só h₂wésti drḗw.
 
-4.  H₁ésti h₂áwis. H₁éstik̂órh₂s. Só h₂wésti drḗw.
-
-## Immersive PIE Text
+## Immersive PIE Text: in groups
 
 1.  H₁ésti dʰǝĝʰmṓ. H₁ésti h₂yuHn̥k̂ós.
 
-2.  Só h₂wésti démi.  H₁nómn̥ h₂yuHn̥k̂ṓy h₁ésti K̂orh₂ikós.
+2.  Só h₂wésti démi. H₁nómn̥ h₂yuHn̥k̂ṓy h₁ésti K̂orh₂ikós.
 
 3.  H₁ésti dʰǝĝʰmṓ. H₁ésti h₂yuHn̥k̂áh₂. Sáh₂ h₂wésti démi.
 
-4.  H₁nómn̥ h₂yuHn̥k̂áh₂ay h₁ésti Trózdah₂. 
+4.  H₁nómn̥ h₂yuHn̥k̂áh₂ay h₁ésti Trózdah₂.
 
 5.  Trózdah₂ h₁ésti K̂orh₂ikósyo swésōr.
