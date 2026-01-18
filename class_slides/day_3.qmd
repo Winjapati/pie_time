@@ -160,7 +160,7 @@ markdown:
 
 -   **endings**
 
-    -   verbs: person/number/tense/aspect/mood
+    -   person/number/tense/aspect/mood
 
 -   stem alternations (**ablaut**)
 
@@ -238,11 +238,11 @@ Go ahead and open the site. You'll find three basic page links at the top.
 
 -   This is where you can access paradigms for nouns, adjectives, and pronouns
 
--   Click on "View" –\> "Nouns" –\> o-stems (masculine)
+-   Click on "View" –\> "Nouns" –\> ***o-stems (masculine)***
 
     -   this gives you the endings for masculine o-stems
 
--   Click on "Example noun" –\> h₁ék̂wos – 'horse'
+-   Click on "Example noun" –\> ***h₁ék̂wos*** ***– 'horse'***
 
     -   this gives you all of the forms for 'horse'
 
@@ -252,7 +252,7 @@ Go ahead and open the site. You'll find three basic page links at the top.
 
 -   Click on "View" –\> "Present paradigms"
 
--   Click on "Verb" –\> h₁ey- – to go
+-   Click on "Verb" –\> ***h₁ey-*** ***– to go***
 
 ## Using the Lexicon Page
 
@@ -260,7 +260,7 @@ Go ahead and open the site. You'll find three basic page links at the top.
 
     -   You also have access to vocab not in the novellas
 
--   Click on a noun: h₂ózdos – 'twig, branch, stick'
+-   Click on a noun: ***h₂ózdos*** ***– 'twig, branch, stick'***
 
     -   POS, gender, pronunciation (+ audio file)
 
