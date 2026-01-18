@@ -33,15 +33,128 @@ markdown:
 -   word order:
     -   The boy hugged the tree.
     -   The tree hugged the boy.
--   helper words
-    -   The boy *can* hug the tree.
-    -   The boy *will* hug the tree.
 
-## PIE often uses:
+> to indicate the role of a nominal in a sentence
+
+## Word order in English tells us the subject vs the object
+  The boy hugged the tree. 
+    -   'The boy' is the subject of the sentence. 
+    -   'The tree' is the object of the sentence.
+
+> The **subject** of a sentence tells us who or what is *verbing*. 
+> The **direct object** of a sentence tells us who or what is *verbed*.
+
+## Word order in English tells us the role of the nominals in a sentence  
+    -   The tree hugged the boy. 
+
+> What is the subject?\ 
+> What is the object?
+
+
+## Languages with case systems use case markers to indicate the role of the nominals:
+
+-   Latin:
+    -  Agricola poetam videt. ‘The farmer sees the poet’
+    -  Agricolam poeta videt.   ‘The poet sees the farmer’
+    -  Poeta agricolam videt.   ‘The poet sees the farmer’
+    -  Poetam agricola videt.   ‘The farmer sees the poet’
+
+> Word order is more flexible because the words themselves contain the information about the roles in the sentence.
+
+## Discuss with a partner:
+
+-   Latin:
+    -  Agricola poetam videt. ‘The farmer sees the poet’
+    -  Agricolam poeta videt.   ‘The poet sees the farmer’
+    -  Poeta agricolam videt.   ‘The poet sees the farmer’
+    -  Poetam agricola videt.   ‘The farmer sees the poet’
+
+> In the sentences above, which ending indicates the **nominative case** (the subject) and which one is the **accusative case** (the direct object)?
+
+## English often uses:
+
+-   prepositions:
+    -   The boy is **in** the tree.
+    -   The boy is **next to** the tree.
+    -   The boy runs away **from** the tree.
+    -   The boy runs **to** the tree.
+    -   The boy carves **into** the tree **with** a knife.
+    -   The boy plucks apples **from** the tree **for** his mom.
+
+> indicates locations of nominals in space and time, or how they relate to the subject of the sentence and the action the subject is doing
+
+## For nominals, PIE often uses:
 
 -   **endings**
 
     -   nominals: case/number/gender
+
+> What do we mean by number? Gender? 
+
+## Nominals
+
+-   Nouns
+-   Adjectives
+-   Pronouns
+
+## Nominals
+
+-   **Case** (what role?)
+-   **Number** (sg/du/pl)
+-   **Gender** (m/f/n)
+-   **Stem class** (o-stem, eh₂-stem, root noun, etc.) <-- more on this later!
+
+## Nominals
+
+-   **Case** (what role?)
+-   **Number** (sg/du/pl)
+-   **Gender** (m/f/n)
+-   **Stem class** (o-stem, eh₂-stem, root noun, etc.)
+
+> **When translating:**\
+Find the ending → identify case/number/gender → identify word's function in the sentence.
+
+## PIE Cases
+
+-   **Nominative**: subject (“the wolf”)
+-   **Vocative**: address (“yo wolf!”)
+-   **Accusative**: direct object / motion-goal (“see the wolf”)
+-   **Instrumental**: means (“with a wolf”)
+-   **Dative**: recipient / “to/for the wolf”
+-   **Ablative**: source (“from the wolf”)
+-   **Genitive**: possession / “of” (“tail of the wolf”)
+-   **Locative**: location (“in/on/at the wolf”)
+
+## PIE Cases
+
+| **Case**         | **PIE form** | **Function / Meaning**  |
+|------------------|--------------|-------------------------|
+| **Nominative**   | **wĺ̥kʷos**   | “the wolf” (subject)    |
+| **Vocative**     | **wĺ̥kʷe**    | “yo, wolf!” (address)   |
+| **Accusative**   | **wĺ̥kʷom**   | "the wolf” (object)     |
+| **Instrumental** | **wĺ̥kʷoh**   | “with a wolf”           |
+| **Dative**       | **wĺ̥kʷōy**   | “to / for the wolf”     |
+| **Ablative**     | **wĺ̥kʷōd**   | “from the wolf”         |
+| **Genitive**     | **wĺ̥kʷosyo** | “of the wolf”           |
+| **Locative**     | **wĺ̥kʷoi**   | “in / on / at the wolf” |
+
+## English verbs also use:
+
+-   endings
+    -   The boy hug*s* the tree.
+    -   The boy hug*ged* the tree.
+-   helper words
+    -   The boy *could* hug the tree.
+    -   The boy *can* hug the tree.
+    -   The boy *will* hug the tree.
+- helper words and endings
+    -   The boy *is* hug*ging* the tree.
+    -   The boy *has* hug*ged* the tree. 
+
+## PIE verbs often use:
+
+-   **endings**
+
     -   verbs: person/number/tense/aspect/mood
 
 -   stem alternations (**ablaut**)
@@ -77,53 +190,6 @@ You can change the stem:
 Or the root:
 
 > **léĝeti** '(s)he gathers'
-
-## Nominals
-
--   Nouns
--   Adjectives
--   Pronouns
-
-## Nominals
-
--   **Case** (what role?)
--   **Number** (sg/du/pl)
--   **Gender** (m/f/n)
--   **Stem class** (o-stem, eh₂-stem, root noun, etc.)
-
-## Nominals
-
--   **Case** (what role?)
--   **Number** (sg/du/pl)
--   **Gender** (m/f/n)
--   **Stem class** (o-stem, eh₂-stem, root noun, etc.)
-
-**When translating:**\
-Find the ending → identify case/number/gender → identify word's function in the sentence.
-
-## PIE Cases
-
--   **Nominative**: subject (“the wolf”)
--   **Vocative**: address (“yo wolf!”)
--   **Accusative**: direct object / motion-goal (“see the wolf”)
--   **Instrumental**: means (“with a wolf”)
--   **Dative**: recipient / “to/for the wolf”
--   **Ablative**: source (“from the wolf”)
--   **Genitive**: possession / “of” (“tail of the wolf”)
--   **Locative**: location (“in/on/at the wolf”)
-
-## PIE Cases
-
-| **Case**         | **PIE form** | **Function / Meaning**  |
-|------------------|--------------|-------------------------|
-| **Nominative**   | **wĺ̥kʷos**   | “the wolf” (subject)    |
-| **Vocative**     | **wĺ̥kʷe**    | “yo, wolf!” (address)   |
-| **Accusative**   | **wĺ̥kʷom**   | "the wolf” (object)     |
-| **Instrumental** | **wĺ̥kʷoh**   | “with a wolf”           |
-| **Dative**       | **wĺ̥kʷōy**   | “to / for the wolf”     |
-| **Ablative**     | **wĺ̥kʷōd**   | “from the wolf”         |
-| **Genitive**     | **wĺ̥kʷosyo** | “of the wolf”           |
-| **Locative**     | **wĺ̥kʷoi**   | “in / on / at the wolf” |
 
 ## Verbs: what you track
 
