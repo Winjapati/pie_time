@@ -34,16 +34,18 @@ markdown:
 
 # Overview of PIE grammar
 
-## English often uses word order:
+## Word order in English
 
 -   The boy hugged the tree.
 -   The tree hugged the boy.
 
-> to indicate the role of a nominal in a sentence
+> Indicates the role of a nominal in a sentence
 
 ## Subject vs Object
 
-**The boy hugged the tree.**
+<br>
+
+### The boy hugged the tree.
 
 -   'The boy' is the subject of the sentence.
 -   'The tree' is the object of the sentence.
@@ -51,35 +53,37 @@ markdown:
 > The **subject** of a sentence tells us who or what is *verbing*.\
 > The **direct object** of a sentence tells us who or what is *verbed*.
 
-## Word order in English tells us the role of the nominals in a sentence
+## Word order in English
 
-**The tree hugged the boy.**
+<br>
+
+### The tree hugged the boy.
 
 > What is the subject? What is the direct object?
 
-## Languages with Case Systems:
+## Languages with Case Systems
 
 -   Latin:
-    -   Agricola poetam videt. ‘The farmer sees the poet’
-    -   Agricolam poeta videt. ‘The poet sees the farmer’
-    -   Poeta agricolam videt. ‘The poet sees the farmer’
-    -   Poetam agricola videt. ‘The farmer sees the poet’
+    -   *Agricola poetam videt.* ‘The farmer sees the poet’
+    -   *Agricolam poeta videt.* ‘The poet sees the farmer’
+    -   *Poeta agricolam videt.* ‘The poet sees the farmer’
+    -   *Poetam agricola videt.* ‘The farmer sees the poet’
 
 > Word order is more flexible because the words themselves contain the information about the roles in the sentence.
 
 ## Discuss with a partner:
 
 -   Latin:
-    -   Agricola poetam videt. ‘The farmer sees the poet’
-    -   Agricolam poeta videt. ‘The poet sees the farmer’
-    -   Poeta agricolam videt. ‘The poet sees the farmer’
-    -   Poetam agricola videt. ‘The farmer sees the poet’
+    -   *Agricola poetam videt.* ‘The farmer sees the poet’
+    -   *Agricolam poeta videt.* ‘The poet sees the farmer’
+    -   *Poeta agricolam videt.* ‘The poet sees the farmer’
+    -   *Poetam agricola videt.* ‘The farmer sees the poet’
 
 > In the sentences above, which ending indicates the **nominative case** (the subject) and which one is the **accusative case** (the direct object)?
 
 ## English often uses:
 
--   prepositions:
+-   **prepositions**:
     -   The boy is **in** the tree.
     -   The boy is **next to** the tree.
     -   The boy runs away **from** the tree.
@@ -108,14 +112,14 @@ markdown:
 -   **Case** (what role?)
 -   **Number** (sg/du/pl)
 -   **Gender** (m/f/n)
--   **Stem class** (o-stem, eh₂-stem, root noun, etc.) \<-- more on this later!
+-   **Stem class** (o-stem, ah₂-stem, root noun, etc.) \<-- more on this later!
 
 ## Nominals
 
 -   **Case** (what role?)
 -   **Number** (sg/du/pl)
 -   **Gender** (m/f/n)
--   **Stem class** (o-stem, eh₂-stem, root noun, etc.)
+-   **Stem class** (o-stem, ah₂-stem, root noun, etc.)
 
 > **When translating:**\
 > Find the ending → identify case/number/gender → identify word's function in the sentence.
@@ -288,7 +292,7 @@ Go ahead and open the site. You'll find three basic page links at the top.
 
 ## Translating PIE
 
-> H₂aláh₂. h₁nómn̥ moy H₁inigṓ montóyah₂ h₁esti. Gʷʰégʷʰens pəh₂térm̥ méne. Pékʷeswe mr̥téyey.
+> H₂aláh₂. H₁nómn̥ moy H₁inigṓ montóyah₂ h₁esti. Gʷʰégʷʰens pəh₂térm̥ méne. Pékʷeswe mr̥téyey.
 
 ### How on earth can be begin to translate this?
 
