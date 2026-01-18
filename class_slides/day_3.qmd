@@ -26,48 +26,54 @@ markdown:
     -   audio + gloss
 -   Begin to translate the story, *K̂orh₂ikós and the Snake*
 
+## Reminder!
+
+-   Take notes on a piece of paper
+-   You'll hand this in for participation credit for the day
+-   You can use your notes on the quiz
+
 # Overview of PIE grammar
 
-## English often uses:
+## English often uses word order:
 
--   word order:
-    -   The boy hugged the tree.
-    -   The tree hugged the boy.
+-   The boy hugged the tree.
+-   The tree hugged the boy.
 
 > to indicate the role of a nominal in a sentence
 
-## Word order in English tells us the subject vs the object
-  The boy hugged the tree. 
-    -   'The boy' is the subject of the sentence. 
-    -   'The tree' is the object of the sentence.
+## Subject vs Object
 
-> The **subject** of a sentence tells us who or what is *verbing*. 
+**The boy hugged the tree.**
+
+-   'The boy' is the subject of the sentence.
+-   'The tree' is the object of the sentence.
+
+> The **subject** of a sentence tells us who or what is *verbing*.\
 > The **direct object** of a sentence tells us who or what is *verbed*.
 
-## Word order in English tells us the role of the nominals in a sentence  
-    -   The tree hugged the boy. 
+## Word order in English tells us the role of the nominals in a sentence
 
-> What is the subject?\ 
-> What is the object?
+**The tree hugged the boy.**
 
+> What is the subject? What is the direct object?
 
-## Languages with case systems use case markers to indicate the role of the nominals:
+## Languages with Case Systems:
 
 -   Latin:
-    -  Agricola poetam videt. ‘The farmer sees the poet’
-    -  Agricolam poeta videt.   ‘The poet sees the farmer’
-    -  Poeta agricolam videt.   ‘The poet sees the farmer’
-    -  Poetam agricola videt.   ‘The farmer sees the poet’
+    -   Agricola poetam videt. ‘The farmer sees the poet’
+    -   Agricolam poeta videt. ‘The poet sees the farmer’
+    -   Poeta agricolam videt. ‘The poet sees the farmer’
+    -   Poetam agricola videt. ‘The farmer sees the poet’
 
 > Word order is more flexible because the words themselves contain the information about the roles in the sentence.
 
 ## Discuss with a partner:
 
 -   Latin:
-    -  Agricola poetam videt. ‘The farmer sees the poet’
-    -  Agricolam poeta videt.   ‘The poet sees the farmer’
-    -  Poeta agricolam videt.   ‘The poet sees the farmer’
-    -  Poetam agricola videt.   ‘The farmer sees the poet’
+    -   Agricola poetam videt. ‘The farmer sees the poet’
+    -   Agricolam poeta videt. ‘The poet sees the farmer’
+    -   Poeta agricolam videt. ‘The poet sees the farmer’
+    -   Poetam agricola videt. ‘The farmer sees the poet’
 
 > In the sentences above, which ending indicates the **nominative case** (the subject) and which one is the **accusative case** (the direct object)?
 
@@ -81,7 +87,7 @@ markdown:
     -   The boy carves **into** the tree **with** a knife.
     -   The boy plucks apples **from** the tree **for** his mom.
 
-> indicates locations of nominals in space and time, or how they relate to the subject of the sentence and the action the subject is doing
+> locations of nominals in space and time, or how they relate to other words in the sentence
 
 ## For nominals, PIE often uses:
 
@@ -89,7 +95,7 @@ markdown:
 
     -   nominals: case/number/gender
 
-> What do we mean by number? Gender? 
+> What do we mean by number? Gender?
 
 ## Nominals
 
@@ -102,7 +108,7 @@ markdown:
 -   **Case** (what role?)
 -   **Number** (sg/du/pl)
 -   **Gender** (m/f/n)
--   **Stem class** (o-stem, eh₂-stem, root noun, etc.) <-- more on this later!
+-   **Stem class** (o-stem, eh₂-stem, root noun, etc.) \<-- more on this later!
 
 ## Nominals
 
@@ -112,7 +118,7 @@ markdown:
 -   **Stem class** (o-stem, eh₂-stem, root noun, etc.)
 
 > **When translating:**\
-Find the ending → identify case/number/gender → identify word's function in the sentence.
+> Find the ending → identify case/number/gender → identify word's function in the sentence.
 
 ## PIE Cases
 
@@ -145,11 +151,10 @@ Find the ending → identify case/number/gender → identify word's function in 
     -   The boy hug*ged* the tree.
 -   helper words
     -   The boy *could* hug the tree.
-    -   The boy *can* hug the tree.
     -   The boy *will* hug the tree.
-- helper words and endings
+-   helper words and endings
     -   The boy *is* hug*ging* the tree.
-    -   The boy *has* hug*ged* the tree. 
+    -   The boy *has* hug*ged* the tree.
 
 ## PIE verbs often use:
 
@@ -289,10 +294,10 @@ Go ahead and open the site. You'll find three basic page links at the top.
 
 ## Steps to Translate
 
-1) identify **verbs**\
-2) identify **subjects/objects** via case\
-3) find **other nominals** and words to complete your translation\
-4) shuffle word order to make it more English-like
+1)  identify **verbs**\
+2)  identify **subjects/objects** via case\
+3)  find **other nominals** and words to complete your translation\
+4)  shuffle word order to make it more English-like
 
 ## Immersive PIE Text: together
 

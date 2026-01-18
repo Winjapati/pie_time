@@ -235,7 +235,7 @@
     "href": "class_slides/day_3.html#english-often-uses",
     "title": "An Immersive Introduction to PIE",
     "section": "English often uses:",
-    "text": "English often uses:\n\nword order:\n\nThe boy hugged the tree.\nThe tree hugged the boy.\n\n\n\nto indicate the role of a nominal in a sentence"
+    "text": "English often uses:\n\nprepositions:\n\nThe boy is in the tree.\nThe boy is next to the tree.\nThe boy runs away from the tree.\nThe boy runs to the tree.\nThe boy carves into the tree with a knife.\nThe boy plucks apples from the tree for his mom.\n\n\n\nlocations of nominals in space and time, or how they relate to other words in the sentence"
   },
   {
     "objectID": "class_slides/day_3.html#the-basic-units-1",
@@ -410,7 +410,7 @@
     "href": "class_slides/day_3.html#word-order-in-english-tells-us-the-role-of-the-nominals-in-a-sentence",
     "title": "An Immersive Introduction to PIE",
     "section": "Word order in English tells us the role of the nominals in a sentence",
-    "text": "Word order in English tells us the role of the nominals in a sentence\n-   The tree hugged the boy. \n\nWhat is the subject?  What is the object?"
+    "text": "Word order in English tells us the role of the nominals in a sentence\nThe tree hugged the boy.\n\nWhat is the subject? What is the direct object?"
   },
   {
     "objectID": "class_slides/day_3.html#languages-with-case-systems-use-case-markers-to-indicate-the-role-of-the-nominals",
@@ -452,7 +452,7 @@
     "href": "class_slides/day_3.html#english-verbs-also-use",
     "title": "An Immersive Introduction to PIE",
     "section": "English verbs also use:",
-    "text": "English verbs also use:\n\nendings\n\nThe boy hugs the tree.\nThe boy hugged the tree.\n\nhelper words\n\nThe boy could hug the tree.\nThe boy can hug the tree.\nThe boy will hug the tree.\n\nhelper words and endings\n\nThe boy is hugging the tree.\nThe boy has hugged the tree."
+    "text": "English verbs also use:\n\nendings\n\nThe boy hugs the tree.\nThe boy hugged the tree.\n\nhelper words\n\nThe boy could hug the tree.\nThe boy will hug the tree.\n\nhelper words and endings\n\nThe boy is hugging the tree.\nThe boy has hugged the tree."
   },
   {
     "objectID": "class_slides/day_3.html#pie-verbs-often-use",
@@ -460,5 +460,33 @@
     "title": "An Immersive Introduction to PIE",
     "section": "PIE verbs often use:",
     "text": "PIE verbs often use:\n\nendings\n\nverbs: person/number/tense/aspect/mood\n\nstem alternations (ablaut)\nderivational morphology (suffixes)"
+  },
+  {
+    "objectID": "class_slides/day_3.html#reminder",
+    "href": "class_slides/day_3.html#reminder",
+    "title": "An Immersive Introduction to PIE",
+    "section": "Reminder!",
+    "text": "Reminder!\n\nTake notes on a piece of paper\nYou’ll hand this in for participation credit for the day\nYou can use your notes on the quiz"
+  },
+  {
+    "objectID": "class_slides/day_3.html#english-often-uses-word-order",
+    "href": "class_slides/day_3.html#english-often-uses-word-order",
+    "title": "An Immersive Introduction to PIE",
+    "section": "English often uses word order:",
+    "text": "English often uses word order:\n\nThe boy hugged the tree.\nThe tree hugged the boy.\n\n\nto indicate the role of a nominal in a sentence"
+  },
+  {
+    "objectID": "class_slides/day_3.html#subject-vs-object",
+    "href": "class_slides/day_3.html#subject-vs-object",
+    "title": "An Immersive Introduction to PIE",
+    "section": "Subject vs Object",
+    "text": "Subject vs Object\nThe boy hugged the tree.\n\n‘The boy’ is the subject of the sentence.\n‘The tree’ is the object of the sentence.\n\n\nThe subject of a sentence tells us who or what is verbing.\nThe direct object of a sentence tells us who or what is verbed."
+  },
+  {
+    "objectID": "class_slides/day_3.html#languages-with-case-systems",
+    "href": "class_slides/day_3.html#languages-with-case-systems",
+    "title": "An Immersive Introduction to PIE",
+    "section": "Languages with Case Systems:",
+    "text": "Languages with Case Systems:\n\nLatin:\n\nAgricola poetam videt. ‘The farmer sees the poet’\nAgricolam poeta videt. ‘The poet sees the farmer’\nPoeta agricolam videt. ‘The poet sees the farmer’\nPoetam agricola videt. ‘The farmer sees the poet’\n\n\n\nWord order is more flexible because the words themselves contain the information about the roles in the sentence."
   }
 ]
