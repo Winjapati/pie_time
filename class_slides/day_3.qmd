@@ -28,9 +28,9 @@ markdown:
 
 ## Reminder!
 
--   Take notes on a piece of paper
--   You'll hand this in for participation credit for the day
--   You can use your notes on the quiz
+-   Pick up a handout!
+    -   You'll hand this in for participation credit for the day
+    -   You can use it on the quiz
 
 # Overview of PIE grammar
 
