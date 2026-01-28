@@ -51,6 +51,24 @@
     }
   },
   {
+    "id": "gwows",
+    "chapter": "1",
+    "pos": "noun",
+    "lemma": "gʷṓws",
+    "pronunciation": "gwoh-oos",
+    "paradigm": "athem_static_anim",
+    "strong_stem": "gʷów-",
+    "weak_stem": "gʷéw-",
+    "gloss": "cow",
+    "PB": false,
+    "thematic": false,
+    "gender": "f",
+    "overrides": {
+      "nom_sg": "gʷṓws",
+      "acc_sg": "gʷṓm"
+    }
+  },
+  {
     "id": "h1ogwhis",
     "chapter": "1",
     "pos": "noun",
@@ -604,6 +622,7 @@
   {
     "id": "prek",
     "pos": "verb",
+    "chapter": "2",
     "lemma": "prek̑-",
     "pronunciation": "prek",
     "gloss": "to ask",
@@ -1129,5 +1148,20 @@
       "voc_du": { "tonic": ["h₁yóh₁"], "clitic": [] },
       "voc_pl": { "tonic": ["h₁yáh₂"], "clitic": [] }
     }
-  }
+  },
+  {
+    "id": "bʰuh₂tḗy",
+    "chapter": "2",
+    "pos": "noun",
+    "lemma": "bʰuh₂tis",
+    "pronunciation": "dohm",
+    "paradigm": "i_stem_pk_anim",
+    "strong_stem": "bʰúh₂t-",
+    "weak_stem": "bʰuh₂t-",
+    "gloss": "being, existence; world",
+    "PB": true,
+    "thematic": false,
+    "gender": "f"
+  },
+
 ]

@@ -59,9 +59,9 @@
     "paradigm": "athem_static_anim",
     "strong_stem": "gʷów-",
     "weak_stem": "gʷéw-",
-    "gloss": "earth, ground",
-    "PB": true,
-    "thematic": true,
+    "gloss": "cow",
+    "PB": false,
+    "thematic": false,
     "gender": "f",
     "overrides": {
       "nom_sg": "gʷṓws",
@@ -1148,5 +1148,20 @@
       "voc_du": { "tonic": ["h₁yóh₁"], "clitic": [] },
       "voc_pl": { "tonic": ["h₁yáh₂"], "clitic": [] }
     }
-  }
+  },
+  {
+    "id": "bʰuh₂tḗy",
+    "chapter": "2",
+    "pos": "noun",
+    "lemma": "bʰuh₂tis",
+    "pronunciation": "dohm",
+    "paradigm": "i_stem_pk_anim",
+    "strong_stem": "bʰúh₂t-",
+    "weak_stem": "bʰuh₂t-",
+    "gloss": "being, existence; world",
+    "PB": true,
+    "thematic": false,
+    "gender": "f"
+  },
+
 ]
