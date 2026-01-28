@@ -1321,12 +1321,13 @@
     "gloss": "not; no"
   },
   {
-    "id": "ath2o",
+    "id": "nu",
     "chapter": "2",
     "pos": "adverb",
     "lemma": "nū́",
-    "pronunciation": "aht-khoh",
-    "gloss": "but; however"
+    "pronunciation": "noo",
+    "gloss": "now",
+    "extended_meaning": "then",
   },
   {
     "id": "h2alah2",
@@ -1343,5 +1344,39 @@
     "lemma": "pīp",
     "pronunciation": "peep",
     "gloss": "peep!"
+  },
+  {
+    "id": "h1aw",
+    "chapter": "2",
+    "pos": "preposition",
+    "lemma": "h₁áw",
+    "pronunciation": "how",
+    "gloss_abl": "away (from)"
+  },
+  {
+    "id": "h1en",
+    "chapter": "2",
+    "pos": "preposition",
+    "lemma": "h₁én",
+    "pronunciation": "hen",
+    "gloss_acc": "into",
+    "gloss_loc": "in"
+  },
+  {
+    "id": "h2mbhi",
+    "chapter": "2",
+    "pos": "preposition",
+    "lemma": "h₂m̥bʰí",
+    "pronunciation": "khmm-bhee",
+    "gloss_acc": "against, towards"
+    "gloss_loc": "around; on both sides of"
+  },
+  {
+    "id": "kom",
+    "chapter": "2",
+    "pos": "preposition",
+    "lemma": "k̂óm",
+    "pronunciation": "kyohm",
+    "gloss_inst": "together with"
   }
 ]
