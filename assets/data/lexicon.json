@@ -1378,5 +1378,54 @@
     "lemma": "k̂óm",
     "pronunciation": "kyohm",
     "gloss_inst": "together with"
+  },
+  {
+    "id": "kwih1",
+    "chapter": "2",
+    "pos": "adverb",
+    "lemma": "kʷíh₁",
+    "pronunciation": "kweehh",
+    "gloss": "why?"
+  },
+  {
+    "id": "kwoi",
+    "chapter": "2",
+    "pos": "adverb",
+    "lemma": "kʷói",
+    "pronunciation": "kwoh-ee",
+    "gloss": "where?"
+  },
+  {
+    "id": "prh2os",
+    "chapter": "2",
+    "pos": "adverb",
+    "lemma": "pr̥h₂ós",
+    "pronunciation": "purr-khohss",
+    "gloss": "earlier, before(hand)"
+  },
+  {
+    "id": "proti",
+    "chapter": "2",
+    "pos": "adverb",
+    "lemma": "próti",
+    "pronunciation": "proh-tee",
+    "gloss": "in response",
+    "gloss_acc": "towards"
+  },
+  {
+    "id": "toi",
+    "chapter": "2",
+    "pos": "adverb",
+    "lemma": "tói",
+    "pronunciation": "toh-ee",
+    "gloss": "there"
+  },
+  {
+    "id": "h1wesu_toy_h2ayr",
+    "chapter": "2",
+    "pos": "expression",
+    "lemma": "h₁wésu toy h₂áyr̥",
+    "pronunciation": "hweh-soo toy khigh-yurr",
+    "gloss": "Good day to you!"
   }
 ]
