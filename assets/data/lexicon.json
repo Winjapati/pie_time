@@ -1169,7 +1169,7 @@
     "pos": "noun",
     "lemma": "K̂orh₂ikós",
     "pronunciation": "dohm",
-    "paradigm": "o_stem_oxy",
+    "paradigm": "o_stem_m",
     "strong_stem": "K̂orh₂ik-",
     "weak_stem": "bʰuh₂t-",
     "gloss": "K̂orh₂ikós (personal name)",
@@ -1213,7 +1213,7 @@
     "pos": "adjective",
     "lemma": "méĝh₂los",
     "pronunciation": "meg-khlohs",
-    "paradigm": "them_adj_oxy",
+    "paradigm": "them_adj_bary",
     "strong_stem": "méĝh₂l-",
     "weak_stem": "méĝh₂l-",
     "gloss": "great",
@@ -1228,7 +1228,7 @@
     "pos": "adjective",
     "lemma": "méĝh₂istos",
     "pronunciation": "meg-khee-stohs",
-    "paradigm": "them_adj_oxy",
+    "paradigm": "them_adj_bary",
     "strong_stem": "méĝh₂ist-",
     "weak_stem": "méĝh₂ist-",
     "gloss": "greatest",
@@ -1295,5 +1295,53 @@
     "PB": false,
     "thematic": true,
     "gender": ""
+  },
+  {
+    "id": "ath2o",
+    "chapter": "2",
+    "pos": "adverb",
+    "lemma": "áth₂o",
+    "pronunciation": "aht-khoh",
+    "gloss": "but; however"
+  },
+  {
+    "id": "me",
+    "chapter": "2",
+    "pos": "adverb",
+    "lemma": "mḗ",
+    "pronunciation": "mehh",
+    "gloss": "don't"
+  },
+  {
+    "id": "ne",
+    "chapter": "2",
+    "pos": "adverb",
+    "lemma": "né",
+    "pronunciation": "neh",
+    "gloss": "not; no"
+  },
+  {
+    "id": "ath2o",
+    "chapter": "2",
+    "pos": "adverb",
+    "lemma": "nū́",
+    "pronunciation": "aht-khoh",
+    "gloss": "but; however"
+  },
+  {
+    "id": "h2alah2",
+    "chapter": "2",
+    "pos": "interjection",
+    "lemma": "h₂aláh₂",
+    "pronunciation": "khah-lahkh",
+    "gloss": "hello!"
+  },
+  {
+    "id": "pip",
+    "chapter": "2",
+    "pos": "interjection",
+    "lemma": "pīp",
+    "pronunciation": "peep",
+    "gloss": "peep!"
   }
 ]
