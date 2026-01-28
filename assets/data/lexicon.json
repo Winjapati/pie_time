@@ -1165,7 +1165,7 @@
   },
   {
     "id": "korh2ikos",
-    "chapter": "2",
+    "chapter": "1",
     "pos": "noun",
     "lemma": "K̂orh₂ikós",
     "pronunciation": "dohm",
@@ -1173,7 +1173,7 @@
     "strong_stem": "K̂orh₂ik-",
     "weak_stem": "bʰuh₂t-",
     "gloss": "K̂orh₂ikós (personal name)",
-    "extended_meaning": "literally "little crow", masculine",
+    "extended_meaning": "literally 'little crow', masculine",
     "PB": true,
     "thematic": false,
     "gender": "m"
@@ -1188,7 +1188,7 @@
     "strong_stem": "trózd-",
     "weak_stem": "trózd-",
     "gloss": "Trózdah₂ (personal name)",
-    "extended_meaning": "literally "thrush" (type of bird), feminine",
+    "extended_meaning": "literally 'thrush' (type of bird), feminine",
     "PB": true,
     "thematic": false,
     "gender": "f"
@@ -1207,7 +1207,7 @@
     "thematic": false,
     "gender": "f"
   },
-{
+  {
     "id": "meghh2los",
     "chapter": "2",
     "pos": "adjective",
@@ -1222,7 +1222,7 @@
     "thematic": true,
     "gender": ""
   },
-{
+  {
     "id": "megh2istos",
     "chapter": "2",
     "pos": "adjective",
@@ -1237,7 +1237,7 @@
     "thematic": true,
     "gender": ""
   },
-{
+  {
     "id": "megyos",
     "chapter": "2",
     "pos": "adjective",
@@ -1252,7 +1252,7 @@
     "thematic": false,
     "gender": ""
   },
-{
+  {
     "id": "polh1us",
     "chapter": "2",
     "pos": "adjective",
@@ -1266,7 +1266,7 @@
     "thematic": true,
     "gender": ""
   },
-{
+  {
     "id": "probhh2us",
     "chapter": "2",
     "pos": "adjective",
@@ -1281,7 +1281,7 @@
     "thematic": false,
     "gender": ""
   },
-{
+  {
     "id": "senos",
     "chapter": "2",
     "pos": "adjective",
