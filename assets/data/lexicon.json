@@ -51,6 +51,24 @@
     }
   },
   {
+    "id": "gwows",
+    "chapter": "1",
+    "pos": "noun",
+    "lemma": "gʷṓws",
+    "pronunciation": "gwoh-oos",
+    "paradigm": "athem_static_anim",
+    "strong_stem": "gʷów-",
+    "weak_stem": "gʷéw-",
+    "gloss": "earth, ground",
+    "PB": true,
+    "thematic": true,
+    "gender": "f",
+    "overrides": {
+      "nom_sg": "gʷṓws",
+      "acc_sg": "gʷṓm"
+    }
+  },
+  {
     "id": "h1ogwhis",
     "chapter": "1",
     "pos": "noun",
@@ -604,6 +622,7 @@
   {
     "id": "prek",
     "pos": "verb",
+    "chapter": "2",
     "lemma": "prek̑-",
     "pronunciation": "prek",
     "gloss": "to ask",
