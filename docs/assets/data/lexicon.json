@@ -1445,7 +1445,7 @@
 {
     "id": "bah2",
     "pos": "verb",
-    "chapter": "1",
+    "chapter": "2",
     "lemma": "bʰah₂-",
     "pronunciation": "bahkh",
     "gloss": "to shine",
@@ -1460,7 +1460,7 @@
 {
     "id": "bhegw",
     "pos": "verb",
-    "chapter": "1",
+    "chapter": "2",
     "lemma": "bʰegʷ-",
     "pronunciation": "bhegw",
     "gloss": "to run away",
@@ -1475,7 +1475,7 @@
 {
     "id": "derk",
     "pos": "verb",
-    "chapter": "1",
+    "chapter": "2",
     "lemma": "derk̂-",
     "pronunciation": "dairk",
     "gloss": "to see",
@@ -1490,7 +1490,7 @@
 {
     "id": "deik",
     "pos": "verb",
-    "chapter": "1",
+    "chapter": "2",
     "lemma": "déyk̂e-",
     "pronunciation": "déyk̂",
     "gloss": "to show",
@@ -1505,7 +1505,7 @@
 {
     "id": "dwey",
     "pos": "verb",
-    "chapter": "1",
+    "chapter": "2",
     "lemma": "dwey-",
     "pronunciation": "dway",
     "gloss": "to be afraid",
@@ -1520,7 +1520,7 @@
 {
     "id": "h1oyeye",
     "pos": "verb",
-    "chapter": "1",
+    "chapter": "2",
     "lemma": "h₁oyéye-",
     "pronunciation": "hoyehyeh",
     "gloss": "to keep on going",
@@ -1534,7 +1534,7 @@
 {
     "id": "h3rewH",
     "pos": "verb",
-    "chapter": "1",
+    "chapter": "2",
     "lemma": "h₃rewH-",
     "pronunciation": "ghreh-ookh",
     "gloss": "to yell",
@@ -1550,7 +1550,7 @@
 {
     "id": "melh3",
     "pos": "verb",
-    "chapter": "1",
+    "chapter": "2",
     "lemma": "melh₃-",
     "pronunciation": "melgh",
     "gloss": "to arrive",
@@ -1564,7 +1564,7 @@
 {
     "id": "sekw",
     "pos": "verb",
-    "chapter": "1",
+    "chapter": "2",
     "lemma": "sekʷ-",
     "pronunciation": "sehkw",
     "gloss": "to gather",
@@ -1579,7 +1579,7 @@
 {
     "id": "strep",
     "pos": "verb",
-    "chapter": "1",
+    "chapter": "2",
     "lemma": "strep-",
     "pronunciation": "leg",
     "gloss": "to make noise",
