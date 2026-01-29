@@ -1421,11 +1421,174 @@
     "gloss": "there"
   },
   {
-    "id": "h1wesu_toy_h2ayr",
+    "id": "h1wesu_toy_h2oyr",
     "chapter": "2",
     "pos": "expression",
-    "lemma": "h₁wésu toy h₂áyr̥",
-    "pronunciation": "hweh-soo toy khigh-yurr",
+    "lemma": "h₁wésu toy h₂óyr̥",
+    "pronunciation": "hweh-soo toy khoy-yurr",
     "gloss": "Good day to you!"
+  },
+{
+    "id": "weyd",
+    "pos": "verb",
+    "chapter": "2",
+    "lemma": "weyd-",
+    "pronunciation": "wade",
+    "gloss": "to see, know",
+    "systems": {
+      "present": {
+        "template": "present_thematic_unaccented",
+        "strong_stem": "weyd-"
+      }
+    }
+  },
+{
+    "id": "bah2",
+    "pos": "verb",
+    "chapter": "1",
+    "lemma": "bʰah₂-",
+    "pronunciation": "bahkh",
+    "gloss": "to shine",
+    "extended_meaning": "to tell a story",
+    "systems": {
+      "present": {
+        "template": "present_thematic_unaccented",
+        "strong_stem": "bʰah₂-"
+      }
+    }
+  },
+{
+    "id": "bhegw",
+    "pos": "verb",
+    "chapter": "1",
+    "lemma": "bʰegʷ-",
+    "pronunciation": "bhegw",
+    "gloss": "to run away",
+    "extended_meaning": "to flee; be frightened",
+    "systems": {
+      "present": {
+        "template": "present_thematic_unaccented",
+        "strong_stem": "bʰegʷ-"
+      }
+    }
+  },
+{
+    "id": "derk",
+    "pos": "verb",
+    "chapter": "1",
+    "lemma": "derk̂-",
+    "pronunciation": "dairk",
+    "gloss": "to see",
+    "extended_meaning": "to look at",
+    "systems": {
+      "present": {
+        "template": "present_thematic_unaccented",
+        "strong_stem": "dérk̂-"
+      }
+    }
+  },
+{
+    "id": "deik",
+    "pos": "verb",
+    "chapter": "1",
+    "lemma": "déyk̂e-",
+    "pronunciation": "déyk̂",
+    "gloss": "to show",
+    "extended_meaning": "to point (at)",
+    "systems": {
+      "present": {
+        "template": "present_thematic_unaccented",
+        "strong_stem": "léĝ-"
+      }
+    }
+  },
+{
+    "id": "dwey",
+    "pos": "verb",
+    "chapter": "1",
+    "lemma": "dwey-",
+    "pronunciation": "dway",
+    "gloss": "to be afraid",
+    "extended_meaning": "to fear",
+    "systems": {
+      "present": {
+        "template": "present_thematic_unaccented",
+        "strong_stem": "léĝ-"
+      }
+    }
+  },
+{
+    "id": "h1oyeye",
+    "pos": "verb",
+    "chapter": "1",
+    "lemma": "h₁oyéye-",
+    "pronunciation": "hoyehyeh",
+    "gloss": "to keep on going",
+    "systems": {
+      "present": {
+        "template": "present_thematic_unaccented",
+        "strong_stem": "h₁oyéye-"
+      }
+    }
+  },
+{
+    "id": "h3rewH",
+    "pos": "verb",
+    "chapter": "1",
+    "lemma": "h₃rewH-",
+    "pronunciation": "ghreh-ookh",
+    "gloss": "to yell",
+    "extended_meaning": "to shout",
+    "systems": {
+      "present": {
+        "template": "present_thematic_unaccented",
+        "strong_stem": "h₃rḗwH-",
+        "weak_stem": "h₃réwH-"
+      }
+    }
+  },
+{
+    "id": "melh3",
+    "pos": "verb",
+    "chapter": "1",
+    "lemma": "melh₃-",
+    "pronunciation": "melgh",
+    "gloss": "to arrive",
+    "systems": {
+      "present": {
+        "template": "present_thematic_unaccented",
+        "strong_stem": "mélh₃-"
+      }
+    }
+  },
+{
+    "id": "sekw",
+    "pos": "verb",
+    "chapter": "1",
+    "lemma": "sekʷ-",
+    "pronunciation": "sehkw",
+    "gloss": "to gather",
+    "extended_meaning": "to collect; to speak",
+    "systems": {
+      "present": {
+        "template": "present_thematic_unaccented",
+        "strong_stem": "sékʷ-"
+      }
+    }
+  },
+{
+    "id": "strep",
+    "pos": "verb",
+    "chapter": "1",
+    "lemma": "strep-",
+    "pronunciation": "leg",
+    "gloss": "to make noise",
+    "extended_meaning": "to be loud",
+    "systems": {
+      "present": {
+        "template": "present_thematic_unaccented",
+        "strong_stem": "strép-"
+      }
+    }
   }
 ]
